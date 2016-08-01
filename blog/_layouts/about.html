@@ -9,10 +9,10 @@ layout: default
   </section>
 
 	{% for i in page.sections%}
-	<section id="{{i[0]}}">
-	<a href="javascript:toggle('{{i[0]}}');"><h3>{{i[1]}} <img src=_img/add.svg class=h3plusimg id="{{i[0]}}_plusimg"> <img src=img/minus.svg class=h3minusimg id="{{i[0]}}_minusimg"></h3> </a>
-		<div id={{i[0]}} class="collapsible">
-		{{i[2]}}
+	<section id="{{i.id}}">
+	<a href="javascript:toggle('{{i.id}}');"><h3>{{i.title}} <img src="{{ site.baseurl }}/images/add.svg" class=h3plusimg id="{{i.id}}_displayimg"> <img src="{{ site.baseurl }}/images/minus.svg" class=h3minusimg id="{{i.id}}_hideimg"></h3> </a>
+		<div id={{i.id}} class="collapsible">
+		{{i.content | markdownify}}
 		</div>
 	</section>	
 	{% endfor%}

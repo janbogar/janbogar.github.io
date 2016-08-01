@@ -1,7 +1,7 @@
 <script type="text/javascript">
     function toggle(Id) {
 		$("#"+Id).toggle();
-		$("#"+Id+"_plusimg").toggle();
-		$("#"+Id+"_minusimg").toggle();
+		$("#"+Id+"_hideimg").toggle();
+		$("#"+Id+"_displayimg").toggle();
     }
 </script>
