@@ -1,10 +1,13 @@
 ---
-layout: page
+layout: about
 title: About
 permalink: /about/
+scripts: [toggle]
+sections: [[i_like,Čo ma ovplyvnilo,Blablablablabla],[i_hate,chrumchrum,kroch]]
+
 ---
 
-Some information about you!
+Welcome
 
 ### More Information
 

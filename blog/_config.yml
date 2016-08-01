@@ -1,3 +1,8 @@
+collections:
+	about_sections:
+		id
+		title
+		
 #
 # This file contains configuration flags to customize your site
 #

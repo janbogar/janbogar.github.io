@@ -13,6 +13,13 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+	<!-- include scripts with filenames specified in scripts variable in frontmatter of the relevant markdown file. scripts are in dir _includes/_scripts-->	
+	{% if page.scripts %}
+		{% for script in page.scripts %}
+  			{% include _scripts/{{script}}%}
+		{% endfor %}
+
+	{% endif %}
   </head>
 
   <body>
