@@ -30,12 +30,3 @@ sections:
 
 Vitajte na mojej osobnej stránke. Som Ján Bogár: fyzik, výmyselník, študent, učiteľ, horolezec, geek, voľnočasový filozof a turista. Narodil som sa 12.11.1990 v Pardubiciach (vtedy ešte v Československu), vyrástol v Trenčíne a vyštudoval v Bratislave.  Komu to stačí, nezabudnite na môj blog, určite tam nájdete niečo zaujímavé. Komu sa ale máli a chcel by o mne vedieť viac, nech číta ďalej.
 
- * Rozumiem kvantovej mechanike. Ak vám niekto vraví že to nejde, sú tri možnosti: buď je perfekcionista, alebo preháňa, alebo netuší, čo je kvantová mechanika. No dobre, ešte stále sa mám veľa čo učiť,ale aj tak!
-          Okrem toho mám mgr. titul z fyziky tuhých látok, v diplomovej práci som sa zaoberal supravodivými kvantovými bitmy.
-         * Viem programovať:
-             * Python
-             * C++
-             * html/css (zatiaľ som začiatočník, učebný projekt je táto stránka)
-         * Viem zbežne používať pestrú zbierku softvéru: Inkscape, Audacity, Gimp, Latex, LibreOffice, Linux
-         * Viem spolupracovať v týme, efektívne komunikovať, hľadať kreatívne riešenia, zvládať stresové situácie, prezentovať, prednášať a vysvetľovať.
-

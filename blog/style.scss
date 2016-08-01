@@ -32,7 +32,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+/*  color: $darkerGray; */
+  color: $myorange;
   font-weight: bold;
 
   line-height: 1.7;
@@ -69,11 +70,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $myorange;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $myorange;
   }
 }
 
@@ -281,6 +282,27 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+}
+
+/*    collapsible class ------------------------------------------------------------------------------------------*/
+
+.collapsible{
+	display:none;
+	
+}
+
+.h3displayimg{
+	display:inline;
+	position:relative;
+	height:30px;
+	bottom:-10px;
+}
+
+.h3hideimg{
+	display:none;
+	position:relative;
+	height:30px;
+	bottom:-10px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
