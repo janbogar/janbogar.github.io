@@ -1,0 +1,113 @@
+html, body {
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: green;
+    overflow: hidden;
+    
+}
+
+#everything {
+    position: relative;
+    background-color: white;
+    height: 100%;
+}
+
+header {
+    position: relative;     /* Important, becouse header nav is positioned absolutely*/
+    float: both;
+    background-color: white;
+    height: 15%;
+    border-style:solid;
+    border-bottom-color: #b7e500;
+    border-bottom-width: 8px;
+
+}
+
+#container {
+    height:100%;
+    background-color: white;
+}
+
+aside {
+    float: left;
+    background-color: white;
+    height: 100%;
+    width: 197px;
+    border-style:double;
+    border-right-color: #b7e500;
+    border-right-width: 3px;
+    
+}
+
+section {
+    float: right;
+    background-color: white;
+    height: calc(100% - 40px);
+    padding: 20px;
+    width: calc(100% - 240px);
+    
+}
+
+
+p { color: blue;
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+
+a {
+    color: green;
+}
+
+/* Header formating*/
+
+h1 {
+    color: #b7e500;
+    text-align: left;
+    position: relative;
+    left: 15%;
+    padding: 10px;
+    font-size: xx-large;  
+    font-style: oblique;
+}
+
+h2 {
+    color: #b7e500;
+    text-align: left;
+    position:relative;
+    left: 30%;
+    top: 5%;
+    font-size:large;  
+    font-style: oblique;
+}
+
+header nav {
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+}
+
+header li {
+    display:inline;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+header li a {
+    color: #b7e500;
+    font-size: large;
+}
+
+/*aside formating*/
+
+aside nav{
+    color: purple;
+    position: relative;
+}
+
+aside li{
+    margin: 5px;
+    padding-left: 20%;
+}

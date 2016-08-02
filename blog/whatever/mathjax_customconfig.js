@@ -382,124 +382,7 @@ MathJax.Hub.Config({
     
   },
   
-  //============================================================================
-  //
-  //  These parameters control the asciimath2jax preprocessor (when you have included
-  //  "asciimath2jax.js" in the extensions list above).
-  //
-  asciimath2jax: {
-
-    //
-    //  The delimiters that surround asciimath expressions.  The first in each
-    //  pair is the initial delimiter and the second is the terminal delimiter.
-    //
-    delimiters: [
-      ['`','`']
-    ],
-
-    //
-    //  This array lists the names of the tags whose contents should not be
-    //  processed by asciimath2jax (other than to look for ignore/process classes
-    //  as listed below).  You can add to (or remove from) this list to prevent
-    //  MathJax from processing mathematics in specific contexts.
-    //
-    skipTags: ["script","noscript","style","textarea","pre","code","annotation","annotation-xml"],
-
-    //
-    //  This is the class name used to mark elements whose contents should
-    //  not be processed by asciimath2jax (other than to look for the
-    //  processClass pattern below).  Note that this is a regular
-    //  expression, and so you need to be sure to quote any regexp special
-    //  characters.  The pattern is automatically preceeded by '(^| )(' and
-    //  followed by ')( |$)', so your pattern will have to match full words
-    //  in the class name.  Assigning an element this class name will
-    //  prevent `asciimath2jax` from processing its contents.
-    //
-    ignoreClass: "asciimath2jax_ignore",
-
-    //
-    //  This is the class name used to mark elements whose contents SHOULD
-    //  be processed by asciimath2jax.  This is used to turn on processing
-    //  within tags that have been marked as ignored or skipped above.
-    //  Note that this is a regular expression, and so you need to be sure
-    //  to quote any regexp special characters.  The pattern is
-    //  automatically preceeded by '(^| )(' and followed by ')( |$)', so
-    //  your pattern will have to match full words in the class name.  Use
-    //  this to restart processing within an element that has been marked
-    //  as ignored above.
-    //
-    processClass: "asciimath2jax_process",
-    
-    //  Controls whether asciimath2jax inserts MathJax_Preview spans to make a
-    //  preview available, and what preview to use, when it locates in-line
-    //  and display mathetics on the page.  The default is "AsciiMath", which
-    //  means use the AsciiMath code as the preview (until it is processed by
-    //  MathJax).  Set to "none" to prevent the previews from being
-    //  inserted (the math will simply disappear until it is typeset).  Set
-    //  to an array containing the description of an HTML snippet in order
-    //  to use the same preview for all equations on the page (e.g., you
-    //  could have it say "[math]" or load an image).
-    //  
-    //  E.g.,     preview: ["[math]"],
-    //  or        preview: [["img",{src: "http://myserver.com/images/mypic.jpg"}]]
-    //  
-    preview: "AsciiMath"
-    
-  },
-  
-  //============================================================================
-  //
-  //  These parameters control the mml2jax preprocessor (when you have included
-  //  "mml2jax.js" in the extensions list above).
-  //
-  mml2jax: {
-    
-    //
-    //  Controls whether mml2jax inserts MathJax_Preview spans to make a
-    //  preview available, and what preview to use, when it locates
-    //  mathematics on the page.  The default is "mathml" which means use
-    //  the <math> tag as the preview (until it is processed by MathJax).
-    //  Set to "alttext", to use the  <math> tag's alttext attribute as the
-    //  preview, if the tag has one.  Set to "none" to
-    //  prevent the previews from being inserted (the math will simply
-    //  disappear until it is typeset). Set to "altimg" to use an image
-    //  described by the altimg* attributes of the <math> element.
-    //  Set to an array containing the
-    //  description of an HTML snippet in order to use the same preview for
-    //  all equations on the page (e.g., you could have it say "[math]" or
-    //  load an image).
-    //  
-    //  E.g.,     preview: ["[math]"],
-    //  or        preview: [["img",{src: "http://myserver.com/images/mypic.jpg"}]]
-    //  
-    preview: "mathml"
-    
-  },
-  
-  //============================================================================
-  //
-  //  These parameters control the jsMath2jax preprocessor (when you have included
-  //  "jsMath2jax.js" in the extensions list above).
-  //
-  jsMath2jax: {
-    
-    //
-    //  Controls whether jsMath2jax inserts MathJax_Preview spans to make a
-    //  preview available, and what preview to use, when it locates
-    //  mathematics on the page.  The default is "TeX", which means use the
-    //  TeX code as the preview (until it is processed by MathJax).  Set to
-    //  "none" to prevent the previews from being inserted (the math will
-    //  simply disappear until it is typeset).  Set to an array containing
-    //  the description of an HTML snippet in order to use the same preview
-    //  for all equations on the page (e.g., you could have it say "[math]"
-    //  or load an image).
-    //  
-    //  E.g.,     preview: ["[math]"],
-    //  or        preview: [["img",{src: "http://myserver.com/images/mypic.jpg"}]]
-    //  
-    preview: "TeX"
-    
-  },
+ 
 
   //============================================================================
   //
@@ -832,7 +715,7 @@ MathJax.Hub.Config({
     //  This controls the global scaling of mathematics as compared to the 
     //  surrounding text.  Values between 100 and 133 are usually good choices.
     //
-    scale: 100,
+    scale: 90,
 
     //
     //  Don't allow the matching of math text to surrounding text to use a scaling
@@ -868,7 +751,7 @@ MathJax.Hub.Config({
     //  This controls the global scaling of mathematics as compared to the 
     //  surrounding text.  Values between 100 and 133 are usually good choices.
     //
-    scale: 100,
+    scale: 90,
     
     //
     //  Don't allow the matching of math text to surrounding text to use a scaling
