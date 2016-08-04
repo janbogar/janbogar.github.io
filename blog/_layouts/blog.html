@@ -1,0 +1,25 @@
+---
+layout: default
+scripts: [mathjax]
+---
+
+<div class="posts">
+	{% assign posts=site.posts | where:"lang", page.lang %}
+	<ul>
+		{% for post in posts %}
+	  <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <p class=date>
+
+	  {%case page.lang %}{% when 'en' %} {{ post.date | date: "%B %e, %Y" }} {% when 'sk' %} {{ post.date | date: "%-d. %-m. %Y" }} {%endcase%}</p>
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">{{site.t[page.lang].read_more}}</a>
+    </article>
+	{% endfor %}
+	</ul>
+
+</div>
