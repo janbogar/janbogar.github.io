@@ -21,6 +21,7 @@ body {
 	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+  text-align: justify;
 }
 
 .container {
@@ -218,10 +219,11 @@ img {
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  float: top;
+  margin-top: 0px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
+  text-align:center;
 
   @include mobile {
     float: none;
@@ -233,15 +235,52 @@ nav {
   a {
     margin-left: 20px;
     color: $darkGray;
-    text-align: right;
+    text-align: center;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
     }
   }
+}
+
+.language_select {
+  float: bottom;
+  margin-top: 10px; // @TODO: Vertically middle align
+  font-family: $helveticaNeue;
+  font-size: 18px;
+  text-align: center;
+
+  @include mobile {
+    float: none;
+    margin-top: 9px;
+    display: block;
+    font-size: 16px;
+  }
+
+  a {
+	float: none;
+    margin-left: 20px;
+    color: $darkGray;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+    @include mobile {
+      margin: 0 10px;
+
+	}
+  }
+}
+
+.masthead_lang_nav{
+	float: right;
+    margin-top: 10px;
+    @include mobile {
+      float:none;
+    }
+
 }
 
 //
@@ -311,7 +350,14 @@ footer {
 	bottom:-10px;
 }
 
+/*    Footer ------------------------------------------------------------------------------------------*/
+.svg-icon {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
-@import "svg-icons";
+// @import "svg-icons";

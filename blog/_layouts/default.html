@@ -20,7 +20,6 @@
 		{% for script in page.scripts %}
   			{% include {{site.baseurl}}_scripts/{{script}}%}
 		{% endfor %}
-
 	{% endif %}
   </head>
 
@@ -28,32 +27,61 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
+<!--aby linky v hlavičke smerovali na stranky v spravnom jazyku-->
+			{% assign blogs=site.pages | where: 'ref', 'blog' |  where: 'lang', page.lang %}
+    		{% assign blog=blogs[0]%}
+	
+			{% assign abouts=site.pages | where: 'ref', 'about' |  where: 'lang', page.lang %}
+        	{% assign about=abouts[0]%}
 		
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+          <a href="{{ blog.url }}" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
           <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+            <h1 class="site-name"><a href="{{blog.url }}">{{ site.t[page.lang].name }}</a></h1>
+            <p class="site-description">{%if page.ref == 'about' %} {{ site.t[page.lang].description}} {% else %} Blog {% endif%}</p>
           </div>
 		<!--
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.base_url}}/images/title_orange.png" /></a>
 			-->
+
+		  <div class="masthead_lang_nav">
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">O mňe</a>
+            <a href="{{ blog.url }}">Blog</a>
+            <a href="{{ about.url }}">{{site.t[page.lang].about}}</a>
           </nav>
+
+
+			<div class=language_select>
+				{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+				{% for post in posts %}
+  				<a href="{{ post.url }}" class="{{ post.lang }}"><img src="{{ site.base_url}}/images/flags/{{post.lang}}.png" /></a></li>
+				{% endfor %}
+
+				{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+				{% for page in pages %}
+				<a href="{{ page.url }}" class="{{ page.lang }}"><img src="{{ site.base_url}}/images/flags/{{page.lang}}.png" /></a></li>
+				{% endfor %}
+				</div>
+			</div>
+
+
         </header>
       </div>
     </div>
 
     <div id="main" role="main" class="container">
+		
+
       {{ content }}
     </div>
 
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          {% include svg-icons.html %}
+			<!--{% include svg-icons.html %}-->
+<a class= svg-icon href=https://www.facebook.com/jan.bogar><img src="{{ site.base_url}}/images/Facebook.svg" /></a>
+
+<!--<a class= svg-icon href=jan.boogie.bogar@gmail.com><img src="{{ site.base_url}}/images/mail.svg" /></a> -->
         </footer>
       </div>
     </div>

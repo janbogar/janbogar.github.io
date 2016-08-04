@@ -18,8 +18,8 @@ avatar: /images/profilovka.jpg
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
-  facebook:
+  email: jan.boogie.bogar@gmail.com
+  facebook: jan.bogar
   flickr:
   github: 
   instagram:
@@ -85,3 +85,27 @@ exclude:
   - README.md
   - CNAME
   - materialy
+
+
+#translations
+t:
+ en:
+  name: "Ján Bogár"
+  description: "Personal Website"
+  about: "About me"
+  influences: "What influenced me"
+  i_like: "What I like"
+  i_know: "What I can do"
+  contacts: "Contacts"
+  i_did: "What I already did"
+  read_more: "Read more"
+ sk:
+  name: "Ján Bogár"
+  description: "Osobná stránka"
+  about: "O mňe"
+  influences: "Čo ma ovplyvnilo"
+  i_like: "Čo mám rád"
+  i_know: "Čo viem"
+  contacts: "Kontakty"
+  i_did: "Čo som už urobil"
+  read_more: "Čítaj ďalej"
