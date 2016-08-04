@@ -1,6 +1,8 @@
 ---
 layout: blog
-scripts: [mathjax]
+scripts:
+ - mathjax
+ - toggle
 lang: en
 ref: blog
 permalink: /blog_en/

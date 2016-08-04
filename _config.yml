@@ -88,7 +88,7 @@ exclude:
   - materialy
 
 
-#translations
+#translations of common words
 t:
  en:
   name: "Ján Bogár"
@@ -100,6 +100,7 @@ t:
   contacts: "Contacts"
   i_did: "What I already did"
   read_more: "Read more"
+  tags: "Tags"
  sk:
   name: "Ján Bogár"
   description: "Osobná stránka"
@@ -110,3 +111,10 @@ t:
   contacts: "Kontakty"
   i_did: "Čo som už urobil"
   read_more: "Čítaj ďalej"
+  tags: "Tagy"
+
+#tags
+taglist:
+ en:
+ sk:
+  "ľahká fyzika": lahka_fyzika

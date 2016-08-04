@@ -4,6 +4,8 @@ title: 'Aká je priemerná hmotnosť všetkého?'
 scripts: [mathjax]
 lang: sk
 ref: priemerna_hmotnost_vsetkeho
+tags:
+ - "ľahká fyzika"
 ---
 
 Toto je jedna z tých úžasne hlúpych otázok, ktoré na prvý pohľad nedávajú zmysel, ale keď sa nad nimy človek zamyslí, tak sa toho kopec dozvie. Takže, čo to tá otázka vôbec znamená? No, priemernú hmotnosť predsa vždy rátame rovnako: vezmem všetky veci z danej kategórie, zrátam dokopy všetky ich hmotnosti a vydelím to ich počtom. Priemerný Američan tak váži $$80 \mathrm{ kg}$$ a priemerný ananás $$ 1,5 \mathrm{ kg}$$. Priemerná hmotnosť v množine všetkých Američanov a Ananásov zas vyjde okolo $$ 2 \mathrm{ kg}$$ (ananásov je skrátka oveľa viac). No dobre, ale nás nezaujímajú nejaké takéto podmnožiny, my chceme priemernú hmotnosť VŠETKÉHO ! Galaxí, planét, tučniakov, atómov, kvarkov! Koľko to tak asi bude?

@@ -357,7 +357,37 @@ footer {
   display: inline-block;
 }
 
+/*    Tagy ------------------------------------------------------------------------------------------*/
+
+.tags {
+  font-style: italic;
+  color: $gray;
+  a {color: $gray;
+     &:hover, &:active {
+    color: $myorange;
+  }}
+
+}
+
+/*    Filter ------------------------------------------------------------------------------------------*/
+
+.filter {
+  
+  
+  
+}
+
+/*uncomment to turn all borders on*/
+/*
+html * {
+  border: solid;
+  border-color: $gray;
+  border-width: 1px;
+}
+*/
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 // @import "svg-icons";
+

@@ -1,6 +1,5 @@
 ---
 layout: default
-
 ---
 
 <article class="page">
@@ -11,7 +10,7 @@ layout: default
 
 	{% for i in page.sections%}
 	<section>
-	<a href="javascript:toggle('{{i.id}}');"><h3>{{i.title}} <img src="{{ site.baseurl }}/images/add.svg" class=h3displayimg id="{{i.id}}_displayimg"> <img src="{{ site.baseurl }}/images/minus.svg" class=h3hideimg id="{{i.id}}_hideimg"></h3> </a>
+	<a href="javascript:toggle('{{i.id}}');"><h3><img src="{{ site.baseurl }}/images/add.svg" class=h3displayimg id="{{i.id}}_displayimg"> <img src="{{ site.baseurl }}/images/minus.svg" class=h3hideimg id="{{i.id}}_hideimg"> {{i.title}}</h3> </a>
 		<div id={{i.id}} class="collapsible">
 		{{i.content | markdownify}}
 		</div>

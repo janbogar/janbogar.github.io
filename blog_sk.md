@@ -1,6 +1,8 @@
 ---
 layout: blog
-scripts: [mathjax]
+scripts:
+ - mathjax
+ - toggle
 lang: sk
 ref: blog
 permalink: /blog_sk/
