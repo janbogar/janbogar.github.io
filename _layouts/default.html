@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.t[page.lang].name }} – {%if page.ref == 'about' %} {{ site.t[page.lang].description}} {% else %} Blog {% endif%}</title>
 
     {% include meta.html %}
 
@@ -38,7 +38,7 @@
 
           <div class="site-info">
             <h1 class="site-name"><a href="{{blog.url }}">{{ site.t[page.lang].name }}</a></h1>
-            <p class="site-description">{%if page.ref == 'about' %} {{ site.t[page.lang].description}} {% else %} Blog {% endif%}</p>
+            <p class="site-description">{% if page.ref == 'about' %} {{ site.t[page.lang].description}} {% else %} Blog {% endif%}</p>
           </div>
 		<!--
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.base_url}}/images/title_orange.png" /></a>
