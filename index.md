@@ -9,7 +9,7 @@ sections:
      title: 'Čo ma ovplyvnilo'
      content: |
          #### Korešpondenčné semináre
-         Už na základnej škole ma do svojich osídel lapila fyzika, vrástla mi do hlavy a doteraz žijeme v šťastnej symbióze. Celé to majú na svedomí korešpondenčné semináre <a href="http://www.p-mat.sk/aktivity/pikomat-pikofyz/" target='_blank'>Pikomat a Pikofyz</a>. Pre tých čo neviete, sú to súťaže v matematike a fyzike, organizované zapálenými dobrovoľníkmi pre talentované deti. Pravidelne organizujú aj týždňové sústredenia pre najlepších riešiteľov a keď som sa na jedno dostal a spoznal všetkých tých skvelých ľudí, už mi nebolo pomoci. Začal som robiť všetky možné súťaže (FKS, KMS, Fykos, FO, TMF,...) a na strednej som sa už ako dobrovoľník zapojil aj do ich organizovania. Vyvrcholilo to tým, že som si z Medzinárodnej Fyzikálnej Olympiády v Zagrebe doniesol striebornú medailu a na vysokú školu som šiel na fyziku na matfyz.
+         Už na základnej škole ma do svojich osídiel lapila fyzika, vrástla mi do hlavy a doteraz žijeme v šťastnej symbióze. Celé to majú na svedomí korešpondenčné semináre <a href="http://www.p-mat.sk/aktivity/pikomat-pikofyz/" target='_blank'>Pikomat a Pikofyz</a>. Pre tých čo neviete, sú to súťaže v matematike a fyzike, organizované zapálenými dobrovoľníkmi pre talentované deti. Pravidelne organizujú aj týždňové sústredenia pre najlepších riešiteľov a keď som sa na jedno dostal a spoznal všetkých tých skvelých ľudí, už mi nebolo pomoci. Začal som robiť všetky možné súťaže (FKS, KMS, Fykos, FO, TMF,...) a na strednej som sa už ako dobrovoľník zapojil aj do ich organizovania. Vyvrcholilo to tým, že som si z Medzinárodnej fyzikálnej olympiády v Záhrebe doniesol striebornú medailu a na vysokú školu som šiel na fyziku na Matfyz.
          Celé toto obdobie mi dalo neuveriteľne veľa. Zistil som čo znamená radosť z myslenia, ako riešiť ťažké problémy, spoznal kopec inšpiratívnych ľudí a ako dobrovoľnícky vedúci Pikofyzu som už veterán mnohých sústredení. Na nich som sa zas naučil ako učiť, ako spolupracovať s tímom skvelých ľudí (a ako vôbec skvelý tím vyzerá) aj ako si udržať pozornosť bandy rozdivočených účastníkov. A kto vie zvládnuť hordu detí, zvládne všetko.
 
          #### Hory
@@ -23,7 +23,7 @@ sections:
 -    id: i_know
      title: 'Čo viem'
      content: |
-         * Mám mgr. titul z fyziky tuhých látok na FMFI UK v Bratislave, v diplomovej práci som sa zaoberal supravodivými kvantovými bitmi.
+         * Mám Mgr. titul z fyziky tuhých látok na FMFI UK v Bratislave, v diplomovej práci som sa zaoberal supravodivými kvantovými bitmi.
          * Viem programovať:
              * Python (Scipy, Numpy, Matplotlib)
              * C++
