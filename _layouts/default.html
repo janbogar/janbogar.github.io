@@ -37,7 +37,7 @@
           <a href="{{ blog.url }}" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
           <div class="site-info">
-            <h1 class="site-name"><a href="{{blog.url }}">{{ site.t[page.lang].name }}</a></h1>
+            <h1 class="site-name"><a href="{%if page.ref == 'about' %}{{about.url}}{%else%}{{blog.url }}{%endif%}">{{ site.t[page.lang].name }}</a></h1>
             <p class="site-description">{% if page.ref == 'about' %} {{ site.t[page.lang].description}} {% else %} Blog {% endif%}</p>
           </div>
 		<!--
