@@ -17,7 +17,7 @@ $$
 \newcommand{\braket}[2]{ \langle #1 \lvert #2 \rangle }
 $$Ha, dostal som vás! Tento článok je&#160;v skutočnosti o kvantovej mechanike&#160;a Dirac, tvorca bra-ket notácie, sa teraz smeje vo svojom hrobe <a href="javascript:toggle('{% capture id %}1{%endcapture%}{{id}}');"><img src="{{ site.baseurl }}/images/add.svg" class="inlinedisplayimg" id="{{id}}_displayimg"/> <img src="{{ site.baseurl }}/images/minus.svg" class="inlinehideimg" id="{{id}}_hideimg"/>  \[{{id}}\]</a><span id="{{id}}" class="collapsible"> Aj keď je pravda, že táto interpretácia názvu bra&#160;v Diracovej dobe ešte pravdepodobne nebola možná. Termín bra pre podprsenku bol prvý krát použitý&#160;v Holandsku len 15 rokov pred zavedením bra-ket notácie a šíril sa len pomaly. </span>. Konkrétne sa tu dozviete niečo o bra-ket notácií (to sú tie zobáčikové zátvorky $$\ket{}$$a $$\bra{}$$ )&#160;a hlavne&#160;o tom, ako pomocou bra&#160;a ket zapisovať operátory&#160;v kvantovej mechanike. Tento článok je určený pre všetkých, ktorí si už s&#160;kvantovou mechanikou čo to odžili (študenti na Matfyze, ktorí sa práve boria s&#160;Kvantovkou&#160;I, sa sem rátajú), ale mätú ich tie divné zátvorky a čo s&#160;nimi občas ľudia stvárajú. Ak do tejto kategórie spadáte, čítajte ďalej.
 
-Bra-ket notácia je skvelá&#160;v tom, že zachováva abstraktný charakter pojmov, ktoré ňou popisujeme,&#160;a nelipne na ich konkrétnej reprezentácií. Nezáleží na tom, či stavy popisovaného systému reprezentujeme ako usporiadané n-tice čísel, kvadraticky integrovateľné funkcie (a.k.a vlnové funkcie), alebo nejakým iným obskúrnym spôsobom. Dôležité je len to, že sú to vektory. Funguje to takto:
+Bra-ket notácia je skvelá&#160;v tom, že zachováva abstraktný charakter pojmov, ktoré ňou popisujeme,&#160;a nelipne na ich konkrétnej reprezentácií. Nezáleží na tom, či stavy popisovaného systému reprezentujeme ako usporiadané n-tice čísel, kvadraticky integrovateľné funkcie (a.k.a. vlnové funkcie), alebo nejakým iným obskúrnym spôsobom. Dôležité je len to, že sú to vektory. Funguje to takto:
 
 #### Ket $$\ket{.}$$
 Ket sú stavy systému. Sú to teda vektory zo stavového priestoru <a href="javascript:toggle('{% capture id %}2{%endcapture%}{{id}}');"><img src="{{ site.baseurl }}/images/add.svg" class="inlinedisplayimg" id="{{id}}_displayimg"/> <img src="{{ site.baseurl }}/images/minus.svg" class="inlinehideimg" id="{{id}}_hideimg"/>  \[{{id}}\]</a><span id="{{id}}" class="collapsible">Ak je fakt, že stavy sú vektory, pre vás novinka, tento článok vám nič nedá. Skúste najprv zelenú knižku alebo inú učebnicu a potom sa vráťte. </span> a môžeme ich sčitovať a násobiť komplexnými číslami. Pojmy stav&#160;a vektor tu budem teda voľne zamieňať. Čokoľvek vnútri zátvorky pritom slúži len ako nálepka, charakterizujúca konkrétny vektor. Napríklad $$\ket{1}$$ je stav ktorý sme označili číslom $$1$$, $$\ket{init}$$ môže byť označenie začiatočného stavu. Často sa stretnete aj s takýmto zápisom: $$\ket{x}$$. Tu si treba uvedomiť, že $$x$$ nie je premenná, ale nejaká konkrétna hodnota $$x$$.
@@ -52,6 +52,7 @@ Ak bra pôsobí na zložený výraz, jednoducho ho roznásobí (čo vyplýva pri
 $$\begin{equation}
 \bra{\psi} \left(\ket{\phi}+\ket{\xi}\right)=\braket{\psi }{ \phi} +\braket{\psi }{\xi}
 \end{equation}$$
+
 Rovnako 
 
 $$\begin{equation}
