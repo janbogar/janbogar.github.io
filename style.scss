@@ -332,8 +332,20 @@ footer {
 /*    collapsible class ------------------------------------------------------------------------------------------*/
 
 .collapsible{
-	display:none;
-	
+	display:none;	
+}
+
+span.collapsible {
+    color: $darkGray;
+    background-color: $lightGray;}
+
+span.collapsible::-moz-selection {
+  color: $white;
+  background: $gray;
+}
+span.collapsible::selection {
+  color: $white;
+  background: $gray;
 }
 
 .h3displayimg{
@@ -349,6 +361,21 @@ footer {
 	height:30px;
 	bottom:-10px;
 }
+
+.inlinedisplayimg{
+	display:inline;
+	position:relative;
+	height:18px;
+	bottom:-3px;
+}
+
+.inlinehideimg{
+	display:none;
+	position:relative;
+	height:18px;
+	bottom:-3px;
+}
+
 
 /*    Footer ------------------------------------------------------------------------------------------*/
 .svg-icon {
@@ -372,9 +399,14 @@ footer {
 /*    Filter ------------------------------------------------------------------------------------------*/
 
 .filter {
-  
-  
-  
+ 
+}
+
+/*    obrazky na strankach postov zarovnane na stred ------------------------------------------------------------------------------------------*/
+article img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
 }
 
 /*uncomment to turn all borders on*/
