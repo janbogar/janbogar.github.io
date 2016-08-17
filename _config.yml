@@ -116,6 +116,10 @@ t:
 #tags
 taglist:
  en:
+  "hard physics": hard-physics
+  "easy physics": easy-physics
+  "science": science
  sk:
-  "ťažká fyzika": tazka_fyzika
-  "fyzika": fyzika
+  "ťažká fyzika": tazka-fyzika
+  "ľahká fyzika": lahka-fyzika
+  "veda": veda

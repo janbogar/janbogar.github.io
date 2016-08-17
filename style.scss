@@ -174,12 +174,7 @@ img {
   width: 70px;
   height: 70px;
   margin-right: 15px;
-/*
-.site-avatar {
-  float: left;
-  width: 500px;
-  margin-right: 15px;
-*/
+
   @include mobile {
     float: none;
     display: block;
@@ -209,6 +204,10 @@ img {
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
+  
+  @include mobile {
+   text-align:center;
+  }
 }
 
 .site-description {
@@ -317,6 +316,7 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+    clear: both ; //because of floatng thumbnails
   }
 }
 
@@ -382,8 +382,8 @@ span.collapsible::selection {
 
 /*    Footer ------------------------------------------------------------------------------------------*/
 .svg-icon {
-  width: 30px;
   height: 30px;
+  width: 30px;
   display: inline-block;
 }
 
@@ -401,15 +401,51 @@ span.collapsible::selection {
 
 /*    Filter ------------------------------------------------------------------------------------------*/
 
-.filter {
- 
-}
 
-/*    obrazky na strankach postov zarovnane na stred ------------------------------------------------------------------------------------------*/
+/*    obrazky na strankach postov zarovnane na stred------------------------------------------------------------------------------------------*/
 article img {
   max-width: 100%;
   display: block;
   margin: auto;
+}
+
+/*    thumbnaily------------------------------------------------------------------------------------------*/
+
+.perex{
+ white-space: nowrap;
+}
+
+.excerpt{
+ white-space: normal;
+}
+
+.thumbnail {
+  margin:15px 10px;
+  width: 200px;
+  display:inline-block;
+  vertical-align:top;
+  @include mobile {
+   display:block;
+   margin:auto;
+  }
+}
+
+.thumbnail img {
+  max-height: 300px;
+}
+
+
+.thumbnail + .excerpt{
+  display:inline-block;
+  vertical-align:top;
+  max-width:489px;
+
+  @include mobile {
+   display:block;
+   margin:auto;
+   max-width:none;
+  }
+
 }
 
 /*uncomment to turn all borders on*/

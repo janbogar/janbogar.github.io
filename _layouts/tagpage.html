@@ -16,6 +16,8 @@ title: Blog
 		</div>
 </div>
 
+{{content}}
+
 <div class="posts">
 
 
@@ -37,11 +39,16 @@ title: Blog
      {% endif %}
   </div>
 
-      <div class="entry">
+      <div class="perex clearfix">
+		{%if post.thumbnail%}
+		      <a class="thumbnail" href="{{ site.baseurl }}{{ post.url }}" ><img alt={{post.title}} src="{{site.baseurl}}/{{post.thumbnail}}" /></a>
+		{%endif%}
+		<div class= "excerpt">
         {{ post.excerpt }}
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">{{site.t[page.lang].read_more}}</a>
+        </div>
+      
       </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">{{site.t[page.lang].read_more}}</a>
     </article>
     {%endif%}
 	{% endfor %}

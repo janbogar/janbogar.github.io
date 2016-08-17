@@ -7,7 +7,7 @@ ref: operatory
 pormalink: /o-podprsenkach-mackach-a-operatoroch/
 tags:
  - "ťažká fyzika"
- - "fyzika"
+ - "veda"
 ---
 $$
 \newcommand{\refr}[1]{(\ref{#1})}
@@ -96,7 +96,7 @@ A \ket{\psi_2} = c \ket{\psi_1} + d \ket{\psi_2}
 \end{align}
 $$
 
-Ako ale zraziť tento zápis do jedného riadku? Na to, aby to bolo možné, je potrebné, aby bola báza zložená z $$\ket{\psi_1}$$ a $$\ket{\psi_2}$$ ortonormálna (premyslite si, že je nutná aj normovanosť funkcií, a čo by sa stalo, keby neboli normované).
+Ako ale zraziť tento zápis do jedného riadku? Na to, aby to bolo možné, je potrebné, aby bola báza zložená z $$\ket{\psi_1}$$ a $$\ket{\psi_2}$$ ortonormálna (Oprava: Naozaj nutné je len aby bola úplná, ale v takom prípade by bol celý postup obludný. Ako by vyzeral bra-ket zápis pre nenormovanú, neortogonálnu, a nakoniec naraz neortogonálnu a neortonormálnu bázu už nechávam na zvedavých a masochystických čitaťeľov).
 
 Takže:
 
@@ -153,7 +153,7 @@ I=\sum\limits_{i}{\ket{\psi_i}\bra{\psi_i}}
 
 Príklad z praxe:
 
-Ako zapísať zdvihový (nazývaný aj kreačný) operátor pre harmonický oscilátor (značený $$a^\dagger$$)? Jeho definícia je, že z ľubovoľného stavu $$\ket{n}$$  urobí stav $$\ket{n+1}$$ a prenásobí ho číslom $$\sqrt{n+1}$$. Stavy $$\ket{n}$$ pritom tvoria ortonormálnu bázu stavového priestoru. Priamo z definície:
+Ako zapísať zdvihový (nazývaný aj kreačný) operátor $$a^\dagger$$ pre harmonický oscilátor? Jeho definícia je, že z ľubovoľného stavu $$\ket{n}$$  urobí stav $$\ket{n+1}$$ a prenásobí ho číslom $$\sqrt{n+1}$$. Stavy $$\ket{n}$$ pritom tvoria ortonormálnu bázu stavového priestoru. Priamo z definície:
 
 $$\begin{equation}
 a^\dagger=\sum\limits_{n}\sqrt{n+1}\ket{n+1}\bra{n}
