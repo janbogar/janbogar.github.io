@@ -43,4 +43,4 @@ sections:
           
 ---
 
-Welcome to my personal page. I am Ján Bogár: physicist, student, volunteer, rockclimber, geek, free-time philosopher and hiker. I was born at 12. November 1990 ( Czechoslovakia at the time), raised in Trenčín (already in Slovakia) and I studied in Bratislava. Those who are satisfied with such a brief introduction, I invite you to my [blog]({{site.base_url}}/blog_en), I am sure you will find something of interest there. But if you would like to know more about me, please continue. 
+Welcome to my personal page. I am Ján Bogár: physicist, student, volunteer, rockclimber, geek, free-time philosopher and hiker. I was born on 12. November 1990 in Pardubice (Czechoslovakia at the time), raised in Trenčín (already in Slovakia) and I studied in Bratislava. Those who are satisfied with such a brief introduction, I invite you to my [blog]({{site.base_url}}/blog_en), I am sure you will find something of interest there. But if you would like to know more about me, please continue. 
