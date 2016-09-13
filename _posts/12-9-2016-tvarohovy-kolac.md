@@ -33,4 +33,4 @@ Potom sa pustíme do plnky. Na plnku potrebujeme:
  - 4 bielka
  - 1 balíček hrozienok
 
-Všetko spolu zamiešame a dáme na cesto. Potom vyvaľkáme aj druhý dieľ cesta a dáme ho na plnku. Koláč necháme hodinu kysnúť, potom vidličkou trochu poprepychujeme horný dieľ cesta a až potom dáme piecť. Po upečení posypeme práškovým cukrom a potom si už len pochutnávame. Dobrú chut!
+Všetko spolu zamiešame a dáme na cesto. Potom vyvaľkáme aj druhý dieľ cesta a dáme ho na plnku. Koláč necháme hodinu kysnúť, potom vidličkou trochu poprepichujeme horný dieľ cesta a až potom dáme piecť. Po upečení posypeme práškovým cukrom a potom si už len pochutnávame. Dobrú chut!
