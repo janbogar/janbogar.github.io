@@ -18,7 +18,7 @@ sections:
 -    id: i_like
      title: 'Čo mám rád'
      content: |
-         Mám rád dobrodružstvo a hlboké myšlienky. Mám rád sci-fi a fantasy: Duna, Malazská Kniha Padlých, Asimov, Úžasná Zeměplocha,  Harry Potter a metódy racionality, Vojna svetov (boj proti mimozemšťanom v podaní autora z doby parných železníc je kúzelný). Mám rád hudbu: W.A.S.P., Led Zeppelin, Omnia, John Butler, Čechomor, Nohavica. Mám rád dobrých ľudí. Mám rád šifrovačky, slackline, larpy (aj keď na ne už nechodím) a hory. Mám rád kvantovú mechaniku, Fermiho odhady a programovanie v Pythone. Mám rád webkomiksy: xkcd, Gunnerkrig Court, SMBC, Order of the Stick. Mám rád hlúpe otázky, na ktoré existuje seriózna odpoveď a seriózne otázky s hlúpymi odpoveďami. Hej, a ešte mám rád <a href="/tvarohovy-kolac" target="_blank">tvarohový koláč</a>. Zbožňujem tvarohový koláč.
+         Mám rád dobrodružstvo a hlboké myšlienky. Mám rád sci-fi a fantasy: Duna, Malazská kniha padlých, Asimov, Úžasná Zeměplocha,  Harry Potter a metódy racionality, Vojna svetov (boj proti mimozemšťanom v podaní autora z doby parných železníc je kúzelný). Mám rád hudbu: W.A.S.P., Led Zeppelin, Omnia, John Butler, Čechomor, Nohavica. Mám rád dobrých ľudí. Mám rád šifrovačky, slackline, larpy (aj keď na ne už nechodím) a hory. Mám rád kvantovú mechaniku, Fermiho odhady a programovanie v Pythone. Mám rád webkomiksy: xkcd, Gunnerkrig Court, SMBC, Order of the Stick. Mám rád hlúpe otázky, na ktoré existuje seriózna odpoveď a seriózne otázky s hlúpymi odpoveďami. Hej, a ešte mám rád <a href="/tvarohovy-kolac" target="_blank">tvarohový koláč</a>. Zbožňujem tvarohový koláč.
 
 -    id: i_know
      title: 'Čo viem'
@@ -28,7 +28,7 @@ sections:
              * Python (Scipy, Numpy, Matplotlib)
              * C++
              * html/css (zatiaľ som začiatočník, učebný projekt je táto stránka)
-         * Na rôznych úrovniach viem používať pestrú zbierku softvéru: Inkscape, Audacity, Gimp, Latex, Linux,...
+         * Na rôznych úrovniach viem používať pestrú zbierku softvéru: Latex, Linux, Inkscape, Audacity, Git, ...
          * Viem spolupracovať v tíme, efektívne komunikovať, hľadať kreatívne riešenia, zvládať stresové situácie, prezentovať, prednášať a vysvetľovať.
 
 -    id: contacts
