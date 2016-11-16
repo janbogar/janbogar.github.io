@@ -96,7 +96,7 @@ A \ket{\psi_2} = c \ket{\psi_1} + d \ket{\psi_2}
 \end{align}
 $$
 
-Ako ale zraziť tento zápis do jedného riadku? Na to, aby to bolo možné, je potrebné, aby bola báza zložená z $$\ket{\psi_1}$$ a $$\ket{\psi_2}$$ ortonormálna (Oprava: Naozaj nutné je len aby bola úplná, ale v takom prípade by bol celý postup obludný. Ako by vyzeral bra-ket zápis pre nenormovanú, neortogonálnu, a nakoniec naraz neortogonálnu a neortonormálnu bázu už nechávam na zvedavých a masochystických čitaťeľov).
+Ako ale zraziť tento zápis do jedného riadku? Na to, aby to bolo možné, je potrebné, aby bola báza zložená z $$\ket{\psi_1}$$ a $$\ket{\psi_2}$$ ortonormálna (Oprava: Naozaj nutné je len aby bola úplná, ale v takom prípade by bol celý postup obludný. Ako by vyzeral bra-ket zápis pre nenormovanú, neortogonálnu, a nakoniec neortogonálnu a nenormovanú bázu už nechávam na zvedavých a masochystických čitaťeľov).
 
 Takže:
 

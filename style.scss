@@ -409,6 +409,15 @@ article img {
   margin: auto;
 }
 
+/*    skupiny obrazkov zarovnane na stred a vedla seba stred------------------------------------------------------------------------------------------*/
+article .img-group {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+article .img-group img {
+  display:inline;
+}
 /*    thumbnaily------------------------------------------------------------------------------------------*/
 
 .perex{
@@ -448,6 +457,12 @@ article img {
 
 }
 
+/*
+@import "flexslider";
+*/
+
+@import "lightslider";
+
 /*uncomment to turn all borders on*/
 /*
 html * {
@@ -460,5 +475,5 @@ html * {
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
-// @import "svg-icons";
+@import "svg-icons";
 

@@ -1,0 +1,22 @@
+<script src="{{baseurl}}/whatever/jquery.flexslider.js"></script>
+<script src="{{baseurl}}/whatever/jquery.flexslider-min.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+ 
+    //simple FlexSlider call
+    $('.flexslider').flexslider();
+ 
+    // more complex call
+    $('.flexslider').flexslider({
+         animation: "slide",
+         controlsContainer: ".flex-container",
+         start: function(slider) {
+           $('.total-slides').text(slider.count);
+         },
+         after: function(slider) {
+           $('.current-slide').text(slider.currentSlide);
+         }
+    });
+  });
+</script>
