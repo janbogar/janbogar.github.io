@@ -94,12 +94,12 @@ Spievajú Flight of the Concords. Prvá časť tu v Chitwane rozhodne nie je pra
 
 ### Koľko to stálo?
 
-Cesta tam a späť (s taxíkmy v KTM): 21 eur
-Ubytovanie: 10 eur v Royal Chitwan Hotel + 7 eur v New Guest House
-Permit (na 24 hodín): 17 eur
-Výlet loďkou + chovná stanica slonov: 19 eur
-Jazda na slonovi: 25 eur
-Kúpanie slonov: 2 eurá
+- Cesta tam a späť (s taxíkmy v KTM): 21 eur
+- Ubytovanie: 10 eur v Royal Chitwan Hotel + 7 eur v New Guest House
+- Permit (na 24 hodín): 17 eur
+- Výlet loďkou + chovná stanica slonov: 19 eur
+- Jazda na slonovi: 25 eur
+- Kúpanie slonov: 2 eurá
 
 Spolu: 84 eur + jedlo
 
@@ -107,10 +107,10 @@ Spolu: 84 eur + jedlo
 
 Hociktorý hotelový agent alebo ktorákoľvek agentúra, ktorých je tu po uliciach plno, vám dokáže zabespečiť toto:
 
-Peší výlet do džungle
-Výlet džípom do džungle
-Prespanie na vyhliadkovej veži v jednej z nárazníkových zón parku
-Výlet kánojkou po rieke
-Zapožičanie byciklov na výlet po okolitých dedinách
+- Peší výlet do džungle
+- Výlet džípom do džungle
+- Prespanie na vyhliadkovej veži v jednej z nárazníkových zón parku
+- Výlet kánojkou po rieke
+- Zapožičanie byciklov na výlet po okolitých dedinách
 
 K tomu ich rôzne kombinácie a neviem čo všetko ešte na čo som už zabudol. Okrem toho to tu v noci žije, v miestnych obchodíkoch sa dá nakúpiť hipisácke oblečenie skoro tak dobre ako v Thameli (aj keď s podstatne menším výberom) a vraj je tu ešte múzeum (plné kadečoho naloženého vo formaldehyde).
