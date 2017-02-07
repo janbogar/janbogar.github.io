@@ -101,17 +101,19 @@ t:
   i_did: "What I already did"
   read_more: "Read more"
   tags: "Tags"
+  repo: "Repository"
  sk:
   name: "Ján Bogár"
   description: "Osobná stránka"
   about: "O mne"
   influences: "Čo ma ovplyvnilo"
   i_like: "Čo mám rád"
-  i_know: "Čo viem"
+  i_know: "Čo viem robiť"
   contacts: "Kontakty"
   i_did: "Čo som už urobil"
   read_more: "Čítaj ďalej"
   tags: "Tagy"
+  repo: "Repositár"
 
 #tags
 taglist:

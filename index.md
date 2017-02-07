@@ -21,14 +21,16 @@ sections:
          Mám rád dobrodružstvo a hlboké myšlienky. Mám rád sci-fi a fantasy: Duna, Malazská kniha padlých, Asimov, Úžasná Zeměplocha,  Harry Potter a metódy racionality, Vojna svetov (boj proti mimozemšťanom v podaní autora z doby parných železníc je kúzelný). Mám rád hudbu: W.A.S.P., Led Zeppelin, Omnia, John Butler, Čechomor, Nohavica. Mám rád dobrých ľudí. Mám rád šifrovačky, slackline, larpy (aj keď na ne už nechodím) a hory. Mám rád kvantovú mechaniku, Fermiho odhady a programovanie v Pythone. Mám rád webkomiksy: xkcd, Gunnerkrig Court, SMBC, Order of the Stick. Mám rád hlúpe otázky, na ktoré existuje seriózna odpoveď a seriózne otázky s hlúpymi odpoveďami. Hej, a ešte mám rád <a href="/tvarohovy-kolac" target="_blank">tvarohový koláč</a>. Zbožňujem tvarohový koláč.
 
 -    id: i_know
-     title: 'Čo viem'
+     title: 'Čo viem robiť'
      content: |
          * Mám Mgr. titul z fyziky tuhých látok na FMFI UK v Bratislave, v diplomovej práci som sa zaoberal supravodivými kvantovými bitmi.
-         * Viem programovať:
+         Publikácie:
+             * P. Neilinger, S. N. Shevchenko, J. Bogár, M. Rehák,G. Oelsner, D. S. Karpov, O. Astafiev, M. Grajcar, and E. Il’ichev, *Landau-Zener-Stückelberg-Majorana  Lasing  in Circuit QED*, Phys. Rev. B 94, 094519 (2016)
+         * Viem programovať (<a href="https://github.com/janbogar/" target="_blank">repozitár</a>):
              * Python (Scipy, Numpy, Matplotlib)
              * C++
              * html/css (zatiaľ som začiatočník, učebný projekt je táto stránka)
-         * Na rôznych úrovniach viem používať pestrú zbierku softvéru: Latex, Linux, Inkscape, Audacity, Git, ...
+         * Na rôznych úrovniach viem používať pestrú zbierku softvéru: Latex, Linux, Git, Inkscape,...
          * Viem spolupracovať v tíme, efektívne komunikovať, hľadať kreatívne riešenia, zvládať stresové situácie, prezentovať, prednášať a vysvetľovať.
 
 -    id: contacts
