@@ -457,6 +457,17 @@ article .img-group img {
 
 }
 
+/* definition lists --------------------------------------------------------------------*/
+
+dt{
+  //font-weight: bold;
+  color:$gray;
+}
+
+dd{
+  padding-left: 30px;
+}
+
 /*
 @import "flexslider";
 */
