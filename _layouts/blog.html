@@ -6,7 +6,6 @@ layout: default
 
 {% assign posts = site.posts | where: "lang", page.lang %}          
 
-<!--{% assign taglist = {{posts | map: "tags"}} | join: '|' | split: '|' | uniq %}--><!-- Vyberie z postov vsetky tagy-->
 
 <div class= "filter " >
 <a href="javascript:toggle('filter');"><h3><img src="{{ site.baseurl }}/images/add.svg" class=h3displayimg id="filter_displayimg"> <img src="{{ site.baseurl }}/images/minus.svg" class=h3hideimg id="filter_hideimg"> Filter: {%case page.lang %}{% when 'en' %}<a href="{{ site.baseurl }}/blog_en">All posts</a>{% when 'sk' %}<a href="{{ site.baseurl }}/blog_sk">Všetky príspevky</a>{%endcase%}</h3> </a>
