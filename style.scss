@@ -468,6 +468,18 @@ dd{
   padding-left: 30px;
 }
 
+/* buttons --------------------------------------------------------------------*/
+button {
+    background-color: $myorange;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
 /*
 @import "flexslider";
 */

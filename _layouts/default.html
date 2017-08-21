@@ -27,7 +27,7 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-<!--aby linky v hlavičke smerovali na stranky v spravnom jazyku-->
+        <!--for links in the header to lead to pages in correct language-->
 			{% assign blogs=site.pages | where: 'ref', 'blog' |  where: 'lang', page.lang %}
     		{% assign blog=blogs[0]%}
 	
@@ -40,9 +40,6 @@
             <h1 class="site-name"><a href="{%if page.ref == 'about' %}{{about.url}}{%else%}{{blog.url }}{%endif%}">{{ site.t[page.lang].name }}</a></h1>
             <p class="site-description">{% if page.ref == 'about' %} {{ site.t[page.lang].description}} {% else %} Blog {% endif%}</p>
           </div>
-		<!--
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.base_url}}/images/title_orange.png" /></a>
-			-->
 
 		  <div class="masthead_lang_nav">
           <nav>
