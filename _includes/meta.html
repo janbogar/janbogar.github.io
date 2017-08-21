@@ -1,4 +1,4 @@
-    <meta charset="utf-8" />
+    <meta charset="utf-8" >
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
@@ -18,6 +18,6 @@
     {% endif %}
     
     {% if page.thumbnail %}
-    <meta name="image" content="{{ page.thumbnail| strip_html }}" >
-    <meta property="og:image" content="{{ page.thumbnail|}}" >
+    <meta name="image" content="{{site.baseurl}}/{{ page.thumbnail| strip_html }}" >
+    <meta property="og:image" content="{{site.baseurl}}/{{ page.thumbnail|}}" >
     {%endif%}
