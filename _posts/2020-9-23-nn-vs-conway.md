@@ -6,6 +6,7 @@ ref: nn-vs-conway
 permalink: /nn-vs-conway
 thumbnail: images/nn-vs-conway/glider.gif
 excerpt: "Both neural networks and Conway's Game of Life are instant buzzwords, but combining them, that's really stupid. How stupid? Consider that the weights of the neural network that plays the game can be easily set by hand (as we will see). No amount of stupidness should stop us from doing something interesting though. Who knows, maybe we will learn something new?"
+scripts: [mathjax, toggle]
 tags:
  - "this and that"
  - "programming"
@@ -19,8 +20,8 @@ No amount of stupidness should stop us from doing something interesting though. 
 So in this notebook we:
  - Write down a neural network that plays the Game of Life.
  - Implement it with Torch.
- - Set it's weights by hand, so it perfectly emulates the rules of the game.
- - We train it to see how hard it is to train it to a perfect accuracy. Turns out, not that easy. 
+ - Set its weights by hand, so it perfectly emulates the rules of the game.
+ - We also train to perfect accuracy from random initialization, just to see how hard it is. Turns out, not that easy. 
 
 And yes, stupidness is a real word.
 
@@ -34,12 +35,11 @@ The [Game of Life](https://en.wikipedia.org/wiki/Conway's_Game_of_Life) is playe
  
 Neighbors are the eight cells both side by side and diagonally adjacent to the cell. These simple rules, applied every turn, produce wonderfully complex and chaotic patterns.
 
-These rules are a natural "if else" algorithm that processes boolean values. It really makes no sense, from performance standpoint or otherwise, to replace it with a neural network, which is a comparably complicated chain of weighted sums and nonlinear functions on (typically) 64-bit floats.
+These rules are a natural "if else" algorithm processing boolean values. It really makes no sense, from performance standpoint or otherwise, to replace it with a neural network, which is a comparably complicated chain of weighted sums and nonlinear functions on (typically) 64-bit floats.
 
-We can write the rules as a function. The input will be a 3x3 array, containing 1s and 0s for live/dead cells, and output a 1 or 0 value for the center cell on the next turn. We could then apply this function to every 3x3 square on the grid on each turn to get the cell values for the next turn. This would definitely not be the most efficient implementation, but it's elegant, and as we will see, also useful in our endeavor to misuse neural nets.
+We can write the rules as a function. The input will be a 3x3 array, with values 1 or 0 for live and dead cells respectively, and output will be the value for the center cell on the next turn. We could then apply this function to every 3x3 square on the grid on each turn to get the cell values for the next turn. This would not be the most efficient implementation <a href="javascript:toggle('{% capture id %}1{%endcapture%}{{id}}');"><img src="{{ site.baseurl }}/images/add.svg" class="inlinedisplayimg" id="{{id}}_displayimg"/> <img src="{{ site.baseurl }}/images/minus.svg" class="inlinehideimg" id="{{id}}_hideimg"/> </a><span id="{{id}}" class="collapsible"> (for that, see [this video](https://www.youtube.com/watch?v=ndAfWKmKF34))</span>, but it's elegant, and as we will see, also useful in our endeavor to misuse neural nets.
 
 Here is such implementation of the rules, together with a function that generates all possible 3x3 squares (useful for testing and training).
-
 
 ```python
 import torch
@@ -252,7 +252,6 @@ print(f"Grid on the next turn:\n\n{y}")
      [0 0 0 0 0]]
 
 
-
 ```python
 #check if neural network gives the same results as the rules
 
@@ -382,7 +381,6 @@ for i in range(1,20):
     plt.title(f"\nTurn {i}\n")
     grid=net_trained.postprocess(net_trained(net_trained.preprocess(grid,pad=True)),threshold=0.1)
     show_grid(grid)
-
 ```
 
 
@@ -398,9 +396,6 @@ Here are the weights of the trained neural network.
 ```python
 net_trained.state_dict()
 ```
-
-
-
 
     OrderedDict([('network.0.weight',
                    tensor([[[[ 4.2063,  4.2074,  4.2075],
