@@ -17,11 +17,11 @@ Both neural networks and Conway's Game of Life are instant buzzwords, but combin
 
 No amount of stupidness should stop us from doing something interesting though. Who knows, maybe we will learn something new?
 
-So in this notebook we:
+So in this notebook, we:
  - Write down a neural network that plays the Game of Life.
  - Implement it with Torch.
  - Set its weights by hand, so it perfectly emulates the rules of the game.
- - We also train to perfect accuracy from random initialization, just to see how hard it is. Turns out, not that easy. 
+ - We train it to perfect accuracy from random initialization, just to see how hard it is. Turns out, not that easy. 
 
 And yes, stupidness is a real word.
 
