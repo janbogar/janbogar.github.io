@@ -6,32 +6,31 @@ title: About me
 permalink: /about/
 scripts: [toggle]
 sections:
--    id: influences
-     title: 'What influenced me'
-     content: |
-         #### Correspondence seminars
-         I was ensnared by physics as soon as at the elementary school, it had taken root in my head and we are living in a happy symbiosis ever since. It's all fault of correspondence seminars <a href="http://www.p-mat.sk/aktivity/pikomat-pikofyz/" target='_blank'>Pikomat and Pikofyz</a>. For those who don't know, they are math and physics competitions organised by enthusiastic volunteers for talented kids. They regularly organize week longs camps for best problem solvers, and when I finally got to one and met all those great people, my path in life was set. I started to participate in all kind of scientific competitions (FKS, KMS, Physics olympiad, Slovak Young Physics Tournament,...) and later at secondary school I became involved in their organisation as a volunteer. It all culminated with a silver medal at International Physics Olympiad and a decision to study physics at the university. This whole life period has given me a lot. I found out what a joy of thinking is, learned how to solve difficult problems and got to knew a lot of inspirational people. Furthermore, as a volunteer at Pikofyz I am a veteran of many summercamps. There I learned how to learn, how to cooperate with a great team ( and what a great team even looks like) as well as how to keep the attention of a horde of uncontrolable children. And anyone who can handle a horde of kids can handle anything.
-         
-         #### Mountains
-         I have been spending a lot of time in nature (often in High Tatras) with my family since I was little and since the time my parents found a climbing gym in our town, it went only uphill with me. Mountains are still my favourite place to spend my free time in, be it while hiking or rockclimbing. Since 2014, I am a member of <a href="http://hkfilozof.sk" target='_blank'>Alpine club Philosopher</a> in Bratislava and although climbing isn't the only sport I have ever tried (I did for example also parkour or jumping on trampolines), it is definitely my favourite one.
-
 -    id: i_like
      title: 'What I like'
      content: |
-         I like adventure and deep thought. I like sci-fi and fantasy: Dune, Malazan Book of the Fallen, Asimov, Discworld series, Harry Potter and Methods of Rationality, War of the Worlds (fight with aliens from the pen of author who lived in the era of steam engines is absolutely magical). I like music: W.A.S.P., Led Zeppelin, Omnia, John Butler, Čechomor, Nohavica. I like good people. I like puzzle hunts, slackline, larps (although I don't attend them anymore) and mountains. I like quantum mechanics, Fermi's estimates and coding in Python. I like webcomics: xkcd, Gunnerkrig Court, SMBC, Order of the Stick. I like silly questions with serious answers and serious questions with silly answers. Oh, and I like <a href="/curd-cake" target="_blank">curd cake</a>. I love curd cake.
-
+         *  I like sci-fi and fantasy: Dune, Malazan Book of the Fallen, Asimov, Discworld series, Harry Potter and Methods of Rationality, War of the Worlds (fight with the aliens from the pen of an author who lived in the era of steam engines is absolutely magical). I like music: W.A.S.P., Led Zeppelin, Omnia, John Butler, Čechomor, Nohavica. I like good people. I like puzzle hunts, slackline and mountains. I like quantum mechanics, Fermi's estimates and coding in Python. I like webcomics: xkcd, Gunnerkrig Court, SMBC, Order of the Stick. I like silly questions with serious answers and serious questions with silly answers. And <a href="/curd-cake" target="_blank">curd cake</a>.
+  
 -    id: i_know
      title: 'What I can do'
      content: |
          * I have masters degree in solid states physics at Commenius University, Bratislava. The topic of my diploma thesis was superconducting quantum bits.
-         Publications:
-             * P. Neilinger, S. N. Shevchenko, J. Bogár, M. Rehák,G. Oelsner, D. S. Karpov, O. Astafiev, M. Grajcar, and E. Il’ichev, *Landau-Zener-Stückelberg-Majorana  Lasing  in Circuit QED*, Phys. Rev. B 94, 094519 (2016)
-         * I can code (<a href="https://github.com/janbogar/" target="_blank">repository</a>):
+         * I have three years of experience as machine learning engineer in multiple startups (Merlon, HealthMode)
+             * Bayesian inference (pymc3), neural networks (Torch, Tensorflow)
              * Python (Scipy, Numpy, Matplotlib)
-             * C++
-             * html/css (I am yet a beginner, this site is my learning project)
-         * I can use a varied collection of software (with various degrees of skill): Latex, Linux, Git, Inkscape,...
-         * I can work in a team, communicate efectively, look for creative solutions, deal with stressfull situations, give lectures and presentations and explain complex ideas.
+             * Clojure
+         * I have long experience as volunteer organising correspondence competitions in math and physics for children (<a href="https://pikomat.sk/">Pikomat</a> and <a href="https://pikofyz.sk/">Pikofyz</a>).
+             * Formulation of problem questions, coordination of volunteers, giving lectures, supervising at summer camps
+
+-    id: publications
+     title: 'Publications'
+     content: |
+              Kvapilova, L., Boza, V., Dubec, P., Majernik, M., Bogar, J., Jamison, J., Goldsack, J.C., Kimmel, D.J. and Karlin, D.R., 2019. Continuous sound collection using smartphones and machine learning to measure cough. Digital biomarkers, 3(3), pp.166-175.
+     
+              Neilinger, P., Shevchenko, S.N., Bogár, J., Rehák, M., Oelsner, G., Karpov, D.S., Hübner, U., Astafiev, O., Grajcar, M. and Il'ichev, E., 2016. Landau-Zener-Stückelberg-Majorana lasing in circuit quantum electrodynamics. Physical Review B, 94(9), p.094519.
+     
+              Bogar, J., Neilinger, P. and Grajcar, M., 2016, 'Landau-Zener-Stűckelberg interference in qubit-resonator system', *Applied Physics of Condensed Matter*. Strbske Pleso, Slovakia, June 22 - 24
+    
 
 -    id: contacts
      title: 'Contacts'
@@ -45,4 +44,5 @@ sections:
           
 ---
 
-Welcome to my personal page. I am Ján Bogár: physicist, student, volunteer, rockclimber, geek, free-time philosopher and hiker. I was born on 12. November 1990 in Pardubice (Czechoslovakia at the time), raised in Trenčín (already in Slovakia) and I studied in Bratislava. Those who are satisfied with such a brief introduction, I invite you to my [blog]({{site.base_url}}/blog_en), I am sure you will find something of interest there. But if you would like to know more about me, please continue. 
+Welcome to my personal page. I am Ján Bogár. Forever curious, scientist at heart, a bit of an adventurer. I like old sci-fi, deep ideas, in my free time I rockclimb.
+This page contains my <a href="/blog_en">blog</a> and a few things about me.
