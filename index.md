@@ -8,16 +8,16 @@ sections:
 -    id: i_like
      title: 'Čo mám rád'
      content: |
-         Mám rád sci-fi a fantasy: Duna, Malazská kniha padlých, Asimov, Úžasná Zeměplocha,  Harry Potter a metódy racionality, Vojna svetov (boj proti mimozemšťanom v podaní autora z doby parných železníc je kúzelný). Mám rád hudbu: W.A.S.P., Led Zeppelin, Omnia, John Butler, Čechomor, Nohavica. Mám rád dobrých ľudí. Mám rád šifrovačky, slackline a hory. Mám rád kvantovú mechaniku, Fermiho odhady a programovanie v Pythone. Mám rád webkomiksy: xkcd, Gunnerkrig Court, SMBC, Order of the Stick. Mám rád hlúpe otázky so serióznymi odpoveďami a seriózne otázky s hlúpymi odpoveďami. A <a href="/tvarohovy-kolac" target="_blank">tvarohový koláč</a>.
+         Mám rád sci-fi a fantasy: Duna, Malazská kniha padlých, Asimov, Úžasná Zeměplocha,  Harry Potter a metódy racionality, Vojna svetov (boj proti mimozemšťanom v podaní autora z doby parných železníc je kúzelný). Mám rád hudbu: Greta Van Fleet, W.A.S.P., Led Zeppelin, Omnia, John Butler, Čechomor. Mám rád dobrých ľudí. Mám rád horolezectvo, šifrovačky a hory. Mám rád kvantovú mechaniku, Fermiho odhady a programovanie v Pythone. Mám rád webkomiksy: xkcd, Gunnerkrig Court, SMBC, Order of the Stick. Mám rád hlúpe otázky so serióznymi odpoveďami a seriózne otázky s hlúpymi odpoveďami. A <a href="/tvarohovy-kolac" target="_blank">tvarohový koláč</a>.
 
 -    id: i_know
      title: 'Čo viem robiť'
      content: |
+         * Od roku 2017 sa profesionálne venujem strojovému učeniu a data-science (pracoval som v startupoch (Merlon, HealthMode), verejných inštitúciách (Moravská Zemská Knihovna) aj nadnárodných korporáciách (Anthology))
+           * Segmentácia a klasifikácia obrazu a zvuku pomocou neurónových sietí, Bayesovské modelovanie, topic modeling a spracovanie prirodzeného jazyka.
+           * Jazyk: primárne Python, ale už som pracoval aj na projektoch v Typescripte, Clojure a Ruste
+           * Nástroje: dvc, cml, snowflake
          * Mám Mgr. titul z fyziky tuhých látok na FMFI UK v Bratislave, v diplomovej práci som sa zaoberal supravodivými kvantovými bitmi.
-         * Mám tri roky skúseností ako machine learning engineer v niekoľkých startupoch (Merlon, HealthMode)
-             * Bayesovská inferencia (pymc3), neurónové siete (Torch, Tensorflow)
-             * Python (Scipy, Numpy, Matplotlib,...)
-             * Clojure
          * Mám dlhoročné skúsenosti ako dobrovolnícky organizátor korešpondenčných súťaží z fyziky a matematiky pre základoškolákov <a href="https://pikomat.sk/">Pikomat</a> a <a href="https://pikofyz.sk/">Pikofyz</a>.
              * Tvorba zadaní, koordinovanie dobrovoľníkov, prednášanie, vedúcovanie na sústredeniach
              
