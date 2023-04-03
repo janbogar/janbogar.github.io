@@ -4,6 +4,7 @@
 
 # Name of your site (displayed in the header)
 name: Ján Bogár
+title: Ján Bogár
 
 # Short bio or description (displayed in the header)
 description: Osobná stránka
@@ -22,16 +23,15 @@ footer-links:
   email: jan.boogie.bogar@gmail.com
   facebook: jan.bogar
   flickr:
-  github: 
+  github:
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: 
+  twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
-
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -67,14 +67,14 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
+    css_class: "highlight"
 
 # Set the Sass partials directory, as we're using @imports
 sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
+plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
@@ -87,47 +87,46 @@ exclude:
   - CNAME
   - materialy
 
-
 #translations of common words
 t:
- en:
-  name: "Ján Bogár"
-  description: "Personal Website"
-  about: "About me"
-  influences: "What influenced me"
-  i_like: "What I like"
-  i_know: "What I can do"
-  contacts: "Contacts"
-  i_did: "What I already did"
-  read_more: "Read more"
-  tags: "Tags"
-  repo: "Repository"
- sk:
-  name: "Ján Bogár"
-  description: "Osobná stránka"
-  about: "O mne"
-  influences: "Čo ma ovplyvnilo"
-  i_like: "Čo mám rád"
-  i_know: "Čo viem robiť"
-  contacts: "Kontakty"
-  i_did: "Čo som už urobil"
-  read_more: "Čítaj ďalej"
-  tags: "Tagy"
-  repo: "Repositár"
+  en:
+    name: "Ján Bogár"
+    description: "Personal Website"
+    about: "About me"
+    influences: "What influenced me"
+    i_like: "What I like"
+    i_know: "What I can do"
+    contacts: "Contacts"
+    i_did: "What I already did"
+    read_more: "Read more"
+    tags: "Tags"
+    repo: "Repository"
+  sk:
+    name: "Ján Bogár"
+    description: "Osobná stránka"
+    about: "O mne"
+    influences: "Čo ma ovplyvnilo"
+    i_like: "Čo mám rád"
+    i_know: "Čo viem robiť"
+    contacts: "Kontakty"
+    i_did: "Čo som už urobil"
+    read_more: "Čítaj ďalej"
+    tags: "Tagy"
+    repo: "Repositár"
 
 #tags
 taglist:
- en:
-  "hard physics": hard-physics
-  "easy physics": easy-physics
-  "science": science
-  "this and that": this-and-that
-  "Nepali diary ": nepali-diary
-  "programming": programming
- sk:
-  "ťažká fyzika": tazka-fyzika
-  "ľahká fyzika": lahka-fyzika
-  "veda": veda
-  "všeličo": vselico
-  "nepálske zápisky": nepalske-zapisky
-  "programovanie": programovanie
+  en:
+    "hard physics": hard-physics
+    "easy physics": easy-physics
+    "science": science
+    "this and that": this-and-that
+    "Nepali diary ": nepali-diary
+    "programming": programming
+  sk:
+    "ťažká fyzika": tazka-fyzika
+    "ľahká fyzika": lahka-fyzika
+    "veda": veda
+    "všeličo": vselico
+    "nepálske zápisky": nepalske-zapisky
+    "programovanie": programovanie
