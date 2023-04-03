@@ -40,7 +40,7 @@ So to help you, I came up with this list of topics a budding data scientist shou
  - <span style="color:red">basic work with Linux terminal (or Windows command line)</span> - change directory, list its contents, run a command, display help for the command
 
  - <span style="color:green">Git</span>
-<span style="color:green">GitHub</span> (or GitLab, Gitea or similar)
+ - <span style="color:green">GitHub</span> (or GitLab, Gitea or similar)
 
 ## Programming
 
