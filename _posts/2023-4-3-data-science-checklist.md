@@ -33,14 +33,14 @@ So to help you, I came up with this list of topics a budding data scientist shou
 
 ## Basic tools
 
- - <span style="color:red">Visual Studio Code</span> - I recommend this code editor (more specifically IDE - Integrated Development Environment - used to edit code, run it, and other useful things). IDEs are usually packed with features, don't worry about them, just learn the basics for now. There are also many other good choices (e.g. Spyder), so just pick one and stick with it.
+ - <span style="color:red">Visual Studio Code</span> - I recommend this code editor (more specifically IDE - Integrated Development Environment - used to edit code, run it, and other useful things). IDEs are usually packed with features, but you don't need to learn how to use all of them, just learn the basics for now. There are also many good choices other than VS Code, e.g. Spyder. Try a few, pick one and stick with it.
 
 - <span style="color:red">Jupyter Notebook</span> - This is a code format and IDE useful for interactive data exploration and visualization. It's compatible with both VS Code and Google Collab.
 
  - <span style="color:red">Basic work with Linux terminal (or Windows command line)</span> - Learn how to change directory, list its contents, run a command, display help for the command.
 
  - <span style="color:green">Git</span>
- - <span style="color:green">GitHub</span> (or GitLab, Glacier, Gitea or similar)
+ - <span style="color:green">GitHub</span> - or GitLab, Gitea or similar Git hosting service. 
 
 ## Programming
 
@@ -84,10 +84,10 @@ So to help you, I came up with this list of topics a budding data scientist shou
   - <span style="color:blue"> P-hacking</span> (as something to avoid)
 - <span style="color:green">Conditional probability</span>
 - Cognitive biases and statistical fallacies:
- - <span style="color:green">Simpson's paradox</span>
- - <span style="color:green">Selection bias</span>
- - <span style="color:green">Survivor bias</span>
- - <span style="color:red">Confounding variable and spurious correlation</span>
+  - <span style="color:green">Simpson's paradox</span>
+  - <span style="color:green">Selection bias</span>
+  - <span style="color:green">Survivorship bias</span>
+  - <span style="color:red">Confounding variable and spurious correlation</span>
 - <span style="color:blue">Unintuitive properties of high dimensional spaces</span>
 - <span style="color:blue">Introduction to Bayesian statistics:</span>
   - Bayes rule
@@ -112,7 +112,7 @@ So to help you, I came up with this list of topics a budding data scientist shou
   - <span style="color:green">Cross-validation</span>
   - <span style="color:green">Regularization</span>
   - <span style="color:blue">Data augmentation</span>
-- <span style="color:green">Data normalization</span> - which models need it, which are immune
+- <span style="color:green">Data normalization</span> - which models need it and which don't
 - <span style="color:red">Confusion matrix</span> - recall (sensitivity), precision, specificity, accuracy and tradeoffs between them
 - <span style="color:green">ROC curve</span> -  ROC AUC score (perhaps also precision-recall curve)
 - Impact of <span style="color:blue">data imbalance</span> on training and model evaluation metrics
@@ -138,12 +138,12 @@ So to help you, I came up with this list of topics a budding data scientist shou
 
 ## What does the usual data science workflow look like?
 
-There is a lot of thinking about business needs, hypothesis forming and testing, communication and other tasks, but the "manual" part of data-science usually consists of these steps:
+In addition to thinking about business needs, hypothesis forming and testing, communication and other tasks, the "manual" part of data-science usually consists of these steps:
 
 - Load data.
-- Explore it - what does it look like, how much is there, what data is missing, is it biased in some way? Is it representative of the real world? What data do you actually need? Are there outliers? Visualize it to get a better feel for it.
-- Use descriptive statistics to summarize data properties.
-- Remove duplicates, deal with missing data, decide what to do with outliers.
+- Explore it - what does it look like, how much is there, what data is missing, is it biased in some way? Is it representative of the real world? What data do you actually need? Are there outliers?
+- Use descriptive statistics and visualization to summarize data properties.
+- Clean the data - remove duplicates and deal with missing data and outliers.
 - Model the data - understand what answer you want and what type of model can give it to you.
 - Evaluate your model - does it do what you want? If not, return to previous step.
 - Visualize and clearly communicate the conclusions of your modeling - what do they mean? How certain are you?
