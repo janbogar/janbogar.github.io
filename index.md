@@ -13,13 +13,13 @@ sections:
 -    id: i_know
      title: 'Čo viem robiť'
      content: |
-         * Od roku 2017 sa profesionálne venujem strojovému učeniu a data-science (pracoval som v startupoch (Merlon, HealthMode), verejných inštitúciách (Moravská Zemská Knihovna) aj nadnárodných korporáciách (Anthology))
+         * Strojové učenie a dátová veda (pracoval som v startupoch (Merlon, HealthMode), verejných inštitúciách (Moravská Zemská Knihovna) aj nadnárodných korporáciách (Anthology)):
            * Segmentácia a klasifikácia obrazu a zvuku pomocou neurónových sietí, Bayesovské modelovanie, topic modeling a spracovanie prirodzeného jazyka.
-           * Jazyk: primárne Python, ale už som pracoval aj na projektoch v Typescripte, Clojure a Ruste
-           * Nástroje: dvc, cml, snowflake
-         * Mám Mgr. titul z fyziky tuhých látok na FMFI UK v Bratislave, v diplomovej práci som sa zaoberal supravodivými kvantovými bitmi.
-         * Mám dlhoročné skúsenosti ako dobrovolnícky organizátor korešpondenčných súťaží z fyziky a matematiky pre základoškolákov <a href="https://pikomat.sk/">Pikomat</a> a <a href="https://pikofyz.sk/">Pikofyz</a>.
-             * Tvorba zadaní, koordinovanie dobrovoľníkov, prednášanie, vedúcovanie na sústredeniach
+           * Jazyk: primárne Python, ale už som pracoval aj na projektoch v Typescripte, Clojure a Ruste.
+           * Nástroje: DVC, CML, Snowflake.
+         * Mgr. titul z fyziky tuhých látok na FMFI UK v Bratislave, v diplomovej práci som sa zaoberal supravodivými kvantovými bitmi.
+         * Dlhoročné skúsenosti ako dobrovolnícky organizátor korešpondenčných súťaží z fyziky a matematiky pre základoškolákov <a href="https://pikomat.sk/">Pikomat</a> a <a href="https://pikofyz.sk/">Pikofyz</a>:
+             * Tvorba zadaní, koordinovanie dobrovoľníkov, prednášanie, vedúcovanie na sústredeniach.
              
 -    id: publications
      title: 'Publikácie'
@@ -33,7 +33,13 @@ sections:
 -    id: contacts
      title: 'Kontakt'
      content: |
-         email: jan.boogie.bogar@gmail.com
+        #### email
+        jan.boogie.bogar@gmail.com
+
+        #### sociálne médiá
+          - [mastodonczech.cz/@janbogar](https://mastodonczech.cz/@janbogar)
+          - [facebook.com/jan.bogar](https://www.facebook.com/jan.bogar)
+             
           
 ---
 

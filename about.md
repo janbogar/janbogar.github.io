@@ -14,13 +14,13 @@ sections:
 -    id: i_know
      title: 'What I can do'
      content: |
-         * I have been working as a machine learning engineer or data-scientist since 2017 (I worked in startups (Merlon,HealthMode), public institutions (Moravian Library) and international corporations (Anthology))
-           * Segmentation and classification of image and sound with neural networks, Bayesian Inference, Topic Modeling and Natural Language Processing   
-           * Language: primary Python, but I have also worked on projects written in Typescript, Clojure and Rust
-           * Tools: dvc, cml, snowflake
-         * I have masters degree in solid states physics at Commenius University, Bratislava. The topic of my diploma thesis was superconducting quantum bits.
-         * I have long experience as volunteer organising correspondence competitions in math and physics for children (<a href="https://pikomat.sk/">Pikomat</a> and <a href="https://pikofyz.sk/">Pikofyz</a>).
-             * Formulation of problem questions, coordination of volunteers, giving lectures, supervising at summer camps
+         * Machine learning engineer/data-scientistist since 2017 (I have experience with work in startups (Merlon,HealthMode), public institutions (Moravian Library) and international corporations (Anthology)):
+           * Segmentation and classification of image and sound with neural networks, Bayesian Inference, Topic Modeling and Natural Language Processing   .
+           * Languages: primary Python, but I have also worked on projects written in Typescript, Clojure and Rust.
+           * Tools: DVC, CML, Snowflake
+         * Msters degree in solid states physics at Commenius University, Bratislava. The topic of my diploma thesis was superconducting quantum bits.
+         * Long experience as a volunteer organising correspondence competitions in math and physics for children (<a href="https://pikomat.sk/">Pikomat</a> and <a href="https://pikofyz.sk/">Pikofyz</a>):
+             * Formulation of problem questions, coordination of volunteers, giving lectures, supervising at summer camps.
 
 -    id: publications
      title: 'Publications'
@@ -35,12 +35,13 @@ sections:
 -    id: contacts
      title: 'Contacts'
      content: |
-         Ján Bogár  
-         Halalovka 50  
-         911 08 Trenčín  
-         Slovakia
+        #### email
+        jan.boogie.bogar@gmail.com
 
-         email: jan.boogie.bogar@gmail.com
+        #### social media
+          - [mastodonczech.cz/@janbogar](https://mastodonczech.cz/@janbogar)
+          - [facebook.com/jan.bogar](https://www.facebook.com/jan.bogar)
+             
           
 ---
 
