@@ -67,7 +67,7 @@ So to help you, I came up with this list of topics a budding data scientist shou
 ## Math
 
 - <span style="color:red">Linear algebra:</span>
-  - <span style="color:red">Vectors</span>
+  - <span style="color:red">Vectors</span> and their <span style="color:red">dot product</span>
   - <span style="color:red">Matrix multiplication</span>
   - <span style="color:green">Geometric interpretation</span>
 - <span style="color:red">Statistics:</span>

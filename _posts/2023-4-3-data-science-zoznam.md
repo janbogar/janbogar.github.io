@@ -71,7 +71,7 @@ Takže aby som ti s tým pomohol, tu je zoznam konceptov, ktoré by začínajúc
 ## Matematika
 
 - <span style="color:red">Lineárna algebra:</span>
-  - <span style="color:red">Vektory</span>
+  - <span style="color:red">Vektory</span> a ich <span style="color:red">skalárny súčin</span>
   - <span style="color:red">Matice a ich násobenie</span>
   - <span style="color:green">Geometrická interpretácia</span>
 - <span style="color:red">Štatistika:</span>
