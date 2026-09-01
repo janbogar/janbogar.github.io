@@ -6,8 +6,44 @@
 //
 
 @import "reset";
-@import "variables";
 // Syntax highlighting @import is at the bottom of this file
+
+//
+// VARIABLES
+//
+
+// Colors
+
+// Space colors
+// $content: #fce5cd;
+// $highlight_secondary: #ff9010;
+// $highlight_main: #e7dd7f;
+// $structure: #8bffff;
+// $base_secondary:#1b5777;
+// $base_main: #212131;
+
+$content: #fce5cd;
+$highlight_secondary: #ff9010;
+$highlight_main: #fadb88;
+$structure: #8bffff;
+$base_secondary:#1b5777;
+$base_main: #212131;
+
+// Font stacks
+$normal: Inter, sans-serif;
+$special: Inter, sans-serif;
+$georgia: Georgia, serif;
+
+$fontsize: 16px;
+$headingfontsize: 28px;
+$titlefontsize: 28px;
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 740px) {
+    @content;
+  }
+}
 
 /**************/
 /* BASE RULES */
@@ -18,9 +54,9 @@ html {
 }
 
 body {
-	background: $white;
-  font: 14px/1.4 $helvetica;
-  color: $darkGray;
+  font: $fontsize $normal;
+  color: $content;
+  background-color: $base_main;
   text-align: justify;
 }
 
@@ -35,9 +71,8 @@ body h1, body h2, body h3, body h4{
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-/*  color: $darkerGray; */
-  color: $myorange;
+  font-family: $special;
+  color: $highlight_main;
   font-weight: bold;
 
   line-height: 1.7;
@@ -50,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: $headingfontsize;
   a {
     color: inherit;
   }
@@ -66,7 +101,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: $structure;
 }
 
 p {
@@ -74,12 +109,12 @@ p {
 }
 
 a {
-  color: $myorange;
+  color: $highlight_main;
   text-decoration: none;
   cursor: pointer;
   outline: 0;
   &:hover, &:active {
-    color: $myorange;
+    color: $highlight_secondary
   }
 }
 
@@ -116,24 +151,19 @@ img {
   max-width: 100%;
 }
 
-// Fixes images in popup boxes from Google Translate
-.gmnoprint img {
-  max-width: none;
-}
-
 .date {
   font-style: italic;
-  color: $gray;
+  color: $structure;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
-  background: $lightGray;
+  color: $base_main;
+  background: $highlight_main;
 }
 ::selection {
-  color: $black;
-  background: $lightGray;
+  color: $base_main;
+  background: $highlight_main
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -162,7 +192,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $structure;
 
   @include mobile {
     text-align: center;
@@ -198,9 +228,9 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $highlight_main;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $special;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -212,7 +242,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $highlight_main;
   font-size: 16px;
 
   @include mobile {
@@ -223,7 +253,7 @@ img {
 nav {
   float: top;
   margin-top: 0px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $special;
   font-size: 18px;
   text-align:center;
 
@@ -236,7 +266,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $highlight_main;
     text-align: center;
     font-weight: 300;
     letter-spacing: 1px;
@@ -250,7 +280,7 @@ nav {
 .language_select {
   float: right;
   margin-top: 10px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $special;
   font-size: 18px;
   text-align: center;
 
@@ -264,7 +294,7 @@ nav {
   a {
 	float: none;
     margin-left: 20px;
-    color: $darkGray;
+    color: $highlight_main;
     text-align: center;
     font-weight: 300;
     letter-spacing: 1px;
@@ -291,7 +321,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $structure;
 }
 
 .posts > .post:last-child {
@@ -302,9 +332,9 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 2px solid $structure;
     padding: 0.1em 1em;
-    color: $gray;
+    color: $highlight_main;
     font-size: 22px;
     font-style: italic;
   }
@@ -324,7 +354,7 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  background-color: $base_main;
 }
 
 footer {
@@ -339,16 +369,16 @@ footer {
 }
 
 span.collapsible {
-    color: $darkGray;
-    background-color: $lightGray;}
+    color: $content;
+    background-color: $base_secondary;}
 
 span.collapsible::-moz-selection {
-  color: $white;
-  background: $gray;
+  color: $content;
+  background: $base_secondary;
 }
 span.collapsible::selection {
-  color: $white;
-  background: $gray;
+  color: $base_secondary;
+  background: $content;
 }
 
 .h3displayimg{
@@ -391,12 +421,6 @@ span.collapsible::selection {
 
 .tags {
   font-style: italic;
-  color: $gray;
-  a {color: $gray;
-     &:hover, &:active {
-    color: $myorange;
-  }}
-
 }
 
 /*    Filter ------------------------------------------------------------------------------------------*/
@@ -461,7 +485,7 @@ article .img-group img {
 
 dt{
   //font-weight: bold;
-  color:$gray;
+  color:$structure;
 }
 
 dd{
@@ -470,19 +494,15 @@ dd{
 
 /* buttons --------------------------------------------------------------------*/
 button {
-    background-color: $myorange;
+    background-color: $highlight_main;
     border: none;
-    color: white;
+    color: $base_main;
     padding: 10px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
 }
-
-/*
-@import "flexslider";
-*/
 
 @import "lightslider";
 
