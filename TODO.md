@@ -1,0 +1,12 @@
+- oprav link nastranku Sashi di Gulian
+- prepis v NN vs Conway ze je to hlupe, to je prilis velka skratka
+- krajsie fonty
+- inak ries tagy
+- menej adolescentne intro
+- krajsi dizajn
+- pridaj readme, je to fakt pain sa v tom teraz zorientovat
+- odstran github
+- update picture
+- footer musi ostat na spodku
+- cv
+- zmen temu
