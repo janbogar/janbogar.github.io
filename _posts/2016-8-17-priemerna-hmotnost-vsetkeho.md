@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Aká je priemerná hmotnosť všetkého?'
-scripts: [mathjax, toggle]
+scripts: [mathjax]
 lang: sk
 ref: priemerna_hmotnost_vsetkeho
 permalink: /priemerna-hmotnost-vsetkeho/

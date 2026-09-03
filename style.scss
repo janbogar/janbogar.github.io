@@ -26,7 +26,7 @@ $content: #fce5cd;
 $highlight_secondary: #ff9010;
 $highlight_main: #fadb88;
 $structure: #8bffff;
-$base_secondary:#1b5777;
+$base_secondary:#548ba8;
 $base_main: #212131;
 
 // Font stacks
@@ -362,25 +362,6 @@ footer {
   text-align: center;
 }
 
-/*    collapsible class ------------------------------------------------------------------------------------------*/
-
-.collapsible{
-	display:none;	
-}
-
-span.collapsible {
-    color: $content;
-    background-color: $base_secondary;}
-
-span.collapsible::-moz-selection {
-  color: $content;
-  background: $base_secondary;
-}
-span.collapsible::selection {
-  color: $base_secondary;
-  background: $content;
-}
-
 .h3displayimg{
 	display:inline;
 	position:relative;
@@ -502,6 +483,44 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+/*    collapsible class ------------------------------------------------------------------------------------------*/
+
+.collaps_checkbox {
+  display: none
+}
+
+.collaps_checkbox:checked ~ .collapsible {
+  display: inline;
+}
+
+.collapsible {
+  display: none;
+
+}
+
+span.collapsible {
+  display: none;
+  background-color: $base_secondary;
+ }
+
+.collaps_button_checked {
+  display: none;
+  height: 16px;
+}
+
+.collaps_button_unchecked {
+  display: inline;
+  height: 16px;
+}
+
+.collaps_checkbox:checked ~ .collaps_button_checked {
+  display: inline;
+}
+
+.collaps_checkbox:checked ~ .collaps_button_unchecked {
+  display: none;
 }
 
 @import "lightslider";

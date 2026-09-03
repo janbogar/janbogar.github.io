@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Dobrodružstvo v Chitwane'
-scripts: [toggle]
 lang: sk
 ref: chitwan
 tags:

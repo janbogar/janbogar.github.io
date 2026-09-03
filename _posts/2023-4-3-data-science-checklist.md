@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Study checklist for a budding data scientist'
-scripts: [toggle]
+
 lang: en
 ref: data-science-checklist
 thumbnail: "images/data-science-checklist/datascience.webp"

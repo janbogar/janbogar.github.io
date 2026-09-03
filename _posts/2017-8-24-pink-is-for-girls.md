@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Pink is for girls!"
-scripts: [toggle]
 lang: en
 ref: ruzova-je-pre-baby
 permalink: /pink-is-for-girls/

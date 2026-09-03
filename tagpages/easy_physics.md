@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-scripts: [mathjax, toggle]
+scripts: [mathjax]
 lang: en
 permalink: /tags/easy-physics
 chosen_tag: "easy physics"

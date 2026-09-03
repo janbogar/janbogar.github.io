@@ -4,7 +4,7 @@ lang: en
 ref: about
 title: About me
 permalink: /about/
-scripts: [toggle]
+scripts:
 sections:
 -    id: i_like
      title: 'What I like'

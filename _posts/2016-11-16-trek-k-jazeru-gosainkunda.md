@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Trek k jazeru Gosainkunda'
-scripts: [toggle]
 lang: sk
 ref: trek
 tags:

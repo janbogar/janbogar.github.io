@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'What is the average mass of everything?'
-scripts: [mathjax, toggle]
+scripts: [mathjax]
 lang: en
 ref: priemerna_hmotnost_vsetkeho
 permalink: /average-mass-of-everything/

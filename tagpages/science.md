@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-scripts: [mathjax, toggle]
+scripts: [mathjax]
 lang: en
 permalink: /tags/science
 chosen_tag: "science"

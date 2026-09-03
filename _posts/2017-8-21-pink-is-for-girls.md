@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Ružová je pre baby!'
-scripts: [toggle]
 lang: sk
 ref: ruzova-je-pre-baby
 permalink: /ruzova-je-pre-baby/

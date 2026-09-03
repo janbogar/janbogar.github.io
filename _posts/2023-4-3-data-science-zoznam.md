@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Študijný checklist pre začínajúcu dátovú vedkyňu'
-scripts: [toggle]
+
 lang: sk
 ref: data-science-checklist
 thumbnail: "images/data-science-checklist/datascience.webp"

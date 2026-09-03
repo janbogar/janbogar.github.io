@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-scripts: [mathjax, toggle]
+scripts: [mathjax]
 lang: sk
 permalink: /tagy/lahka-fyzika
 chosen_tag: "ľahká fyzika"

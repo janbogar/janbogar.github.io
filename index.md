@@ -3,7 +3,6 @@ layout: about
 ref: about
 lang: sk
 title: O mne
-scripts: [toggle]
 sections:
 -    id: i_like
      title: 'Čo mám rád'

@@ -6,7 +6,7 @@ ref: nn-vs-conway
 permalink: /nn-vs-conway
 thumbnail: images/nn-vs-conway/glider.gif
 excerpt: "Both neural networks and Conway's Game of Life are instant buzzwords, but combining them, that's really stupid. How stupid? Consider that the weights of the neural network that plays the game can be easily set by hand (as we will see). No amount of stupidness should stop us from doing something interesting though. Who knows, maybe we will learn something new?"
-scripts: [mathjax, toggle]
+scripts: [mathjax]
 tags:
  - "this and that"
  - "programming"

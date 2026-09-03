@@ -1,12 +1,17 @@
-- oprav link nastranku Sashi di Gulian
-- prepis v NN vs Conway ze je to hlupe, to je prilis velka skratka
-- krajsie fonty
-- inak ries tagy
-- menej adolescentne intro
-- krajsi dizajn
-- pridaj readme, je to fakt pain sa v tom teraz zorientovat
-- odstran github
-- update picture
-- footer musi ostat na spodku
-- cv
-- zmen temu
+- [ ]oprav link nastranku Sashi di Gulian
+- [ ]prepis v NN vs Conway ze je to hlupe, to je prilis velka skratka
+- [ ]krajsie fonty
+- [ ]inak ries tagy
+  - [ ] lepsi dizajn
+  - [ ] zvyrazni link aj v tagpage
+  - [ ] automaticky generuj veci pre tagy (ruby script?)
+- [ ] nahrad toggle cistym css 
+- [ ]menej adolescentne intro
+- [ ]krajsi dizajn
+- [x]pridaj readme, je to fakt pain sa v tom teraz zorientovat
+- [x]odstran github
+- [ ]update picture
+- [ ]footer musi ostat na spodku
+- [ ]cv
+- [ ]zmen temu
+- [ ]zmen farby vsetkeho svg
