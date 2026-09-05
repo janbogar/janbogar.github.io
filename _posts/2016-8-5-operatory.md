@@ -23,7 +23,7 @@ Ha, dostal som vás! Tento článok je&#160;v skutočnosti o kvantovej mechanike
 Bra-ket notácia je skvelá&#160;v tom, že zachováva abstraktný charakter pojmov, ktoré ňou popisujeme,&#160;a nelipne na ich konkrétnej reprezentácií. Nezáleží na tom, či stavy popisovaného systému reprezentujeme ako usporiadané n-tice čísel, kvadraticky integrovateľné funkcie (a.k.a. vlnové funkcie), alebo nejakým iným obskúrnym spôsobom. Dôležité je len to, že sú to vektory. Funguje to takto:
 
 #### Ket $$\ket{.}$$
-Ket sú stavy systému. Sú to teda vektory zo stavového priestoru <a href="javascript:toggle('{% capture id %}2{%endcapture%}{{id}}');"><img src="{{ site.baseurl }}/images/add.svg" class="inlinedisplayimg" id="{{id}}_displayimg"/> <img src="{{ site.baseurl }}/images/minus.svg" class="inlinehideimg" id="{{id}}_hideimg"/>  \[{{id}}\]</a><span id="{{id}}" class="collapsible">Ak je fakt, že stavy sú vektory, pre vás novinka, tento článok vám nič nedá. Skúste najprv zelenú knižku alebo inú učebnicu a potom sa vráťte. </span> a môžeme ich sčitovať a násobiť komplexnými číslami. Pojmy stav&#160;a vektor tu budem teda voľne zamieňať. Čokoľvek vnútri zátvorky pritom slúži len ako nálepka, charakterizujúca konkrétny vektor. Napríklad $$\ket{1}$$ je stav ktorý sme označili číslom $$1$$, $$\ket{init}$$ môže byť označenie začiatočného stavu. Často sa stretnete aj s takýmto zápisom: $$\ket{x}$$. Tu si treba uvedomiť, že $$x$$ nie je premenná, ale nejaká konkrétna hodnota $$x$$.
+Ket sú stavy systému. Sú to teda vektory zo stavového priestoru {% include collapsible.html content= "Ak je fakt, že stavy sú vektory, pre vás novinka, tento článok vám nič nedá. Skúste najprv zelenú knižku alebo inú učebnicu a potom sa vráťte. "%} a môžeme ich sčitovať a násobiť komplexnými číslami. Pojmy stav&#160;a vektor tu budem teda voľne zamieňať. Čokoľvek vnútri zátvorky pritom slúži len ako nálepka, charakterizujúca konkrétny vektor. Napríklad $$\ket{1}$$ je stav ktorý sme označili číslom $$1$$, $$\ket{init}$$ môže byť označenie začiatočného stavu. Často sa stretnete aj s takýmto zápisom: $$\ket{x}$$. Tu si treba uvedomiť, že $$x$$ nie je premenná, ale nejaká konkrétna hodnota $$x$$.
 
 #### Bra $$\bra{.}$$
 Bra sú lineárne funkcionály na stavovom priestore. Funkcionál je mlynček. Na vstupe vezme stav&#160;a do klobások natlačí číslo.
@@ -69,7 +69,7 @@ c\braket{\psi}{\phi}=\bra{\psi}c\ket{\phi}=\braket{\psi}{\phi}c
 \end{equation}$$
 
 Inak povedané, číslo môžeme výrazom zloženým zo zasebou zapísaných bra a ket ľubovoľne presúvať.
-Ale pozor: bra vektor k vektoru $$ c\ket{\psi}$$ je $$c^*\bra{\psi}$$, kde $$^*$$ značí komplexné združenie. Vyplýva to z požiadavky kososymetrickosti skalárneho súčinu <a href="javascript:toggle('{% capture id %}3{%endcapture%}{{id}}');"><img src="{{ site.baseurl }}/images/add.svg" class="inlinedisplayimg" id="{{id}}_displayimg"/> <img src="{{ site.baseurl }}/images/minus.svg" class="inlinehideimg" id="{{id}}_hideimg"/>  \[{{id}}\]</a><span id="{{id}}" class="collapsible">Kososymetrickosť znamená, že $$\braket{\psi }{ \phi}=\braket{\phi }{ \psi}^*$$. Premyslite si to. </span>.
+Ale pozor: bra vektor k vektoru $$ c\ket{\psi}$$ je $$c^*\bra{\psi}$$, kde $$^*$$ značí komplexné združenie. Vyplýva to z požiadavky kososymetrickosti skalárneho súčinu {% include collapsible.html content= "Kososymetrickosť znamená, že $$\braket{\psi }{ \phi}=\braket{\phi }{ \psi}^*$$. Premyslite si to. "%}.
 
 #### Operátor
 
@@ -147,7 +147,7 @@ $$\begin{equation}
 A=\sum\limits_{i}{\sum\limits_{j}{c_{ij}{\ket{\psi_i}\bra{\psi_j}}}}
 \end{equation}$$
 
-Tento zápis sa hodí hlavne vtedy, ak operátor (vo svojom maticovom zápise) má veľa nulových elementov. Napríklad jednotkový operátor (identita) bude <a href="javascript:toggle('{% capture id %}4{%endcapture%}{{id}}');"><img src="{{ site.baseurl }}/images/add.svg" class="inlinedisplayimg" id="{{id}}_displayimg"/> <img src="{{ site.baseurl }}/images/minus.svg" class="inlinehideimg" id="{{id}}_hideimg"/>  \[{{id}}\]</a><span id="{{id}}" class="collapsible"> Toto si zapamätajte, tento výraz sa votrel snáď úplne všade. </span>:
+Tento zápis sa hodí hlavne vtedy, ak operátor (vo svojom maticovom zápise) má veľa nulových elementov. Napríklad jednotkový operátor (identita) bude {% include collapsible.html content= "Toto si zapamätajte, tento výraz sa votrel snáď úplne všade. "%}:
 
 $$\begin{equation}
 I=\sum\limits_{i}{\ket{\psi_i}\bra{\psi_i}}
