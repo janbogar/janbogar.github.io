@@ -28,6 +28,7 @@ $highlight_main: #fadb88;
 $structure: #8bffff;
 $base_secondary:#548ba8;
 $base_main: #212131;
+$background: #13131b;
 
 // Font stacks
 $normal: "Nunito", sans-serif;
@@ -56,7 +57,7 @@ body {
   font: $fontsize $normal;
   line-height: $normal-line-height;
   color: $content;
-  background-color: $base_main;
+  background-color: $background;
   text-align: justify;
 }
 
@@ -70,6 +71,7 @@ body h1, body h2, body h3, body h4{
   width: 100%;
   border: 1px solid $structure;
   border-radius: 15px;
+  background-color: $base_main;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -190,6 +192,7 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .masthead {
@@ -243,7 +246,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $highlight_main;
+  color: $content;
   font-size: 16px;
 
   @include mobile {
@@ -353,9 +356,6 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $base_main;
 }
 
 footer {
