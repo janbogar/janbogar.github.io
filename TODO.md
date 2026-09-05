@@ -5,7 +5,7 @@
   - [ ] lepsi dizajn
   - [ ] zvyrazni link aj v tagpage
   - [ ] automaticky generuj veci pre tagy (ruby script?)
-- [ ] nahrad toggle cistym css 
+- [x] nahrad toggle cistym css 
 - [ ]menej adolescentne intro
 - [ ]krajsi dizajn
 - [x]pridaj readme, je to fakt pain sa v tom teraz zorientovat
@@ -15,3 +15,4 @@
 - [ ]cv
 - [ ]zmen temu
 - [ ]zmen farby vsetkeho svg
+- [ ]self host fonts 

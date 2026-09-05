@@ -30,13 +30,12 @@ $base_secondary:#548ba8;
 $base_main: #212131;
 
 // Font stacks
-$normal: Inter, sans-serif;
-$special: Inter, sans-serif;
-$georgia: Georgia, serif;
+$normal: "Nunito", sans-serif;
+$special: "Roboto", sans-serif;
 
-$fontsize: 16px;
-$headingfontsize: 28px;
-$titlefontsize: 28px;
+$fontsize: 18px;
+
+$normal-line-height: 1.6;
 
 // Mobile breakpoints
 @mixin mobile {
@@ -55,6 +54,7 @@ html {
 
 body {
   font: $fontsize $normal;
+  line-height: $normal-line-height;
   color: $content;
   background-color: $base_main;
   text-align: justify;
@@ -65,9 +65,11 @@ body h1, body h2, body h3, body h4{
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
+  max-width: 900px;
+  padding: 0 30px;
   width: 100%;
+  border: 1px solid $structure;
+  border-radius: 15px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -85,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: $headingfontsize;
+  font-size: 28px;
   a {
     color: inherit;
   }
@@ -192,7 +194,6 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $structure;
 
   @include mobile {
     text-align: center;
@@ -427,6 +428,7 @@ article .img-group img {
 
 .perex{
  white-space: nowrap;
+ display: flex;
 }
 
 .excerpt{
@@ -435,8 +437,6 @@ article .img-group img {
 
 .thumbnail {
   margin:15px 10px;
-  width: 200px;
-  display:inline-block;
   vertical-align:top;
   @include mobile {
    display:block;
@@ -445,14 +445,13 @@ article .img-group img {
 }
 
 .thumbnail img {
-  max-height: 300px;
+  max-width: 200px;
 }
 
 
 .thumbnail + .excerpt{
   display:inline-block;
   vertical-align:top;
-  max-width:489px;
 
   @include mobile {
    display:block;
