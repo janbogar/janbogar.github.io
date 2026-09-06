@@ -22,7 +22,7 @@ Ako je to vlastne naozaj? Naozaj je veľa ženského vybavenia do hôr v ružovo
 
 ...napäté ticho...
 
-No predsa ja! Pomocou mocného počítačového kung-fu som posťahoval všetky obrázky oblečenia a topánok z e-shopov sport-outdoor.sk a hudy.sk {% include collapsible.html content= "Dokopy niečo cez 5000 obrázkov."%}, odrezal z nich pozadie a urobil štatistiku všetkých farieb v obrázkoch pre mužské a ženské výrobky zvlášť {% include collapsible.html content= "V skratke: python, scrapy, numpy, mpld3 a tento [kód](https://mail.python.org/pipermail/image-sig/2010-April/006220.html) floodfil algoritmu s thresholdom. Tu je môj [zdroják](https://github.com/janbogar/small_projects/tree/master/pink_is_for_girls)"%}.
+No predsa ja! Pomocou mocného počítačového kung-fu som posťahoval všetky obrázky oblečenia a topánok z e-shopov sport-outdoor.sk a hudy.sk {% include collapsible.html content= "Dokopy niečo cez 5000 obrázkov."%}, odrezal z nich pozadie a urobil štatistiký prehľad všetkých farieb v obrázkoch pre mužské a ženské výrobky zvlášť {% include collapsible.html content= "V skratke: python, scrapy, numpy, mpld3 a tento [kód](https://mail.python.org/pipermail/image-sig/2010-April/006220.html) floodfil algoritmu s thresholdom. Tu je môj [zdroják](https://github.com/janbogar/small_projects/tree/master/pink_is_for_girls)"%}.
 
 No a tu sú výsledky v podobe dvoch najfarebnejších grafov aké som kedy vytvoril.
 
@@ -126,9 +126,6 @@ if(typeof(mpld3) !== "undefined" && mpld3._mpld3IsLoaded){
 showPlot1();
 </script>
 
-Hneď vidno že ženské oblečenie sa viac ako to mužské kloní k fialovej, tyrkysovej, červenej a áno, aj tej ružovej. Mužské zas vedie prekvapivo v žltej, zelenej, oranžovej a neprekvapivo v tmavých farbách. Zaujímavá je tiež modrá, v ktorej muži napriek stereotypu stvorenému farebne kódovanými detskými dupačkami nevedú. Rozdiely sú ale menšie než 10% ponúkaného sortimentu.
+Hneď vidno že ženské oblečenie sa viac ako to mužské kloní k fialovej, tyrkysovej, červenej a áno, aj tej ružovej. Mužské zas vedie prekvapivo v žltej, zelenej, oranžovej a neprekvapivo v tmavých farbách. Zaujímavá je tiež modrá, v ktorej muži napriek stereotypu nevedú. Rozdiely sú ale menšie než 10% ponúkaného sortimentu.
 
-Poučenie na záver? Iba ak toto. To ružové stvorenie na začiatku článku nie je nejaká náhodná dievčina, ale Sasha DiGuilian, jedna z najlepších lezkýň súčasnosti a veľká fanúšička všetkého ružového (presvedčí o tom jediný pohľad na jej <a href = "http://www.sasha-digiulian.com/" target="_blank">osobnú stránku</a> alebo niektoré z jej osobných vyjadrení). Takže poučenie je, noste si čo chcete, pokojne aj ružovú. Možno potom tiež onsightnete nejakú tú desinu, a ak aj nie, aspoň budete veselší :)
-
-
-
+Poučenie na záver? Iba ak toto. Na fotke v úvode nie je nejaká náhodná dievčina, ale Sasha DiGuilian - špičková atlétka, jedna z najlepších lezcov súčasnosti a podľa vlastných slov veľká fanúšička všetkého ružového. Takže poučenie je, noste si čo chcete, pokojne aj ružovú. Možno sa na vás vďaka tomu nalepí trocha DiGuilian mágie a tiež preleziete na onsight nejaké to 8b+ - a ak aj nie, aspoň budete veselší.
