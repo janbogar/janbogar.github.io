@@ -13,7 +13,7 @@ excerpt: >-
 ---
 <img alt="mysterious girl in pink" src="{{site.baseurl}}/images/pink-is-for-girls/pic.jpeg" />
 
-"Great shirt/jacket/climbing shoes, but it comes only in pink!" That's what a complaint of an outdoors woman in an outdoor shop could sound like. Let's face it: gender stereotypes still hold our society firmly in their grasp. Even the toughest women, with climbs so hard that most men can only dream of being that good, can't easily avoid pink outdoor clothes, even if they wanted to. Supply is simply limited. Or maybe not?
+{{page.excerpt}}
 
 How is it really? How much of the women's outdoor equipment is actually pink? And what about the men's wear? Who could know?
 

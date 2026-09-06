@@ -5,9 +5,10 @@ lang: en
 ref: nn-vs-conway
 permalink: /nn-vs-conway
 thumbnail: images/nn-vs-conway/glider.gif
-excerpt: "I scrolled past some video thumbnail about playing Conway's Game of life with neural networks, and I have to admit that my first thought was "Pft, that's stupid". I thought that "playing the game" meant actually computing and carying out the game's rules - a task where any use of neural networks would make absolutly no sense. Of course, the video actually turned out awesome, because what it meant by "playing the game" was coming up with interesting patterns - a perfect task for neural networks.
+excerpt: >-
+    'I scrolled past some video thumbnail about playing Conway's Game of life with neural networks, and I have to admit that my first thought was "Pft, that's stupid". I thought that "playing the game" meant actually computing and carying out the game's rules - a task where any use of neural networks would make absolutly no sense. Of course, the video actually turned out awesome, because what it meant by "playing the game" was coming up with interesting patterns - a perfect task for neural networks.
 
-But what if we stuck with the first meaning for a moment, how stupid would that be? A lot, actually. Consider that the weights of the neural network that plays the game can be easily set by hand (as we will see). No amount of stupidness should stop us from doing something interesting though. Who knows, maybe we will learn something new?"
+    But what if we stuck with the first meaning for a moment, how stupid would that be? A lot, actually. Consider that the weights of the neural network that plays the game can be easily set by hand (as we will see). No amount of stupidness should stop us from doing something interesting though. Who knows, maybe we will learn something new?'
 scripts: [mathjax]
 tags:
  - "this-and-that"

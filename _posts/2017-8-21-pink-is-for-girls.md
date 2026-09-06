@@ -14,11 +14,7 @@ Je to  skrátka tak, chýba ponuka. Alebo nie?'
 ---
 <img alt="mysterious girl in pink" src="{{site.baseurl}}/images/pink-is-for-girls/pic.jpeg" />
 
-"Super tričko/mikina/lezečky, ale mali len v ružovej!" Tak približne znie jedna zo sťažností outdoorovo ladených žien nakupujúcich v outdoorovo ladených obchodoch.
-Rodové stereotypy majú jednoducho našu spoločnosť pevne vo svojich pazúroch. Ani tie najdrsnejšie baby, ktoré by svojimi prelezmi mohli zahanbiť nejedného horala, sa ružovému outdoorovému oblečeniu len tak ľahko nevyhnú, a to aj keby chceli.
-Je to  skrátka tak, chýba ponuka. Alebo nie?
-
-Ako je to vlastne naozaj? Naozaj je veľa ženského vybavenia do hôr v ružovom vyhotovení? A ako je to potom s tým mužským? Kto by to len mohol vedieť?
+{{page.excerpt}}
 
 ...napäté ticho...
 

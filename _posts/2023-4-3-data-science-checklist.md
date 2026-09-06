@@ -17,12 +17,7 @@ So to help you I came up with this list of topics a budding data scientist shoul
 
 <img alt="Tom (from Tom & Jerry) haphazardly mixing food ingredients labeled as data, Pytorch, Numpy, etc." src="{{site.baseurl}}/images/data-science-checklist/datascience.webp" />
 
-I recently met someone who wants to learn data science- just like I did years ago!
-This blog post is for you, dear future data scientist.
-
-When I look back at my data science career, I had no problem finding all the learning resources I might need freely accessible on the internet. The problem was actually the opposite - every blog, book, tutorial or tool tried to look like the most important thing in the universe that you definitely need to know. The hardest thing was to correctly prioritize all the topics.
-
-So to help you, I came up with this list of topics a budding data scientist should know. It is not the only possible learning path or the only flavour of data science (it is a very vaguely defined job), but it is a good compromise between being exhaustive and concise. Use it as a springboard, to guide you before you learn enough to guide yourself.
+{{page.excerpt}}
 
 
 ### Legend
