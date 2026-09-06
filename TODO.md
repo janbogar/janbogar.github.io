@@ -16,3 +16,4 @@
 - [x]zmen temu
 - [ ]zmen farby vsetkeho svg
 - [ ]self host fonts 
+- [ ]atom feed

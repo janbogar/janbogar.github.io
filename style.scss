@@ -65,9 +65,9 @@ body h1, body h2, body h3, body h4{
   text-align: left;}
 
 .container {
-  margin: 0 auto;
+  margin: 20px auto;
   max-width: 900px;
-  padding: 0 30px;
+  padding: 20px;
   width: 100%;
   border: 1px solid $structure;
   border-radius: 15px;
@@ -190,14 +190,7 @@ img {
 // .masthead
 //
 
-.wrapper-masthead {
-  margin-bottom: 50px;
-  margin-bottom: 20px;
-}
-
 .masthead {
-  padding: 20px 0;
-
   @include mobile {
     text-align: center;
   }
@@ -354,12 +347,9 @@ nav {
   }
 }
 
-.wrapper-footer {
-  margin-top: 50px;
-}
+
 
 footer {
-  padding: 20px 0;
   text-align: center;
 }
 

@@ -4,7 +4,7 @@ title: 'Dobrodružstvo v Chitwane'
 lang: sk
 ref: chitwan
 tags:
- - "nepalese-diary"
+ - "nepali-diary"
 
 thumbnail: "images/chitwan/thumbnails/P1020898.JPG"
 excerpt: "Je 17.12.2016, v Nepále začali zimné prázdniny a deti zo školy, kde som doteraz dobrovolníčil, sa natešene rozpŕchli ako kŕdel vrabcov. Už tu nemám dôvod ostávať, hurá na dobrodružstvo! Mojim cieľom je Chitwan, národný park na juhu Nepálu, vraj divočina plná tigrov, slonov, nosorožcov a všetkých ostatných zverov z detských snov."

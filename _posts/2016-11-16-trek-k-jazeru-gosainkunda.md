@@ -4,7 +4,7 @@ title: 'Trek k jazeru Gosainkunda'
 lang: sk
 ref: trek
 tags:
- - "nepalese-diary"
+ - "nepali-diary"
 thumbnail: "images/trek/P1000878.JPG"
 excerpt: "Kedysi dávno, keď had s mnohými hlavami otrávil svojimi slinami Zem, mocný Šiva sa obetoval a ten ohavný jed vypil. Ak by ho však prehltol, zahynul by aj on, a tak len chodil po svete a hadí jed ho pálil v hrdle a spôsoboval mu hrozné muky. Nakoniec to nevydržal, vzal svoj trojzubec a tam kde ho vrazil do zeme, vytriskla čistá ľadová voda. Šiva ňou schladil svoje rozpálené hrdlo a sláva, Zem bola zachránená! Tak vzniklo jazero Gosainkunda, ktoré nájdete v národnom parku Langtang vo výške 4380 metrov nad morom a ku ktorému som zamieril na svojom prvom Himaljáskom treku. Ako to šlo sa dozviete v tomto článku. Na jeho konci tiež nájdete zoznam praktických rád, ktoré sa inam nezmestili."
 

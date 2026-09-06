@@ -8,7 +8,7 @@ layout: default
      {% if page.tags.size > 0 %}
        {{site.t[page.lang].tags}}:
        {%for tag in page.tags%}
-		   <a href="{{ site.baseurl }}/blog_{{page.lang}}?tag={{tag}}">{{site.taglist[tag][page.lang]}}</a> {% unless forloop.last %},{% endunless %}
+		   <a href="{{ site.baseurl }}{{site.blog_path[page.lang]}}?tag={{tag}}">{{site.taglist[tag][page.lang]}}</a> {% unless forloop.last %},{% endunless %}
        {%endfor%}
      {% endif %}
   </div>

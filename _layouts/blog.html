@@ -60,7 +60,9 @@ function checkCheckboxes(tags){
 //check if some specific tag should be prechecked
 window.onload = (event) =>{
 let queryString = new URLSearchParams(document.location.search);
-checkCheckboxes(queryString.getAll("tag"))}
+tags=queryString.getAll("tag")
+if (tags.length > 0) {
+  checkCheckboxes(tags)}}
 
 </script>
 

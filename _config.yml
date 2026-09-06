@@ -77,6 +77,10 @@ exclude:
   - CNAME
   - materialy
 
+blog_path:
+  en: "/blog_en/"
+  sk: "/"
+
 #translations of common words
 t:
   en: 
