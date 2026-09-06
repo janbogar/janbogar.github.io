@@ -79,7 +79,7 @@ exclude:
 
 #translations of common words
 t:
-  en:
+  en: 
     name: "Ján Bogár"
     description: "Personal Website"
     about: "About me"
@@ -91,7 +91,7 @@ t:
     read_more: "Read more"
     tags: "Tags"
     repo: "Repository"
-  sk:
+  sk: 
     name: "Ján Bogár"
     description: "Osobná stránka"
     about: "O mne"
@@ -104,65 +104,30 @@ t:
     tags: "Tagy"
     repo: "Repositár"
 
-#tags
-# taglist:
-#   en:
-#     "hard physics": hard-physics
-#     "easy physics": easy-physics
-#     "science": science
-#     "this and that": this-and-that
-#     "Nepali diary ": nepali-diary
-#     "programming": programming
-#   sk:
-#     "ťažká fyzika": tazka-fyzika
-#     "ľahká fyzika": lahka-fyzika
-#     "veda": veda
-#     "všeličo": vselico
-#     "nepálske zápisky": nepalske-zapisky
-#     "programovanie": programovanie
-
-# key value is not important, pretty is shown in tag filter, ref is used in headers and urls
+# key value is used in front matters and to reference a tag in url parameters
 # this structure was chosen so that config has map between en and sk tags
 taglist: 
-  hard-physics:
-    en:
-      pretty: hard physics
-      ref: hard-physics
-    sk:
-      pretty: ťažká fyzika
-      ref: tazka-fyzika
-  easy-physics:
-    en:
-      pretty: easy-physics
-      ref: easy physics
-    sk:
-      pretty: ľahká fyzika
-      ref: lahka-fyzika
+  easy:
+    en: "easier"
+    sk: "ľahšie"
+  hard:
+    en: "harder"
+    sk: "ťažšie"
+  physics:
+    en: physics
+    sk: fyzika
+  math:
+    en: math
+    sk: matematika
   science:
-    en:
-      pretty: science
-      ref: science
-    sk:
-      pretty: veda
-      ref: veda
+    en: science
+    sk: veda
   this-and-that:
-    en:
-      pretty: this and that
-      ref: this-and-that
-    sk:
-      pretty: všeličo
-      ref: vselico
+    en: this and that
+    sk: všeličo
   nepali-diary:
-    en:
-      pretty: Nepali diari
-      ref: nepali-diari
-    sk:
-      pretty: nepálsky zápisník
-      ref: nepalsky-zapisnik
+    en: Nepali diari
+    sk: nepálsky zápisník
   programming:
-    en:
-      pretty: programming
-      ref: programming
-    sk:
-      pretty: programovanie
-      ref: programovanie
+    en: programming
+    sk: programovanie

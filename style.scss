@@ -401,8 +401,35 @@ footer {
 
 /*    Tagy ------------------------------------------------------------------------------------------*/
 
+// tags in posts
 .tags {
   font-style: italic;
+}
+
+// tag filtering menu
+#tag_filter {
+  margin-top: 5px;
+}
+
+.tag_checkbox
+  {
+  display:none
+  }
+
+.tag_label
+  {
+    border: 1px solid $structure;
+    border-radius: 5px;
+    margin: 5px;
+    color: $structure;
+    background-color: $base_main;
+    padding: 0px 5px;
+  }
+
+.tag_checkbox:checked + .tag_label {
+  color:$base_main;
+  background-color: $structure;
+  
 }
 
 /*    Filter ------------------------------------------------------------------------------------------*/

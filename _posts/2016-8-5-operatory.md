@@ -6,8 +6,9 @@ lang: sk
 ref: operatory
 pormalink: /o-podprsenkach-mackach-a-operatoroch/
 tags:
- - "ťažká fyzika"
- - "veda"
+ - "hard"
+ - "physics"
+ - "science"
 ---
 <div style="display:none">
 $$
