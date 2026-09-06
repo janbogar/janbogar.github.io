@@ -5,7 +5,9 @@ lang: en
 ref: nn-vs-conway
 permalink: /nn-vs-conway
 thumbnail: images/nn-vs-conway/glider.gif
-excerpt: "Both neural networks and Conway's Game of Life are instant buzzwords, but combining them, that's really stupid. How stupid? Consider that the weights of the neural network that plays the game can be easily set by hand (as we will see). No amount of stupidness should stop us from doing something interesting though. Who knows, maybe we will learn something new?"
+excerpt: "I scrolled past some video thumbnail about playing Conway's Game of life with neural networks, and I have to admit that my first thought was "Pft, that's stupid". I thought that "playing the game" meant actually computing and carying out the game's rules - a task where any use of neural networks would make absolutly no sense. Of course, the video actually turned out awesome, because what it meant by "playing the game" was coming up with interesting patterns - a perfect task for neural networks.
+
+But what if we stuck with the first meaning for a moment, how stupid would that be? A lot, actually. Consider that the weights of the neural network that plays the game can be easily set by hand (as we will see). No amount of stupidness should stop us from doing something interesting though. Who knows, maybe we will learn something new?"
 scripts: [mathjax]
 tags:
  - "this-and-that"
@@ -13,9 +15,9 @@ tags:
 ---
 Jupyter notebook for this page can be found [here](https://github.com/janbogar/small_projects/blob/master/NN_vs_Conway/NN%20plays%20Conways%20Game%20of%20Life.ipynb).
 
-Both neural networks and Conway's Game of Life are instant buzzwords, but combining them, that's really stupid. How stupid? Consider that the weights of the neural network that plays the game can be easily set by hand (as we will see).
+I scrolled past some video thumbnail about playing Conway's Game of life with neural networks, and I have to admit that my first thought was "Pft, that's stupid". I thought that "playing the game" meant actually computing and carying out the game's rules - a task where any use of neural networks would make absolutly no sense. Of course, the video actually turned out awesome, because what it meant by "playing the game" was coming up with interesting patterns - a perfect task for neural networks.
 
-No amount of stupidness should stop us from doing something interesting though. Who knows, maybe we will learn something new?
+But what if we stuck with the first meaning for a moment, how stupid would that be? A lot, actually. Consider that the weights of the neural network that plays the game can be easily set by hand (as we will see). No amount of stupidness should stop us from doing something interesting though. Who knows, maybe we will learn something new?
 
 In this notebook, we:
  - Write down a neural network that plays the Game of Life.

@@ -1,5 +1,5 @@
-- [ ]oprav link nastranku Sashi di Gulian
-- [ ]prepis v NN vs Conway ze je to hlupe, to je prilis velka skratka
+- [x]oprav link nastranku Sashi di Gulian
+- [x]prepis v NN vs Conway ze je to hlupe, to je prilis velka skratka
 - [x] krajsie fonty
 - [x]inak ries tagy
   - [x] lepsi dizajn
