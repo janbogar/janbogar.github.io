@@ -47,7 +47,10 @@ function filterPosts(){
   setPostsDisplay(gatherVisibleTags())
 }
 
+// check checkboxes because of links or url query parameters
+// also displays filters
 function checkCheckboxes(tags){
+  document.getElementById("tagfilter_collaps").checked=true
   for (checkbox of getCheckboxes()){
     checkbox.checked = tags.includes(checkbox.id)
   }
@@ -58,6 +61,7 @@ function checkCheckboxes(tags){
 window.onload = (event) =>{
 let queryString = new URLSearchParams(document.location.search);
 checkCheckboxes(queryString.getAll("tag"))}
+
 
 
 </script>
