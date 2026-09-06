@@ -6,11 +6,11 @@
   - [ ] zvyrazni link aj v tagpage
   - [ ] automaticky generuj veci pre tagy (ruby script?)
 - [x] nahrad toggle cistym css 
-- [ ]menej adolescentne intro
+- [x]menej adolescentne intro
 - [ ]krajsi dizajn
 - [x]pridaj readme, je to fakt pain sa v tom teraz zorientovat
 - [x]odstran github
-- [ ]update picture
+- [x]update picture
 - [ ]footer musi ostat na spodku
 - [ ]cv
 - [ ]zmen temu

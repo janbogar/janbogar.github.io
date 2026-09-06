@@ -1,19 +1,31 @@
 ---
 layout: default
-
-
 ---
 
-{% assign posts = site.posts | where: "lang", page.lang %}          
-
+{% assign posts = site.posts | where: "lang", page.lang %}         
 
 <div class= "filter " >
-<a href="javascript:toggle('filter');"><h3><img src="{{ site.baseurl }}/images/add.svg" class=h3displayimg id="filter_displayimg"> <img src="{{ site.baseurl }}/images/minus.svg" class=h3hideimg id="filter_hideimg"> Filter: {%case page.lang %}{% when 'en' %}<a href="{{ site.baseurl }}/blog_en">All posts</a>{% when 'sk' %}<a href="{{ site.baseurl }}/blog_sk">Všetky príspevky</a>{%endcase%}</h3> </a>
-		<div id=filter class="collapsible tags">
-        {%case page.lang %}{% when 'en' %}Only posts with tag: {% when 'sk' %}Len príspevky s tagom: {%endcase%}
-		
-        {%case page.lang %}{% when 'en' %}<a href="{{ site.baseurl }}/blog_en">All posts</a>{% when 'sk' %}<a href="{{ site.baseurl }}/blog_sk">Všetky príspevky</a>{%endcase%}{% for tag in site.taglist[page.lang]%}, <a href="{{ site.baseurl }}/{{site.t[page.lang].tags | downcase }}/{{tag[1]}}">{{tag[0]}}</a>{% endfor %}
-		</div>
+    <input type="checkbox" class="collaps_checkbox" id="tagfilter"/>
+    <label class="collaps_button" for="tagfilter">
+    <img
+      src="{{ site.baseurl }}/images/add.svg"
+      class="collaps_button_unchecked"
+    />
+    <img
+      src="{{ site.baseurl }}/images/minus.svg"
+      class="collaps_button_checked"
+    />
+    
+  Filter
+  </label>
+  <div class="collapsible">
+      {%case page.lang %}{% when 'en' %}Only posts with tag: {% when 'sk' %}Len príspevky s tagom: {%endcase%}
+      {%case page.lang %}{% when 'en' %}<a href="{{ site.baseurl }}/blog_en">All posts</a>{% when 'sk' %}<a href="{{ site.baseurl }}/blog_sk">Všetky príspevky</a>{%endcase%}
+      {% for tag in site.taglist[page.lang]%}
+      <a href="{{ site.baseurl }}/{{site.t[page.lang].tags | downcase }}/{{tag[1]}}">{{tag[0]}}</a>
+      {% endfor %}
+	</div>
+</label>
 </div>
 
 <div class="posts">

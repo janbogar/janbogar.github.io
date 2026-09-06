@@ -522,6 +522,16 @@ span.collapsible {
   display: none;
 }
 
+
+// for taglists
+.collaps_checkbox:checked + label .collaps_button_checked {
+  display: inline;
+}
+
+.collaps_checkbox:checked + label .collaps_button_unchecked {
+  display: none;
+}
+
 @import "lightslider";
 
 /*uncomment to turn all borders on*/
