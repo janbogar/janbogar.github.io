@@ -50,6 +50,7 @@
 
 
 			<div class=language_select>
+        <!-- this is weird, we assume that each page_ref has always just two langs, both are pages or both are posts -->
 				{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
 				{% for post in posts %}
   				<a href="{{ post.url }}" class="{{ post.lang }}"><img src="{{ site.base_url}}/images/flags/{{post.lang}}.png" /></a></li>
