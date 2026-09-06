@@ -1,4 +1,4 @@
-- [x]oprav link nastranku Sashi di Gulian
+- [x]oprav link na stranku Sashi di Gulian
 - [x]prepis v NN vs Conway ze je to hlupe, to je prilis velka skratka
 - [x] krajsie fonty
 - [x]inak ries tagy
@@ -17,3 +17,5 @@
 - [ ]zmen farby vsetkeho svg
 - [ ]self host fonts 
 - [ ]atom feed
+- [ ]preklad blogu nech prenesie vybrate tagy skrz query
+- [ ]prepis average mass of everything ze average vymaze exception, takto to nie je nutne pravda (fat tails)
