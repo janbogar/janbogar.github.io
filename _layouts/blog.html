@@ -20,15 +20,16 @@ chosen_tag: nil
   Filter
   </label>
   <div class="collapsible">
+    <select multiple>
       {% case page.lang %}{% when 'en' %}Only posts with tag: {% when 'sk' %}Len príspevky s tagom: {% endcase %}
       <a class={% if chosen_tag==nil %}"highlighted_tag"{% else %}"tag"{% endif %} {% case page.lang %}{% when 'en' %} href="{{ site.baseurl }}/blog_en"  >All posts</a>{% when 'sk' %}<a href="{{ site.baseurl }}/blog_sk">Všetky príspevky</a>{%endcase%}
       {% for multilang_tag in site.taglist%}
         {% assign tag=multilang_tag[1][page.lang] %}
         {% assign tag_pretty=tag["pretty"] %}
         {% assign tag_ref=tag["ref"] %}
-        {% assign class={% if chosen_tag==tag_ref %}"highlighted_tag"{% else %}"tag"{% endif %}%}
-        <a class={{class}} href="{{ site.baseurl }}/{{site.t[page.lang].tags | downcase }}/{{tag_ref}}">{{tag_pretty}}</a>
+        < class={{class}} href="{{ site.baseurl }}/{{site.t[page.lang].tags | downcase }}/{{tag_ref}}">{{tag_pretty}}</a>
       {% endfor %}
+    </select>
 	</div>
 </label>
 </div>
