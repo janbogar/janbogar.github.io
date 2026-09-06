@@ -6,8 +6,8 @@ lang: sk
 ref: data-science-checklist
 thumbnail: "images/data-science-checklist/datascience.webp"
 tags:
- - "všeličo"
- - "programovanie"
+ - "this-and-that"
+ - "programming"
 excerpt: "Nedávno som stretol niekoho, kto by sa chcel naučiť dátovú vedu - presne ako som sa ju kedysi naučil ja!
 Tento článok je pre teba, milá budúca dátová vedkyňa.
 

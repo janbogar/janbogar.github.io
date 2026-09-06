@@ -6,7 +6,7 @@ ref: ruzova-je-pre-baby
 permalink: /pink-is-for-girls/
 thumbnail: "images/pink-is-for-girls/sasha.jpg"
 tags:
- - "this and that"
+ - "this-and-that"
  - "programming"
 excerpt: >- 
     "Great shirt/jacket/climbing shoes, but it comes only in pink!" That's what a complaint of an outdoors woman in an outdoor shop could sound like. Let's face it: gender stereotypes still hold our society firmly in their grasp. Even the toughest women, with climbs so hard that they put to shame many a man, can't easily avoid pink outdoor clothes, even if they would like to. Supply is simply limited. Or maybe not?

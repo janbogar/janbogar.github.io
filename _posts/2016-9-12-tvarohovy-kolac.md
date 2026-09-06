@@ -6,7 +6,7 @@ lang: sk
 ref: tvarohovy_kolac
 thumbnail: images/kolac/curd_pie.JPG
 tags:
- - 'všeličo'
+ - 'this-and-that'
 excerpt: 'Toto je recept na výborný tvarohový koláč ako ho robí moja mamička. Robí sa takto...'
 ---
 <img alt="curd pie" src="{{site.baseurl}}/images/kolac/curd_pie.JPG" />

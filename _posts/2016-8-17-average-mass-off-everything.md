@@ -7,7 +7,8 @@ ref: priemerna_hmotnost_vsetkeho
 permalink: /average-mass-of-everything/
 thumbnail: "images/priemerna hmotnost/zemnavahach.png"
 tags:
- - "easy physics"
+ - "easy"
+ - "physics"
  - "science"
 ---
 This is one of those wonderfully stupid questions that makes no sense at first glance, but you learn a lot when you think about it for a while. So what does this question even mean? Well, average mass is computed the same way every time: you sum masses of all things in a given category and then divide it by their count. For example average American weighs $$80 \mathrm{ kg}$$ and average pineapple around $$2 \mathrm{ kg}$$. The average mass of both pineapples and Americans together is approximately $$ 3,5 \mathrm{ kg}$$ (there is simply much more pineapples than Americans). Ok, but we are not interested in some subsets like these, we want the average mass of EVERYTHING! Galaxies, planets, penguins, atoms, quarks! How much will that be?
