@@ -53,6 +53,13 @@ function checkSingleTagCheckbox(tag){
   }
   filterPosts()
 }
+
+//check if some specific tag should be prechecked
+window.onload = (event) =>{
+let queryString = new URLSearchParams(document.location.search);
+checkSingleTagCheckbox(queryString.get("tag"))}
+
+
 </script>
 
 <div id="tag_filter">
