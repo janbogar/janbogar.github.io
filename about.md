@@ -17,4 +17,4 @@ jan.boogie.bogar@gmail.com
 
 #### social media
 - [mastodonczech.cz/@janbogar](https://mastodonczech.cz/@janbogar)
-- [facebook.com/jan.bogar](https://www.facebook.com/jan.bogar)
+- [facebook.com/jan.bogar](https://www.facebook.com/jan.bogar), but I don't recommend for following me, see [How to follow]({{site.base_url}}/how-to-follow/)
