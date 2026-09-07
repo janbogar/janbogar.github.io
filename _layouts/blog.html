@@ -62,7 +62,11 @@ window.onload = (event) =>{
 let queryString = new URLSearchParams(document.location.search);
 tags=queryString.getAll("tag")
 if (tags.length > 0) {
-  checkCheckboxes(tags)}}
+  checkCheckboxes(tags)}
+
+//remove query parameters from url, so that the user isn't confused 
+// after they click other filters and hit reload, or send url to someone else
+history.pushState(null, "", location.href.split("?")[0])};
 
 </script>
 

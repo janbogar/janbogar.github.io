@@ -11,7 +11,6 @@
 - [x]pridaj readme, je to fakt pain sa v tom teraz zorientovat
 - [x]odstran github
 - [x]update picture
-- [ ]footer musi ostat na spodku
 - [ ]cv
 - [x]zmen temu
 - [ ]zmen farby vsetkeho svg

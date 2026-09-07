@@ -8,7 +8,7 @@ permalink: /o_mne/
 
 Som Ján Bogár a toto je môj osobný blog.
 
-Publikujem tu drobné, popularizačne zamerané vedecké alebo programátorské projekty, ale aj rôzne moje myšlienky, postoje, zážitky z dobrodru6stiev a čokoľvek iné, čo ma práve zaujme a chcem to zdieľať so svetom.
+Publikujem tu drobné, populárno-vedecké alebo programátorské projekty, ale aj rôzne moje myšlienky, postoje, zážitky z dobrodružstiev a čokoľvek iné, čo ma práve zaujme a chcem to zdieľať so svetom.
 
 ## Kontakt
 
