@@ -8,6 +8,41 @@
 @import "reset";
 // Syntax highlighting @import is at the bottom of this file
 
+//local fonts
+
+@font-face {
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+src:
+  local("Nunito"),
+  url(./assets/Nunito-VariableFont_wght.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: italic;
+  font-weight: 400;
+  src:
+    local("Nunito"),
+    url(./assets/Nunito-Italic-VariableFont_wght.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: local("Roboto"),url(assets/Roboto-VariableFont_wdth,wght.ttf);}
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: italic;
+      font-weight: 400;
+      font-stretch: 100%;
+      src: local("Roboto"), url(assets/Roboto-Italic-VariableFont_wdth,wght.ttf);
+    }
+
 //
 // VARIABLES
 //
