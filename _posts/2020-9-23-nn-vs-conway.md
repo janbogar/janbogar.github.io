@@ -118,7 +118,7 @@ else:
 
 ## How to turn this to a neural network?
 
-The usual way of doing things is machine learning: we define the structure of the neural network and then we train it, that is, we use some algorithm (e.g. gradient descent) to tweak it's free parameters until its output resembles the desired one.
+The usual way of doing things is machine learning: we define the structure of the neural network and then we train it, that is, we use some algorithm (e.g. gradient descent) to tweak its free parameters until its output resembles the desired one.
 
 But we don't have to do that. Neural networks are just a special class of functions, like "quadratic functions" or "Fourier series" etc. We can just think really hard and write down its structure and parameters directly.
 
