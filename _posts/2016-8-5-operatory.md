@@ -29,7 +29,7 @@ Ket sú stavy systému. Sú to teda vektory zo stavového priestoru {% include c
 #### Bra $$\bra{.}$$
 Bra sú lineárne funkcionály na stavovom priestore. Funkcionál je mlynček. Na vstupe vezme stav&#160;a do klobások natlačí číslo.
 
-<img alt="funkcionálny mlynček" width="250px" src="{{site.baseurl}}/images/operatory/funkcional.png" />
+<div class="lighter_background"><img alt="funkcionálny mlynček" width="250px" src="{{site.baseurl}}/images/operatory/funkcional.png" /></div>
 
 $$\begin{equation}
 \bra{\phi}\ket{\psi}=\braket{\phi}{\psi}=c \;\;\;\; c \in \mathbb{C}
@@ -76,7 +76,7 @@ Ale pozor: bra vektor k vektoru $$ c\ket{\psi}$$ je $$c^*\bra{\psi}$$, kde $$^*$
 
 Operátor&#160;v kvantovej mechanike je mlynček. Na vstupe vezme stav zo stavového priestoru&#160;a do klobások natlačí iný (alebo aj rovnaký) stav.
 
-<img alt="operátorový mlynček" width="250px" src="{{site.baseurl}}/images/operatory/operator.png" />
+<div class="lighter_background"><img alt="operátorový mlynček" width="250px" src="{{site.baseurl}}/images/operatory/operator.png" /></div>
 
 $$\begin{equation}
 A\ket{\psi}=\ket{\phi}

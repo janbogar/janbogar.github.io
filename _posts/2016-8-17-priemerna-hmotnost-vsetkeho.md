@@ -5,7 +5,7 @@ scripts: [mathjax]
 lang: sk
 ref: priemerna_hmotnost_vsetkeho
 permalink: /priemerna-hmotnost-vsetkeho/
-thumbnail: "images/priemerna hmotnost/zemnavahach.png"
+thumbnail: "images/priemerna hmotnost/zemnavahach_biela.png"
 tags:
  - "easy"
  - "physics"
@@ -16,8 +16,8 @@ Toto je jedna z tých úžasne hlúpych otázok, ktoré na prvý pohľad nedáva
 Hneď tu na začiatku narážame na problém. Ak zarátame do priemerovania napríklad človeka, možno by sme už nemali zahrnúť bunky z ktorých sa skladá, pretože hmotnosť každej z nich sme už zahrnuli. Takto definovaná otázka by nám ale veľa nepovedala. Mala by totiž triviálnu odpoveď, že všetko je súčasťou vesmíru, a tak teda existuje len jediná vec - vesmír. Miesto toho si problém radšej definujme takto: predstavte si, že sa hráte na boha {% include collapsible.html content= "to predsa vedci podľa všetkých filmov radi robia"%}, občas siahnete do vesmíru a vytiahnete odtiaľ nejakú vec. Môže to byť čokoľvek čo by niekto niekedy označil ako samostatnú vec, bez ohľadu na to, či je to súčasť niečoho väčšieho alebo nie. Odvážite ju, zapíšete si jej hmotnosť a vrátite ju naspäť. No a nás zaujíma, aká bude priemerná hmotnosť takto vyťahovaných vecí. Čo je ešte "vec" je samozrejme stále subjektívne, ale s trochou šťastia to výsledok príliš neovplyvní, keďže nám aj tak ide len o odhad. Poďme teda na to. Ale počkať! Ešte pred tým si tipnite koľko to vyjde. No vážne, nie že budete pokračovať bez hádania! Už máte? Tak pokračujeme.
 
 Čo všetko by sme mohli považovať za veci? Najväčšia vec je vesmír (pozorovateľný). Váži $$m_{max}=10^{54} \mathrm{ kg}$$ a je len jeden. Potom, keď trochu zazoomujeme, prejdeme na nižšiu škálu a zistíme že sa skladá napr. z kôp galaxií (Je to vec, alebo nie? To si zatiaľ necháme na neskôr, rovnako ako tmavú hmotu/ energiu). Potom sú galaxie, potom hviezdy, <a href="http://htwins.net/scale2">**...**</a>, potom sú molekuly, potom atómy a potom elementárne častice. Skončíme napr. pri kvarkoch, tie váža $$m_{min}=10^{-30} \mathrm{ kg}$$. Na základe tohoto si urobme jednoduchý model vesmíru: predpokladajme, že na každej hmotnostnej škále sa vesmír skladá z rovnakých vecí. Z tých sa zas každá skladá z $$N$$ vecí na nižšej škále, ktoré sú teda N-krát ľahšie, atď. až po najmenšie častice, ako na obrázku 1. $$N$$ budeme volať škálovací faktor. Keby napr. $$N$$ bolo 2, tak by sa vesmír skladal z dvoch polvesmírov, tie každý z dvoch štvrťvesmírov, atď. až po dvojkvarky a o jednu škálu nižšie kvarky. Vidno že $$N=2$$ nedáva dobrý zmysel, takže to asi bude nejaké väčšie číslo, ale to si zatiaľ odložíme.
-
-<img alt="vesmír na rôznych škálach" width="400px" src="{{site.baseurl}}/images/priemerna hmotnost/fractal_universe_sk.png" />
+<div class="lighter_background">
+<img alt="vesmír na rôznych škálach" width="400px" src="{{site.baseurl}}/images/priemerna hmotnost/fractal_universe_sk.png" /></div>
 
 *Obr. 1: Náš model vesmíru: každá vec sa skladá z $$N$$ menších vecí, pričom dokopy je takto vesmír rozdelený na $$k$$ škál. Na $$i$$-tej škále teda existuje dokopy $$N^{i-1}$$ objektov.*
 

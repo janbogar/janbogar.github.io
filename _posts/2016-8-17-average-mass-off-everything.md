@@ -5,7 +5,7 @@ scripts: [mathjax]
 lang: en
 ref: priemerna_hmotnost_vsetkeho
 permalink: /average-mass-of-everything/
-thumbnail: "images/priemerna hmotnost/zemnavahach.png"
+thumbnail: "images/priemerna hmotnost/zemnavahach_biela.png"
 tags:
  - "easy"
  - "physics"
@@ -19,7 +19,10 @@ So let's get to it. But wait! First you have to make an initial guess. Ready? Se
 
 What can still be considered a thing? The biggest possible thing is probably the universe (observable). It weighs $$m_{max}=10^{54} \mathrm{ kg}$$ and it is one of a kind. Then after zooming a little we get to a lower scale and we find out that it consists of, let's say, clusters of galaxies (Is it a thing, or not? We will leave that for later, as well as dark matter/energy). Then there are galaxies, then stars,<a href="http://htwins.net/scale2">**...**</a>, molecules, atoms and finally elementary particles. We can stop for example at quarks, their mass is approximately $$m_{min}=10^{-30} \mathrm{ kg}$$. Based on this, let us make a simple model of the universe: let it consist, on every scale, of only identical things. Of those, every one consists of $$N$$ things on a smaller scale, which are therefore N times lighter, and so on down to the smallest particles as seen on the figure 1. We will call the $$N$$ the scaling factor. If the $$N$$ were for example 2, the universe would consist of two half-universes, every one of them of two quarter-universes and so on down to double quarks and finally quarks. It is obvious that $$N=2$$ doesn't make much sense, so it should probably be a bigger number, but let us leave that for later.
 
-<img alt="universe at different scales" width="400px" src="{{site.baseurl}}/images/priemerna hmotnost/fractal_universe_en.png" />
+
+
+<div class="lighter_background"><img alt='universe at different scales' width='400px' src='{{site.baseurl}}/images/priemerna hmotnost/fractal_universe_en.png' /></div>
+
 
 *Fig. 1: Our model of the universe: everything consists of $$N$$ smaller things. The universe is thus divided to $$k$$ different scales. Therefore, at $$i$$-th scale there exists $$N^{i-1}$$ objects.*
 

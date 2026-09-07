@@ -47,6 +47,7 @@ function showPlot2() {
 <button id='button1' onclick='showPlot1()'> Farba podľa počtu kusov </button><button id='button2' onclick='showPlot2()'> Farba podľa plochy</button>
 </div>
 <p id='plotTitle' style='color: #666;padding-left:40px;padding-right:40px;font-style: italic;'></p>
+<div class="lighter_background">
 <div id="plot1" style='text-align:center;'></div><script>
 function mpld3_load_lib(url, callback){
   var s = document.createElement('script');
@@ -118,7 +119,9 @@ if(typeof(mpld3) !== "undefined" && mpld3._mpld3IsLoaded){
             })
          });
 }
-</script><script>
+</script>
+</div>
+<script>
 showPlot1();
 </script>
 
