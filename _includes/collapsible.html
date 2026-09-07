@@ -1,11 +1,9 @@
-<label class="collaps_button">
-  <input type="checkbox" class="collaps_checkbox" />
+<label class="collaps_button">{{include.label}}
+  <input type="checkbox" class="collaps_checkbox" >
   <img
     src="{{ site.baseurl }}/images/add.svg"
-    class="collaps_button_unchecked"
-  />
+    class="collaps_button_unchecked">
   <img
     src="{{ site.baseurl }}/images/minus.svg"
-    class="collaps_button_checked"
-  />
+    class="collaps_button_checked">
   <span class="collapsible">{{ include.content }}</span></label>
