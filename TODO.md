@@ -13,8 +13,11 @@
 - [x]update picture
 - [ ]cv
 - [x]zmen temu
-- [ ]zmen farby vsetkeho svg
+- [x]zmen farby vsetkeho svg
 - [ ]self host fonts 
-- [ ]atom feed
+- [x]atom feed
 - [ ]preklad blogu nech prenesie vybrate tagy skrz query
 - [ ]prepis average mass of everything ze average vymaze exception, takto to nie je nutne pravda (fat tails)
+- [ ]vycisti margins
+- [ ]zjednot ikony
+- [ ]plausible? - nie, je to drahe, ked tak nieco ine

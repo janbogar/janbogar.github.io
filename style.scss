@@ -13,15 +13,6 @@
 //
 
 // Colors
-
-// Space colors
-// $content: #fce5cd;
-// $highlight_secondary: #ff9010;
-// $highlight_main: #e7dd7f;
-// $structure: #8bffff;
-// $base_secondary:#1b5777;
-// $base_main: #212131;
-
 $content: #fce5cd;
 $highlight_secondary: #ff9010;
 $highlight_main: #fadb88;
@@ -392,9 +383,10 @@ footer {
 
 /*    Footer ------------------------------------------------------------------------------------------*/
 .svg-icon {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   display: inline-block;
+  margin: 0px 5px;
 }
 
 /*    Tagy ------------------------------------------------------------------------------------------*/

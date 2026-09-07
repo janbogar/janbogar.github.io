@@ -15,7 +15,6 @@
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 
-	    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 	<!-- include scripts with filenames specified in scripts variable in frontmatter of the relevant markdown file. scripts are in dir _includes/_scripts-->	
 	{% if page.scripts %}
 		{% for script in page.scripts %}
@@ -69,16 +68,17 @@
     </div>
 
     <div id="main" role="main" class="container">
-		
-
       {{ content }}
     </div>
 
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-      <a class= svg-icon rel="me" href="https://mastodonczech.cz/@janbogar"><img src="{{ site.base_url}}/images/mastodon.svg" /></a>
-      <a class= svg-icon href=https://www.facebook.com/jan.bogar><img src="{{ site.base_url}}/images/Facebook.svg" /></a>
+
+      <a class= svg-icon download type="application/rss+xml"  href="{{ site.url }}/feed.xml" title="{{ site.title }}"><img src="{{ site.base_url}}/images/rss.svg" /></a>
+      <a class= svg-icon href="https://mastodonczech.cz/@janbogar"><img src="{{ site.base_url}}/images/mastodon.svg" /></a>
+      <a class= svg-icon href=https://www.facebook.com/jan.bogar><img src="{{ site.base_url}}/images/facebook.svg" /></a>
+      
         </footer>
       </div>
     </div>
