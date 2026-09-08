@@ -376,7 +376,13 @@ nav {
 
 
 footer {
-  text-align: center;
+  text-align: left;
+}
+
+footer .right_block {
+  display:block;
+  float: right;
+  text-align:right;
 }
 
 .h3displayimg{
@@ -495,6 +501,9 @@ article .img-group img {
 
 .excerpt{
  white-space: normal;
+}
+.excerpt > p {
+  margin-top: 0px;
 }
 
 .thumbnail {
