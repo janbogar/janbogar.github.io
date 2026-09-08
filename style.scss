@@ -519,10 +519,6 @@ article .img-group img {
 .thumbnail {
   margin:5px 10px 0px 0px;
   vertical-align:top;
-  @include mobile {
-   display:block;
-   margin:auto;
-  }
 }
 
 .thumbnail img {
