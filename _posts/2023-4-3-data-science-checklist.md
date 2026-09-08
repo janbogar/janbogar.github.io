@@ -67,7 +67,7 @@ So to help you I came up with this list of topics a budding data scientist shoul
 - <span style="color:{{red}}">Linear algebra:</span>
   - <span style="color:{{red}}">Vectors</span> and their <span style="color:{{red}}">dot product</span>
   - <span style="color:{{red}}">Matrix multiplication</span>
-  - <span style="color:{{green}}">Geometric interpretation</span>
+  - <span style="color:{{green}}">Geometric interpretation of these concepts</span>
 - <span style="color:{{red}}">Statistics:</span>
   - <span style="color:{{red}}">Probability</span>
   - <span style="color:{{red}}">Probability distribution</span> and difference between probability and probability density

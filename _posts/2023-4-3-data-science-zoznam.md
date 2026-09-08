@@ -71,7 +71,7 @@ Takže aby som ti s tým pomohol, tu je zoznam konceptov, ktoré by začínajúc
 - <span style="color:{{red}}">Lineárna algebra:</span>
   - <span style="color:{{red}}">Vektory</span> a ich <span style="color:{{red}}">skalárny súčin</span>
   - <span style="color:{{red}}">Matice a ich násobenie</span>
-  - <span style="color:{{green}}">Geometrická interpretácia</span>
+  - <span style="color:{{green}}">Geometrická interpretácia týchto pojmov</span>
 - <span style="color:{{red}}">Štatistika:</span>
   - <span style="color:{{red}}">Pravdepodobnosť</span>
   - <span style="color:{{red}}">Pravdepodobnostné rozdelenie (distribúcia)</span> a rozdiel medzi pravdepodobnosťou a hustotou pravdepodobnosti
@@ -124,7 +124,7 @@ Takže aby som ti s tým pomohol, tu je zoznam konceptov, ktoré by začínajúc
 - <span style="color:{{green}}">ROC krivka</span> a plocha pod ROC krivkou (možno aj krivka precission-recall)
 - Dôsledky <span style="color:{{blue}}">nevyvážených dáta (data imbalance)</span> pri trénovaní a evaluačných metrikách
 - <span style="color:{{green}}">Rozhodovacie rozhranie (decision boundary)</span> - lineárny vs. nelineárny model, koncept lineárne separovateľných dát
-- <span style="color:{{blue}}">Feature engineering</span>, obzvlášť ako pomoocu neho premeniť lineárny model na nelineárny, viď tiež "kernel trick".
+- <span style="color:{{blue}}">Feature engineering</span>, obzvlášť ako pomocou neho premeniť lineárny model na nelineárny, viď tiež "kernel trick".
 - <span style="color:{{green}}">Rozhodovací strom</span>
 - <span style="color:{{blue}}">Neurónové siete</span> pre klasifikáciu
 - <span style="color:{{blue}}">Kompromis medzi systematickou chybou a varianciou (Bias Vs variance tradeoff)</span>

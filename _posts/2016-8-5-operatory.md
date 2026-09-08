@@ -5,6 +5,7 @@ scripts: [mathjax]
 lang: sk
 ref: operatory
 pormalink: /o-podprsenkach-mackach-a-operatoroch/
+thumbnail: "images/operatory/kat_and_bra.jpg"
 tags:
  - "hard"
  - "physics"
@@ -19,7 +20,7 @@ $$
 \newcommand{\braket}[2]{ \langle #1 \lvert #2 \rangle }
 $$
 </div>
-Ha, dostal som vás! Tento článok je&#160;v skutočnosti o kvantovej mechanike&#160;a Dirac, tvorca bra-ket notácie, sa teraz smeje vo svojom hrobe. Chápete? Bra a ket, podprsenky a mačky? {% include collapsible.html content="Nie je vlastne jasné, či v Diracovej dobe bola takáto interpretácia slova bra&#160; možná, ale zdá sa, že skôr to tak nemyslel. Termín bra pre podprsenku bol prvý krát použitý&#160;v Holandsku 15 rokov pred zavedením bra-ket notácie a šíril sa pomaly."%} No dobre, poďme radšej ďalej. Konkrétne sa tu dozviete niečo o bra a ket (to sú tie zobáčikové zátvorky $$\ket{}$$a $$\bra{}$$ )&#160;a hlavne&#160;o tom, ako pomocou nich zapisovať operátory&#160;v kvantovej mechanike. Tento článok je určený pre všetkých, ktorí kvantovú mechanikou detailne študujú, napríklad práve navštevujú úvodný kurz na univerzite, ale mätú ich tie divné zátvorky a čo s&#160;nimi občas ľudia stvárajú. Ak do tejto kategórie spadáte, čítajte ďalej.
+Ha, dostal som vás! Tento článok je&#160;v skutočnosti o kvantovej mechanike&#160;a Dirac, tvorca bra-ket notácie, sa teraz smeje vo svojom hrobe. Chápete? Bra a ket, podprsenky a mačky? {% include collapsible.html content="V Diracovej dobe bola takáto interpretácia slova bra&#160; zrejme už možná (pretože slovo brassiere sa začalo skracovať na bra práve v 30-tych rokoch a bra-ket notácia vznikla v roku 1939), ale skôr to vyzerá, že to tak nemyslel."%} No dobre, poďme radšej ďalej. Konkrétne sa tu dozviete niečo o bra a ket (to sú tie zobáčikové zátvorky $$\ket{}$$a $$\bra{}$$ )&#160;a hlavne&#160;o tom, ako pomocou nich zapisovať operátory&#160;v kvantovej mechanike. Tento článok je určený pre všetkých, ktorí kvantovú mechanikou detailne študujú, napríklad práve navštevujú úvodný kurz na univerzite, ale mätú ich tie divné zátvorky a čo s&#160;nimi občas ľudia stvárajú. Ak do tejto kategórie spadáte, čítajte ďalej.
 
 Bra-ket notácia je skvelá&#160;v tom, že zachováva abstraktný charakter pojmov, ktoré ňou popisujeme,&#160;a nelipne na ich konkrétnej reprezentácií. Nezáleží na tom, či stavy popisovaného systému reprezentujeme ako usporiadané n-tice čísel, kvadraticky integrovateľné funkcie (a.k.a. vlnové funkcie), alebo nejakým iným obskúrnym spôsobom. Dôležité je len to, že sú to vektory. Funguje to takto:
 
