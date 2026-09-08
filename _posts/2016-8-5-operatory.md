@@ -19,12 +19,12 @@ $$
 \newcommand{\braket}[2]{ \langle #1 \lvert #2 \rangle }
 $$
 </div>
-Ha, dostal som vás! Tento článok je&#160;v skutočnosti o kvantovej mechanike&#160;a Dirac, tvorca bra-ket notácie, sa teraz smeje vo svojom hrobe.{% include collapsible.html content="Aj keď je pravda, že táto interpretácia názvu bra&#160;v Diracovej dobe ešte pravdepodobne nebola možná. Termín bra pre podprsenku bol prvý krát použitý&#160;v Holandsku len 15 rokov pred zavedením bra-ket notácie a šíril sa len pomaly."%} Konkrétne sa tu dozviete niečo o bra a ket (to sú tie zobáčikové zátvorky $$\ket{}$$a $$\bra{}$$ )&#160;a hlavne&#160;o tom, ako pomocou nich zapisovať operátory&#160;v kvantovej mechanike. Tento článok je určený pre všetkých, ktorí si už s&#160;kvantovou mechanikou čo to odžili (študenti na Matfyze, ktorí sa práve boria s&#160;Kvantovkou&#160;I, sa sem rátajú), ale mätú ich tie divné zátvorky a čo s&#160;nimi občas ľudia stvárajú. Ak do tejto kategórie spadáte, čítajte ďalej.
+Ha, dostal som vás! Tento článok je&#160;v skutočnosti o kvantovej mechanike&#160;a Dirac, tvorca bra-ket notácie, sa teraz smeje vo svojom hrobe. Chápete? Bra a ket, podprsenky a mačky? {% include collapsible.html content="Nie je vlastne jasné, či v Diracovej dobe bola takáto interpretácia slova bra&#160; možná, ale zdá sa, že skôr to tak nemyslel. Termín bra pre podprsenku bol prvý krát použitý&#160;v Holandsku 15 rokov pred zavedením bra-ket notácie a šíril sa pomaly."%} No dobre, poďme radšej ďalej. Konkrétne sa tu dozviete niečo o bra a ket (to sú tie zobáčikové zátvorky $$\ket{}$$a $$\bra{}$$ )&#160;a hlavne&#160;o tom, ako pomocou nich zapisovať operátory&#160;v kvantovej mechanike. Tento článok je určený pre všetkých, ktorí kvantovú mechanikou detailne študujú, napríklad práve navštevujú úvodný kurz na univerzite, ale mätú ich tie divné zátvorky a čo s&#160;nimi občas ľudia stvárajú. Ak do tejto kategórie spadáte, čítajte ďalej.
 
 Bra-ket notácia je skvelá&#160;v tom, že zachováva abstraktný charakter pojmov, ktoré ňou popisujeme,&#160;a nelipne na ich konkrétnej reprezentácií. Nezáleží na tom, či stavy popisovaného systému reprezentujeme ako usporiadané n-tice čísel, kvadraticky integrovateľné funkcie (a.k.a. vlnové funkcie), alebo nejakým iným obskúrnym spôsobom. Dôležité je len to, že sú to vektory. Funguje to takto:
 
 #### Ket $$\ket{.}$$
-Ket sú stavy systému. Sú to teda vektory zo stavového priestoru {% include collapsible.html content= "Ak je fakt, že stavy sú vektory, pre vás novinka, tento článok vám nič nedá. Skúste najprv zelenú knižku alebo inú učebnicu a potom sa vráťte. "%} a môžeme ich sčitovať a násobiť komplexnými číslami. Pojmy stav&#160;a vektor tu budem teda voľne zamieňať. Čokoľvek vnútri zátvorky pritom slúži len ako nálepka, charakterizujúca konkrétny vektor. Napríklad $$\ket{1}$$ je stav ktorý sme označili číslom $$1$$, $$\ket{init}$$ môže byť označenie začiatočného stavu. Často sa stretnete aj s takýmto zápisom: $$\ket{x}$$. Tu si treba uvedomiť, že $$x$$ nie je premenná, ale nejaká konkrétna hodnota $$x$$.
+Ket sú stavy systému. Sú to teda vektory zo stavového priestoru {% include collapsible.html content= "Ak je fakt, že stavy sú vektory, pre vás novinka, tento článok vám nič nedá. Odporúčam si tento blog zazáložkovať a vrátiť sa neskôr. "%} a môžeme ich sčitovať a násobiť komplexnými číslami. Pojmy stav&#160;a vektor tu budem teda voľne zamieňať. Čokoľvek vnútri zátvorky pritom slúži len ako nálepka, charakterizujúca konkrétny vektor. Napríklad $$\ket{1}$$ je stav ktorý sme označili číslom $$1$$, $$\ket{init}$$ môže byť označenie začiatočného stavu. Často sa stretnete aj s takýmto zápisom: $$\ket{x}$$. Tu si treba uvedomiť, že $$x$$ nie je premenná, ale nejaká konkrétna hodnota $$x$$.
 
 #### Bra $$\bra{.}$$
 Bra sú lineárne funkcionály na stavovom priestore. Funkcionál je mlynček. Na vstupe vezme stav&#160;a do klobások natlačí číslo.
@@ -102,7 +102,7 @@ $$
 
 Ako ale zraziť tento zápis do jedného riadku? Na to, aby to bolo možné, je potrebné, aby bola báza zložená z $$\ket{\psi_1}$$ a $$\ket{\psi_2}$$ ortonormálna (Oprava: Naozaj nutné je len aby bola úplná, ale v takom prípade by bol celý postup obludný. Ako by vyzeral bra-ket zápis pre nenormovanú, neortogonálnu, a nakoniec neortogonálnu a nenormovanú bázu už nechávam na zvedavých a masochystických čitaťeľov).
 
-Takže:
+Z definície ortonormálnosti vyplýva:
 
 $$
 \begin{align}
@@ -122,7 +122,7 @@ A &= \begin{aligned}[t]
 \end{align}
 $$
 
-Zápis do dvoch riadkov je tu čisto estetický. Čo to teda vlastne znamená a prečo je to tak? Rozoberme si pôsobenie tohoto operátora na bázový stav $$\ket{\psi_1}$$. Najprv obyčajne roznásobím:
+Zápis do dvoch riadkov je tu čisto estetický, aby bola zrejmý súvis s maticovým zápisom. Čo to teda vlastne znamená a prečo je to tak? Rozoberme si pôsobenie tohoto operátora na bázový stav $$\ket{\psi_1}$$. Najprv obyčajne roznásobím:
 
 $$
 \begin{align}
@@ -134,13 +134,15 @@ A \ket{\psi_1} &= \begin{aligned}[t]
 \end{align}
 $$
 
-Teraz vďaka ortonormálnosti bude $$\braket{\psi_2 }{ \psi_1}=0$$ a  $$\braket{\psi_1 }{ \psi_1}=1$$. Takže prežije len prvý riadok, a teda:
+Teraz vďaka ortonormálnosti bude $$\braket{\psi_2 }{ \psi_1}=0$$ a  $$\braket{\psi_1 }{ \psi_1}=1$$. Skalárne súčiny v druhom riadku sú teda všetku nulové, prežije len prvý riadok:
 
 $$\begin{equation}
 A \ket{\psi_1} = a \ket{\psi_1} + b \ket{\psi_2}
 \end{equation}$$
 
-A je to. Obdobne pôsobí $$A$$ aj na stav $$\psi_2$$. **_Výraz $$\boldsymbol{c\ket{\psi_i}\bra{\psi_j}}$$ teda pôsobí tak, že vylúpne všetky $$\boldsymbol{\ket{\psi_j}}$$ a nahradí ich $$\boldsymbol{c \ket{\psi_i}}$$._**
+A je to. Obdobne pôsobí $$A$$ aj na stav $$\psi_2$$.
+
+**Výraz $$\boldsymbol{c\ket{\psi_i}\bra{\psi_j}}$$ teda pôsobí tak, že vylúpne všetky $$\boldsymbol{\ket{\psi_j}}$$ a nahradí ich $$\boldsymbol{c \ket{\psi_i}}$$.**
 
 Pekné, nie? Ako to bude pre všeobecný, viacrozmerný vektorový priestor (konečnorozmerný alebo spočítateľne nekonečnorozmerný)? Ľahko nahliadneme, že všeobecný operátor zapíšeme ako:
 
