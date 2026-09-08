@@ -32,7 +32,7 @@
 			{% assign abouts=site.pages | where: 'ref', 'about' |  where: 'lang', page.lang %}
         	{% assign about=abouts[0]%}
 		
-          <a href="{{ blog.url }}" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+          <a href="{{ blog.url }}" class="site-avatar"><img alt="my portrait - a man with blue eyes and long hair, in his thirties, in a pirate hat and striped shirt, behind a wheel." src="{{ site.avatar }}" /></a>
 
           <div class="site-info">
             <h1 class="site-name"><a href="{%if page.ref == 'about' %}{{about.url}}{%else%}{{blog.url }}{%endif%}">{{ site.t[page.lang].name }}</a></h1>
@@ -50,12 +50,12 @@
         <!-- this is weird, we assume that each page_ref has always just two langs, both are pages or both are posts -->
 				{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
 				{% for post in posts %}
-  				<a href="{{ post.url }}" class="{{ post.lang }}"><img src="{{ site.base_url}}/images/flags/{{post.lang}}.png" /></a></li>
+  				<a href="{{ post.url }}" class="{{ post.lang }}"><img alt="{{post.lang}}" src="{{ site.base_url}}/images/flags/{{post.lang}}.png" /></a></li>
 				{% endfor %}
 
 				{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
 				{% for page in pages %}
-				<a href="{{ page.url }}" class="{{ page.lang }}"><img src="{{ site.base_url}}/images/flags/{{page.lang}}.png" /></a></li>
+				<a href="{{ page.url }}" class="{{ page.lang }}"><img alt="{{page.lang}}" src="{{ site.base_url}}/images/flags/{{page.lang}}.png" /></a></li>
 				{% endfor %}
 				</div>
 			</div>
@@ -73,9 +73,9 @@
       <div class="container">
         <footer class="footer clearfix">
           <div class="left_block">
-          <a class= svg-icon download type="application/rss+xml"  href="{{ site.base_url }}/feed.xml" title="{{ site.title }}"><img src="{{ site.base_url}}/images/rss.svg" /></a>
-          <a class= svg-icon href="https://mastodonczech.cz/@janbogar"><img src="{{ site.base_url}}/images/mastodon.svg" /></a>
-          <a class= svg-icon href={%case page.lang %} {% when 'en' %} {{site.base_url}}/how-to-follow/ {% when 'sk' %}{{site.base_url}}/ako-ma-sledovat/{%endcase%}><img src="{{ site.base_url}}/images/facebook.svg" /></a>
+          <a class= svg-icon download type="application/rss+xml"  href="{{ site.base_url }}/feed.xml" title="{{ site.title }}"><img alt="rss feed" src="{{ site.base_url}}/images/rss.svg" /></a>
+          <a class= svg-icon href="https://mastodonczech.cz/@janbogar"><img alt="mastodon" src="{{ site.base_url}}/images/mastodon.svg" /></a>
+          <a class= svg-icon href={%case page.lang %} {% when 'en' %} {{site.base_url}}/how-to-follow/ {% when 'sk' %}{{site.base_url}}/ako-ma-sledovat/{%endcase%}><img alt="facebook" src="{{ site.base_url}}/images/facebook.svg" /></a>
           </div> 
           <div class="right_block"><div><img src="{{ site.base_url }}/images/no_ai.svg" alt="Stop sign with crossed out AI" height="30px" style="margin-bottom:-7px;">  No AI content</div><div>No cookies, because I don't track you</div></div>
       

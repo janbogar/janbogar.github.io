@@ -76,9 +76,11 @@ history.pushState(null, "", location.href.split("?")[0])};
     <img
       src="{{ site.baseurl }}/images/add.svg"
       class="collaps_button_unchecked"
+      alt="click to expand"
     /><img
       src="{{ site.baseurl }}/images/minus.svg"
       class="collaps_button_checked"
+      class="click to collaps"
     />  Filter</label></br>
   <div class="collapsible">
         {% for tag in site.taglist%}
@@ -108,7 +110,7 @@ history.pushState(null, "", location.href.split("?")[0])};
   </div>
     <div class="perex clearfix">
 		{%if post.thumbnail%}
-		      <a class="thumbnail" href="{{ site.baseurl }}{{ post.url }}" ><img alt={{post.title}} src="{{site.baseurl}}/{{post.thumbnail}}" /></a>
+		      <a class="thumbnail" href="{{ site.baseurl }}{{ post.url }}" ><img alt="{{post.title}}" src="{{site.baseurl}}/{{post.thumbnail}}" /></a>
 		{%endif%}
 		<div class= "excerpt">
         {{ post.excerpt }}

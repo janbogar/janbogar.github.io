@@ -75,6 +75,11 @@ $normal-line-height: 1.6;
 /* BASE RULES */
 /**************/
 
+:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}
+
 html {
   font-size: 100%;
 }
@@ -582,6 +587,12 @@ span.collapsible {
   color: $base_main;
   padding: 0px 5px;
  }
+
+.collapsible a {
+  color: $highlight_secondary;
+  &:hover, &:active {
+      text-decoration: underline;
+}}
 
 .collaps_button_checked {
   display: none;
