@@ -510,8 +510,11 @@ article .img-group img {
 /*    thumbnaily------------------------------------------------------------------------------------------*/
 
 .perex{
- white-space: nowrap;
  display: flex;
+ @include mobile {
+      display: block;
+    }
+ 
 }
 
 .excerpt{
@@ -523,7 +526,6 @@ article .img-group img {
 
 .thumbnail {
   margin:5px 10px 0px 0px;
-  vertical-align:top;
 }
 
 .thumbnail img {
