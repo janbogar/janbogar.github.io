@@ -373,16 +373,26 @@ nav {
   }
 }
 
-
-
 footer {
-  text-align: left;
+  align-items: center;
+}
+
+footer .left_block {
+  text-align:left;
+  float:left;
+  @include mobile {
+      float: none;
+      text-align: center;
+    }
 }
 
 footer .right_block {
-  display:block;
-  float: right;
   text-align:right;
+  float:right;
+  @include mobile {
+      float: none;
+      text-align: center;
+    }
 }
 
 .h3displayimg{

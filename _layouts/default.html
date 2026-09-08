@@ -71,12 +71,13 @@
 
     <div class="wrapper-footer">
       <div class="container">
-        <footer class="footer">
-
-      <a class= svg-icon download type="application/rss+xml"  href="{{ site.base_url }}/feed.xml" title="{{ site.title }}"><img src="{{ site.base_url}}/images/rss.svg" /></a>
-      <a class= svg-icon href="https://mastodonczech.cz/@janbogar"><img src="{{ site.base_url}}/images/mastodon.svg" /></a>
-      <a class= svg-icon href={%case page.lang %} {% when 'en' %} {{site.base_url}}/how-to-follow/ {% when 'sk' %}{{site.base_url}}/ako-ma-sledovat/{%endcase%}><img src="{{ site.base_url}}/images/facebook.svg" /></a>
-      <div class="right_block"><div><img src="{{ site.base_url }}/images/no_ai.svg" alt="Stop sign with crossed out AI" height="30px" style="margin-bottom:-7px;">  No AI content</div><div>No cookies, because I don't track you</div></div>
+        <footer class="footer clearfix">
+          <div class="left_block">
+          <a class= svg-icon download type="application/rss+xml"  href="{{ site.base_url }}/feed.xml" title="{{ site.title }}"><img src="{{ site.base_url}}/images/rss.svg" /></a>
+          <a class= svg-icon href="https://mastodonczech.cz/@janbogar"><img src="{{ site.base_url}}/images/mastodon.svg" /></a>
+          <a class= svg-icon href={%case page.lang %} {% when 'en' %} {{site.base_url}}/how-to-follow/ {% when 'sk' %}{{site.base_url}}/ako-ma-sledovat/{%endcase%}><img src="{{ site.base_url}}/images/facebook.svg" /></a>
+          </div> 
+          <div class="right_block"><div><img src="{{ site.base_url }}/images/no_ai.svg" alt="Stop sign with crossed out AI" height="30px" style="margin-bottom:-7px;">  No AI content</div><div>No cookies, because I don't track you</div></div>
       
         </footer>
       </div>
