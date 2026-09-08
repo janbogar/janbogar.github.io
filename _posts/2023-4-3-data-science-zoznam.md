@@ -14,7 +14,7 @@ Tento článok je pre teba, milá budúca dátová vedkyňa.
 Keď sa obzriem späť na svoju kariéru, nikdy nebol problém nájsť dostatok kvalitných a voľne dostupných učebných materiálov na internete. Mal som presne opačný problém - každý článok, video, tutoriál, kniha alebo nástroj sa tvárili ako tá najdôležitejšia vec na svete, bez ktorej sa v žiadnom prípade nezaobídem.
 To najťažšie bolo správne rozpoznať priority.
 
-Takže aby som ti s tým pomohol, tu je zoznam konceptov, ktoré by začínajúci dátový vedec mal poznať. Nie je to samozrejme jediná možná vzdelávacia cesta ani jediná správna definícia dátovej vedy (koniec koncov, je to veľmi vágne definovaná pracovná pozícia), ale je to dobrý kompromis medzi stručnosťou a úplnosťou. Ber tento zoznam ako odrazový mostík, ako niečo čo ťa povedie skôr, ako sa budeš vedieť viesť sama.
+Takže aby som ti s tým pomohol, tu je zoznam konceptov, ktoré by začínajúci dátový vedec mal poznať.
 "
 ---
 
