@@ -9,7 +9,7 @@ tags:
  - "this-and-that"
  - "programming"
 excerpt: >- 
-    "Great shirt/jacket/climbing shoes, but it comes only in pink!" That's what a complaint of an outdoors woman in an outdoor shop could sound like. Let's face it: gender stereotypes still hold our society firmly in their grasp. Even the toughest women, with climbs so hard that most men can only dream of being that good, can't easily avoid pink outdoor clothes, even if they wanted to. Supply is simply limited. Or is it?
+    "Great shirt/jacket/climbing shoes, but it comes only in pink!" That's what a complaint by an outdoors woman in an outdoor shop could sound like. Let's face it: gender stereotypes still hold our society firmly in their grasp. Even the toughest women, with climbs so hard that most men can only dream of being that good, can't easily avoid pink outdoor clothes, even if they wanted to. Supply is simply limited. Or is it?
 ---
 <img alt="mysterious girl in pink" src="{{site.baseurl}}/images/pink-is-for-girls/pic.jpeg" />
 
@@ -21,7 +21,7 @@ How is it really? How much of the women's outdoor equipment is actually pink? An
 
 Me, of course! I used mighty computer kung-fu and downloaded all images of clothes and shoes from internet shops sport-outdoor.sk and hudy.sk {% include collapsible.html content= "Approximately 5000 images overall. Offer of both shops covers most of the major brands."%}, cut out the background from them and made a statistical overview of colors used for both men's and women's items.{% include collapsible.html content= "In short: python, scrapy, numpy, mpld3 and this [code](https://mail.python.org/pipermail/image-sig/2010-April/006220.html) of floodfil algorithm with treshold. Here is my [source code](https://github.com/janbogar/small_projects/tree/master/pink_is_for_girls)"%}
 
-Here are the results in the form of two most colorful plots I have ever created.
+Here are the results in the form of the two most colorful plots I have ever created.
 
 <script>
 function showPlot1() {
@@ -124,7 +124,7 @@ if(typeof(mpld3) !== "undefined" && mpld3._mpld3IsLoaded){
 showPlot1();
 </script>
 
-It's immediately obvious that women's items really tend towards violet, turquoise, red and yes, pink too. Men's wear, on the other hand, tends (surprisingly) towards, yellow, green, orange and (unsurprisingly) towards dark colors. The color blue is interesting, because contrary to the stereotype, blue doesn't dominate for men. Differences between men's and women's clothes are however smaller than 10% percent of all items.
+It's immediately obvious that women's items really tend towards violet, turquoise, red and yes, pink too. Men's wear, on the other hand, tends (surprisingly) towards yellow, green, orange and (unsurprisingly) towards dark colors. The color blue is interesting because, contrary to the stereotype, blue doesn't dominate for men. Differences between men's and women's clothes are, however, smaller than 10 % of all items.
 
-Moral of the story? Maybe this: on that picture at the beginning of the article is not just some random girl, but Sasha DiGuilian - top athlete, one of the best climbers in the world and according to her own words a huge fan of everything pink. So the moral is, wear whatever you like, even pink if you want to. Maybe some of the DiGuilian magic will rub off on you and you too will onsight some 8b+ route - and even if not, at least it will make your day a bit more cheerful.
+Moral of the story? Maybe this: on that picture at the beginning of the article is not just some random girl, but Sasha DiGiulian – top athlete, one of the best climbers in the world and, according to her own words, a huge fan of everything pink. So the moral is: wear whatever you like, even pink if you want to. Maybe some of the DiGiulian magic will rub off on you and you too will onsight some 8b+ route – and even if not, at least it will make your day a bit more cheerful.
 
