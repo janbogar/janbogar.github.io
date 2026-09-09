@@ -116,27 +116,15 @@ t:
 # key value is used in front matters and to reference a tag in url parameters
 # this structure was chosen so that config has map between en and sk tags
 taglist: 
-  easy:
-    en: "easier"
-    sk: "ľahšie"
-  hard:
-    en: "harder"
-    sk: "ťažšie"
   physics:
     en: physics
     sk: fyzika
-  math:
-    en: math
-    sk: matematika
-  science:
-    en: science
-    sk: veda
   this-and-that:
-    en: this and that
+    en: this&nbsp;and&nbsp;that
     sk: všeličo
   nepali-diary:
-    en: Nepali diari
-    sk: nepálsky zápisník
-  programming:
-    en: programming
-    sk: programovanie
+    en: Nepali&nbsp;diari
+    sk: nepálsky&nbsp;zápisník
+  data-science:
+    en: data&nbsp;science
+    sk: dátová&nbsp;veda

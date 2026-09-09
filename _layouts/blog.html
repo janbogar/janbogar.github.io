@@ -8,13 +8,13 @@ chosen_tag: nil
 <script>
 // post filtering
 
-function containsAll(ar1,ar2){
-  for (x of ar2){
-    if (!ar1.contains(x)){
-      return false
+function containsAny(ar1,ar2){
+  for (x of ar1){
+    if (ar2.includes(x)){
+      return true
     }
   }
-  return true
+  return false
 }
 
 function setPostsDisplay(visible_tags){
@@ -26,7 +26,7 @@ function setPostsDisplay(visible_tags){
     }
   else {
     for (post of posts){
-      if (containsAll(post.classList,visiblePostClasses)){ // with filters, show intersection of selected tags
+      if (containsAny(post.classList,visiblePostClasses)){ // with filters, show union of selected tags
           post.style.display = "block"     
         }
       else
@@ -50,7 +50,6 @@ function filterPosts(){
 // check checkboxes because of links or url query parameters
 // also displays filters
 function checkCheckboxes(tags){
-  document.getElementById("tagfilter_collaps").checked=true
   for (checkbox of getCheckboxes()){
     checkbox.checked = tags.includes(checkbox.id)
   }
@@ -71,24 +70,13 @@ history.pushState(null, "", location.href.split("?")[0])};
 </script>
 
 <div id="tag_filter">
-    <input type="checkbox" class="collaps_checkbox" id="tagfilter_collaps"/>
-    <label class="collaps_button" for="tagfilter_collaps">
-    <img
-      src="{{ site.baseurl }}/images/add.svg"
-      class="collaps_button_unchecked"
-      alt="click to expand"
-    /><img
-      src="{{ site.baseurl }}/images/minus.svg"
-      class="collaps_button_checked"
-      class="click to collaps"
-    />  Filter</label></br>
-  <div class="collapsible">
+<span class="tag_filter_prompt">
+Filter:</span>
         {% for tag in site.taglist%}
           {% assign tag_ref=tag[0] %}
           {% assign tag_pretty=tag[1][page.lang] %}
           <input type="checkbox" class="tag_checkbox" id="{{tag_ref}}" onchange="filterPosts()"> <label class="tag_label" for="{{tag_ref}}">{{tag_pretty}}</label>
         {% endfor %}
-	</div>
 </div>
 
 <div class="posts">
