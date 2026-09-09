@@ -6,8 +6,7 @@ lang: en
 ref: data-science-checklist
 thumbnail: "images/data-science-checklist/datascience.webp"
 tags:
- - "this-and-that"
- - "programming"
+ - "data-science"
 excerpt: "I recently met someone who wants to learn data science - just like I did years ago!
 This blog post is for you, dear future data scientist.
 

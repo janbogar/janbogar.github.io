@@ -7,9 +7,7 @@ ref: operatory
 pormalink: /o-podprsenkach-mackach-a-operatoroch/
 thumbnail: "images/operatory/kat_and_bra.jpg"
 tags:
- - "hard"
  - "physics"
- - "science"
 ---
 <div style="display:none">
 $$

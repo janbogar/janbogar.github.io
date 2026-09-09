@@ -7,9 +7,7 @@ ref: priemerna_hmotnost_vsetkeho
 permalink: /priemerna-hmotnost-vsetkeho/
 thumbnail: "images/priemerna hmotnost/zemnavahach_biela.png"
 tags:
- - "easy"
  - "physics"
- - "science"
 ---
 Toto je jedna z tých úžasne hlúpych otázok, ktoré na prvý pohľad nedávajú zmysel, ale keď sa nad nimy človek zamyslí, tak sa toho kopec dozvie. Takže čo táto otázka vôbec znamená? Priemernú hmotnosť predsa vždy rátame rovnako: vezmem všetky veci z danej kategórie, zrátam dokopy všetky ich hmotnosti a vydelím to ich počtom. Priemerný Američan tak váži $$80 \mathrm{ kg}$$ a priemerný ananás $$ 2 \mathrm{ kg}$$. Priemerná hmotnosť všetkých Američanov a ananásov dokopy zas vyjde okolo $$ 3,5 \mathrm{ kg}$$ (ananásov je skrátka oveľa viac ako Američanov). No dobre, ale nás nezaujímajú nejaké takéto podmnožiny, my chceme priemernú hmotnosť VŠETKÉHO ! Galaxií, planét, tučniakov, atómov, kvarkov! Koľko to tak asi bude?
 

@@ -14,8 +14,7 @@ excerpt: >-
 
 scripts: [mathjax]
 tags:
- - "this-and-that"
- - "programming"
+ - "data-science"
 ---
 Jupyter notebook pre túto stránku nájdete na tomto [odkaze](https://github.com/janbogar/small_projects/blob/master/NN_vs_Conway/NN%20plays%20Conways%20Game%20of%20Life.ipynb).
 

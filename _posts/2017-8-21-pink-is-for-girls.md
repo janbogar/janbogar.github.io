@@ -6,8 +6,7 @@ ref: ruzova-je-pre-baby
 permalink: /ruzova-je-pre-baby/
 thumbnail: "images/pink-is-for-girls/sasha.jpg"
 tags:
- - "this-and-that"
- - "programming"
+ - "data-science"
 excerpt: '"Super tričko/mikina/lezečky, ale mali len v ružovej!" Tak približne znie jedna zo sťažností outdoorovo ladených žien nakupujúcich v outdoorovo ladených obchodoch.
 Rodové stereotypy majú skrátka našu spoločnosť pevne vo svojich pazúroch. Ani tie najdrsnejšie baby, ktoré by svojimi prelezmi mohli zahanbiť nejedného horala, sa ružovému outdoorovému oblečeniu len tak ľahko nevyhnú, a to aj keby chceli.
 Je to  skrátka tak, chýba ponuka. Alebo nie?'
