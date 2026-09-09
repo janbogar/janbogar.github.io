@@ -74,7 +74,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - CNAME
-  - materialy
+  - ignored
   - TODO.md
 
 blog_path:

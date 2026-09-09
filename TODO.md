@@ -16,8 +16,15 @@
 - [x]zmen farby vsetkeho svg
 - [x]self host fonts 
 - [x]atom feed
-- [ ]preklad blogu nech prenesie vybrate tagy skrz query
-- [ ]prepis average mass of everything ze average vymaze exception, takto to nie je nutne pravda (fat tails)
-- [ ]vycisti margins
+- [ ]preklad homepage nech prenesie vybrate tagy skrz query
+- [x]prepis average mass of everything ze average vymaze exception, takto to nie je nutne pravda (fat tails)
+- [x]vycisti margins
 - [x]zjednot ikony
 - [ ]plausible? - nie, je to drahe, ked tak nieco ine
+- [ ]gramatika operatorov
+- [ ]gramatika data science
+- [ ]gramatika average mass
+- [ ]gramatika conway
+- [ ]gramatika nepal
+- [ ]dopis cokoladovu hadanku
+- [ ]jazykovy filter both? a zvyraznit, ktory je vybraty, a nastavit oboje ako default

@@ -37,3 +37,10 @@ To build page:
 ```
 bundler exec jekyll build
 ```
+
+## Ignored
+Assets and materials that should not be part of site go to ignored folder.
+
+For example, icons.svg
+
+Ignored files are set in _config.yaml
