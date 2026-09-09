@@ -10,7 +10,7 @@ permalink: /how-to-follow/
 
 #### Following me on Facebook is like having your bank in a casino.
 
-It's designed to swindle you, track you, make you addicted, simply to use you.
+It's designed to swindle you, track you and make you addicted.
 
 If you still want to, my profile is [facebook.com/jan.bogar](https://facebook.com/jan.bogar), but I have some alternatives for you.
 
@@ -34,11 +34,15 @@ If you want to be notified when I write a new post on this blog, use an RSS feed
       <li>How often you should check for new content.</li>
     </ul>
   </li>
-  <li>On your machine (phone or computer), you have a program (typically browser extension or an app) that regularly looks at this file. If there is anything new, it will notify you. There are also web app feed readers.</li>
+  <li>On your machine (phone or computer), you have a program (typically browser extension or an app) that regularly connects to my blog and checks this file. If there is anything new, it will notify you. There are also web app feed readers.</li>
 </ol>
 
 <p>That’s it. You don’t have to remember to check whether there is something new. You don’t have to give anyone your email and wade through spam. You don't login anywhere, there is no tracking.
-You have control over your own attention. Here is a short <a href="https://aboutfeeds.com/">intro</a> to rss.</p></div></label>
+You have control over your own attention.
+
+In my phone, I use the <a href="https://play.google.com/store/apps/details?id=com.nononsenseapps.feeder.play">Feeder</a> app.
+
+Here is a short <a href="https://aboutfeeds.com/">intro</a> to rss.</p></div></label>
 {:/}
 
 I am well aware, that my longing for internet that is free, private and safe is quixotic. But the least I can do is walk away from the internet that is none of those things, at least to the extent which is practical. Follow me, if you dare.

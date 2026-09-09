@@ -95,6 +95,8 @@ t:
     read_more: "Read more"
     tags: "Tags"
     repo: "Repository"
+    ai: "No AI content"
+    cookies: "No cookies, because I don't track you"
   sk: 
     name: "Ján Bogár"
     description: "Osobná stránka"
@@ -107,6 +109,9 @@ t:
     read_more: "Čítaj ďalej"
     tags: "Tagy"
     repo: "Repositár"
+    ai: "Žiadny AI obsah"
+    cookies: "Žiadne cookies, pretože ťa nesledujem"
+
 
 # key value is used in front matters and to reference a tag in url parameters
 # this structure was chosen so that config has map between en and sk tags

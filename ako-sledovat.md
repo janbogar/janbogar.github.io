@@ -10,7 +10,7 @@ permalink: /ako-ma-sledovat/
 
 #### Sledovať ma na Facebooku je ako mať banku v kasíne.
 
-Je to prostredie stvorené na to, aby ťa oklamalo, špehovalo, urobilo závislým, skrátka zneužilo.
+Je to prostredie stvorené na to, aby ťa klamalo, špehovalo a urobilo závislým.
 
 Ak chceš aj napriek tomu pokračovať, môj profil je [facebook.com/jan.bogar](https://facebook.com/jan.bogar), ale mám pre teba pár alternatív.
 
@@ -35,11 +35,15 @@ Je to trochu zabudnutá, ale štandardná webová technológia.
       <li>Ako často je dobré kontrolovať, či je nový obsah.</li>
     </ul>
   </li>
-  <li>U teba (na počítači alebo telefóne) existuje program (typicky plugin v prehliadači alebo samostatné aplikácia), ktorá sa na tento súbor pravidelne pozrie. Ak je v ňom niečo nové, upozorní ťa.</li>
+  <li>U teba (na počítači alebo telefóne) existuje program (typicky plugin v prehliadači alebo samostatná aplikácia), ktorá sa na môj blog pravidelne pripojí a tento súbor skontroluje. Ak je v ňom niečo nové, upozorní ťa.</li>
 </ol>
 
 <p>To je všetko. Nepotrebuješ neustále kontrolovať obľúbené stránky, aby si zistil, čo je nové. Nikomu nemusíš dávať svoj email a brodiť sa spamom. Nikam sa neprihlasuješ, nikto ťa nešpehuje.
-Máš plnú kontrolu nad svojou pozornosťou. Tu je krátky <a href="https://aboutfeeds.com/">návod</a> ako na to.</p></div></label>
+Máš plnú kontrolu nad svojou pozornosťou.
+
+Ja v mobile používam aplikáciu <a href="https://play.google.com/store/apps/details?id=com.nononsenseapps.feeder.play">Feeder</a>.
+
+Tu je krátky <a href="https://aboutfeeds.com/">úvod</a> do rss.</p></div></label>
 {:/}
 
-Som si plne vedomý, že moja túžba po internete, ktorý by bol slobodný, súkromný a bezpečný, je donkichotská. Ale to najmenšie, čo môžem urobiť, je otočiť sa chrbtom internetu, ktorý taký nie je, aspoň pokiaľ je to praktické. Nasleduj ma, ak sa odvážiš.
+Som si plne vedomý, že moja túžba po internete, ktorý by bol slobodný, súkromný a bezpečný, je donkichotská. Ale to najmenej, čo môžem urobiť, je otočiť sa chrbtom internetu, ktorý taký nie je, aspoň pokiaľ je to praktické. Nasleduj ma, ak sa odvážiš.

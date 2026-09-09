@@ -279,25 +279,15 @@ img {
 }
 
 nav {
-  float: top;
   margin-top: 0px; // @TODO: Vertically middle align
   font-family: $special;
   font-size: 18px;
   text-align:center;
 
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
-
   a {
     margin-left: 20px;
     color: $highlight_main;
-    text-align: center;
     font-weight: 300;
-    letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
@@ -530,20 +520,13 @@ article .img-group img {
 
 .thumbnail img {
   max-width: 200px;
-}
-
-
-.thumbnail + .excerpt{
-  display:inline-block;
-  vertical-align:top;
-
   @include mobile {
-   display:block;
-   margin:auto;
-   max-width:none;
-  }
+      max-width: 100%;
+      max-height: 250px;
+    }
 
 }
+
 
 /* definition lists --------------------------------------------------------------------*/
 
