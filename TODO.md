@@ -1,0 +1,30 @@
+- [x]oprav link na stranku Sashi di Gulian
+- [x]prepis v NN vs Conway ze je to hlupe, to je prilis velka skratka
+- [x] krajsie fonty
+- [x]inak ries tagy
+  - [x] lepsi dizajn
+  - [x] zvyrazni link aj v tagpage
+  - [x] automaticky generuj veci pre tagy (ruby script?)
+- [x] nahrad toggle cistym css 
+- [x]menej adolescentne intro
+- [x]krajsi dizajn
+- [x]pridaj readme, je to fakt pain sa v tom teraz zorientovat
+- [x]odstran github
+- [x]update picture
+- [ ]cv
+- [x]zmen temu
+- [x]zmen farby vsetkeho svg
+- [x]self host fonts 
+- [x]atom feed
+- [ ]preklad homepage nech prenesie vybrate tagy skrz query
+- [x]prepis average mass of everything ze average vymaze exception, takto to nie je nutne pravda (fat tails)
+- [x]vycisti margins
+- [x]zjednot ikony
+- [x]plausible? - nie, je to drahe, ked tak nieco ine
+- [ ]gramatika operatorov
+- [ ]gramatika data science
+- [ ]gramatika average mass
+- [ ]gramatika conway
+- [ ]gramatika nepal
+- [ ]dopis cokoladovu hadanku
+- [ ]jazykovy filter both? a zvyraznit, ktory je vybraty, a nastavit oboje ako default, alebo aspon prelozit conway

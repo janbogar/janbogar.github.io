@@ -6,21 +6,89 @@
 //
 
 @import "reset";
-@import "variables";
 // Syntax highlighting @import is at the bottom of this file
+
+//local fonts
+
+@font-face {
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+src:
+  local("Nunito"),
+  url(./assets/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: italic;
+  font-weight: 400;
+  src:
+    local("Nunito"),
+    url(./assets/Nunito-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: local("Roboto"),url(./assets/Roboto-VariableFont_wdth,wght.ttf);}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: local("Roboto"), url(./assets/Roboto-Italic-VariableFont_wdth,wght.ttf);
+  }
+
+//
+// VARIABLES
+//
+
+// Colors
+$content: #fce5cd;
+$highlight_secondary: #ff9010;
+$highlight_main: #fadb88;
+$structure: #8bffff;
+$base_secondary:#fceac9;
+$base_main: #212131;
+$background: #13131b;
+
+// Font stacks
+$normal: "Nunito", sans-serif;
+$special: "Roboto", sans-serif;
+
+$fontsize: 18px;
+
+$normal-line-height: 1.6;
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 740px) {
+    @content;
+  }
+}
 
 /**************/
 /* BASE RULES */
 /**************/
+
+:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}
 
 html {
   font-size: 100%;
 }
 
 body {
-	background: $white;
-  font: 14px/1.4 $helvetica;
-  color: $darkGray;
+  font: $fontsize $normal;
+  line-height: $normal-line-height;
+  color: $content;
+  background-color: $background;
   text-align: justify;
 }
 
@@ -28,29 +96,27 @@ body h1, body h2, body h3, body h4{
   text-align: left;}
 
 .container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
+  margin: 20px auto;
+  max-width: 900px;
+  padding: 20px;
   width: 100%;
+  border: 1px solid $structure;
+  border-radius: 15px;
+  background-color: $base_main;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-/*  color: $darkerGray; */
-  color: $myorange;
+  font-family: $special;
+  color: $highlight_main;
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 0.6em 0px;
   padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 28px;
   a {
     color: inherit;
   }
@@ -66,7 +132,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: $structure;
 }
 
 p {
@@ -74,12 +140,12 @@ p {
 }
 
 a {
-  color: $myorange;
+  color: $highlight_main;
   text-decoration: none;
   cursor: pointer;
   outline: 0;
   &:hover, &:active {
-    color: $myorange;
+    color: $highlight_secondary
   }
 }
 
@@ -116,24 +182,19 @@ img {
   max-width: 100%;
 }
 
-// Fixes images in popup boxes from Google Translate
-.gmnoprint img {
-  max-width: none;
-}
-
 .date {
   font-style: italic;
-  color: $gray;
+  color: $structure;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
-  background: $lightGray;
+  color: $base_main;
+  background: $highlight_main;
 }
 ::selection {
-  color: $black;
-  background: $lightGray;
+  color: $base_main;
+  background: $highlight_main
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -156,14 +217,7 @@ img {
 // .masthead
 //
 
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
-
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
-
   @include mobile {
     text-align: center;
   }
@@ -198,9 +252,9 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $highlight_main;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $special;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -212,7 +266,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $content;
   font-size: 16px;
 
   @include mobile {
@@ -221,25 +275,15 @@ img {
 }
 
 nav {
-  float: top;
   margin-top: 0px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $special;
   font-size: 18px;
   text-align:center;
 
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
-
   a {
     margin-left: 20px;
-    color: $darkGray;
-    text-align: center;
+    color: $highlight_main;
     font-weight: 300;
-    letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
@@ -250,7 +294,7 @@ nav {
 .language_select {
   float: right;
   margin-top: 10px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $special;
   font-size: 18px;
   text-align: center;
 
@@ -264,7 +308,7 @@ nav {
   a {
 	float: none;
     margin-left: 20px;
-    color: $darkGray;
+    color: $highlight_main;
     text-align: center;
     font-weight: 300;
     letter-spacing: 1px;
@@ -291,7 +335,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $structure;
 }
 
 .posts > .post:last-child {
@@ -302,9 +346,9 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 2px solid $structure;
     padding: 0.1em 1em;
-    color: $gray;
+    color: $highlight_main;
     font-size: 22px;
     font-style: italic;
   }
@@ -320,35 +364,26 @@ nav {
   }
 }
 
-.wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
-}
-
 footer {
-  padding: 20px 0;
-  text-align: center;
+  align-items: center;
 }
 
-/*    collapsible class ------------------------------------------------------------------------------------------*/
-
-.collapsible{
-	display:none;	
+footer .left_block {
+  text-align:left;
+  float:left;
+  @include mobile {
+      float: none;
+      text-align: center;
+    }
 }
 
-span.collapsible {
-    color: $darkGray;
-    background-color: $lightGray;}
-
-span.collapsible::-moz-selection {
-  color: $white;
-  background: $gray;
-}
-span.collapsible::selection {
-  color: $white;
-  background: $gray;
+footer .right_block {
+  text-align:right;
+  float:right;
+  @include mobile {
+      float: none;
+      text-align: center;
+    }
 }
 
 .h3displayimg{
@@ -379,34 +414,80 @@ span.collapsible::selection {
 	bottom:-3px;
 }
 
+//
+// svetle pozadie obrazkov
+//
+
+.lighter_background {
+  padding: 15px;
+  background-color: $base_secondary;
+}
 
 /*    Footer ------------------------------------------------------------------------------------------*/
 .svg-icon {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   display: inline-block;
+  margin: 0px 5px;
 }
 
 /*    Tagy ------------------------------------------------------------------------------------------*/
 
+// tags in posts
 .tags {
   font-style: italic;
-  color: $gray;
-  a {color: $gray;
-     &:hover, &:active {
-    color: $myorange;
-  }}
+}
 
+// tag filtering menu
+#tag_filter{
+  margin-top: 5px;
+}
+
+.tag_filter_prompt{
+  color: $highlight_main;
+  font-family: $special;
+  font-weight: bold;
+}
+
+.tag_checkbox
+  {
+  display:none;
+  }
+
+.tag_label
+  {
+    border: 1px solid $structure;
+    border-radius: 5px;
+    margin: 5px;
+    color: $structure;
+    background-color: $base_main;
+    padding: 1px 5px;
+  }
+
+.tag_checkbox:checked + .tag_label {
+  color:$base_main;
+  background-color: $structure;
+  
 }
 
 /*    Filter ------------------------------------------------------------------------------------------*/
 
 
 /*    obrazky na strankach postov zarovnane na stred------------------------------------------------------------------------------------------*/
-article img {
+article  img {
   max-width: 100%;
   display: block;
   margin: auto;
+}
+
+article .lighter_background {
+  margin: auto;
+  display: block;
+  width: fit-content;
+}
+
+.lighter_background img{
+  margin: 0px;
 }
 
 /*    skupiny obrazkov zarovnane na stred a vedla seba stred------------------------------------------------------------------------------------------*/
@@ -421,47 +502,39 @@ article .img-group img {
 /*    thumbnaily------------------------------------------------------------------------------------------*/
 
 .perex{
- white-space: nowrap;
+ display: flex;
+ @include mobile {
+      display: block;
+    }
+ 
 }
 
 .excerpt{
  white-space: normal;
 }
+.excerpt > p {
+  margin-top: 0px;
+}
 
 .thumbnail {
-  margin:15px 10px;
-  width: 200px;
-  display:inline-block;
-  vertical-align:top;
-  @include mobile {
-   display:block;
-   margin:auto;
-  }
+  margin:5px 10px 0px 0px;
 }
 
 .thumbnail img {
-  max-height: 300px;
-}
-
-
-.thumbnail + .excerpt{
-  display:inline-block;
-  vertical-align:top;
-  max-width:489px;
-
+  max-width: 200px;
   @include mobile {
-   display:block;
-   margin:auto;
-   max-width:none;
-  }
+      max-width: 100%;
+      max-height: 250px;
+    }
 
 }
+
 
 /* definition lists --------------------------------------------------------------------*/
 
 dt{
   //font-weight: bold;
-  color:$gray;
+  color:$structure;
 }
 
 dd{
@@ -470,9 +543,9 @@ dd{
 
 /* buttons --------------------------------------------------------------------*/
 button {
-    background-color: $myorange;
+    background-color: $highlight_main;
     border: none;
-    color: white;
+    color: $base_main;
     padding: 10px 32px;
     text-align: center;
     text-decoration: none;
@@ -480,9 +553,71 @@ button {
     font-size: 16px;
 }
 
-/*
-@import "flexslider";
-*/
+/*    collapsible class ------------------------------------------------------------------------------------------*/
+
+span.clickable{
+  color: $highlight_main;
+    cursor: pointer;
+    &:hover,
+    &:active {
+      color: $highlight_secondary
+    }
+
+}
+
+.collaps_checkbox {
+  display: none
+}
+
+.collaps_checkbox:checked ~ .collapsible {
+  display: inline;
+}
+
+.collapsible {
+  display: none;
+
+}
+
+span.collapsible {
+  display: none;
+  background-color: $base_secondary;
+  color: $base_main;
+  padding: 0px 5px;
+ }
+
+.collapsible a {
+  color: $highlight_secondary;
+  &:hover, &:active {
+      text-decoration: underline;
+}}
+
+.collaps_button_checked {
+  display: none;
+  height: 16px;
+}
+
+.collaps_button_unchecked {
+  display: inline;
+  height: 16px;
+}
+
+.collaps_checkbox:checked ~ .collaps_button_checked {
+  display: inline;
+}
+
+.collaps_checkbox:checked ~ .collaps_button_unchecked {
+  display: none;
+}
+
+
+// for taglists
+.collaps_checkbox:checked + label .collaps_button_checked {
+  display: inline;
+}
+
+.collaps_checkbox:checked + label .collaps_button_unchecked {
+  display: none;
+}
 
 @import "lightslider";
 
@@ -498,5 +633,4 @@ html * {
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
-@import "svg-icons";
 

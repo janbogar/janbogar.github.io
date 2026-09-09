@@ -1,46 +1,46 @@
 ---
 layout: post
-title: Neural networks vs Conway's Game of Life
-lang: en
+title: Neurónové sieťe vs. Conwayova hra života
+lang: sk
 ref: nn-vs-conway
-permalink: /nn-vs-conway
+permalink: /nn-vs-conway-sk
 thumbnail: images/nn-vs-conway/glider.gif
 excerpt: >-
-    I scrolled past some video thumbnail about playing Conway's Game of life with neural networks, and I have to admit that my first thought was "Pft, that's stupid". I thought that "playing the game" meant actually computing and carying out the game's rules - a task where any use of neural networks would make absolutely no sense. Of course, the video actually turned out awesome, because what it meant by "playing the game" was coming up with interesting patterns - a perfect task for neural networks.
+    Preskroloval som okolo ukážky nejakého videa o hraní Conwayovej hry života pomocou neurónovej siete a priznávam, že moja prvá reakcia bola: "Pff, to je blbosť". Myslel som totiž, že "hraním hry" sa myslí samotné aplikovanie jej pravidiel — úloha, pri ktorej akékoľvek použitie neurónových sietí nedáva zmysel. Nakoniec sa samozrejme ukázalo, že video bolo skvelé, pretože "hraním hry" myslelo vymýšľanie rôznych zaujímavých obrazcov, na čo sa neurónky naopak perfektne hodia.
 
 
-    But what if we stuck with the first meaning for a moment, how stupid would that be? A lot, actually. Consider that the weights of the neural network that plays the game can be easily set by hand (as we will see). No amount of stupidness should stop us from doing something interesting though. Who knows, maybe we will learn something new?'
+    Ale čo keby sme zostali pri tom prvom význame "hrania hry"? Ako stupídne by bolo použiť na to neurónovú sieť? Vlastne celkom dosť. Uvážte, že váhy takej neurónovej siete sa dajú spočítať a zadať ručne. Ale žiadne množstvo stupídnosti by nám nemalo zabrániť urobiť niečo zaujímavé. Kto vie, možno sa pri tom niečo naučíme?
+
+
 scripts: [mathjax]
 tags:
  - "data-science"
 ---
-Jupyter notebook for this page can be found [here](https://github.com/janbogar/small_projects/blob/master/NN_vs_Conway/NN%20plays%20Conways%20Game%20of%20Life.ipynb).
+Jupyter notebook pre túto stránku nájdete na tomto [odkaze](https://github.com/janbogar/small_projects/blob/master/NN_vs_Conway/NN%20plays%20Conways%20Game%20of%20Life.ipynb).
 
 {{page.excerpt}}
 
-In this notebook, we:
- - Write down a neural network that plays the Game of Life.
- - Implement it in Python with PyTorch.
- - Set its weights by hand, so it perfectly emulates the rules of the game.
- - We train it to perfect accuracy from random initialization, just to see how hard it is. Turns out, not that easy. 
-
-And yes, stupidness is a real word.
+V tomto článku:
+ - Navrhneme neurónovú sieť, ktorá bude hrať Conwayovu hru života.
+ - Implementujeme ju v Pythone pomocou Pytorch.
+ - Nastavíme ručne jej váhy tak, aby perfektne simulovala pravidlá hry.
+ - Natrénujeme ju do perfektnej presnosti z náhodnej inicializácie, len aby sme zistili, aké je to ťažké. Ukáže sa, že celkom dosť.
 
 ![glider_gun.gif]({{site.baseurl}}/images/nn-vs-conway/Gospers_glider_gun.gif)
 
-## Rules of the game
-The [Game of Life](https://en.wikipedia.org/wiki/Conway's_Game_of_Life) is played in turns on a grid of square cells, which can be dead or alive. State of the cell on the next turn will be:
- - Alive, if it is dead and has three live neighbors.
- - Alive, if it is alive and has two or three live neighbors.
- - Dead otherwise.
+## Pravidlá hry
+[Conwayova hra života](https://cs.wikipedia.org/wiki/Hra_%C5%BEivota) sa hrá na štvorcovej mriežke, kde každá bunka (tzn. políčko) môže byť živá alebo mŕtva. Hrá sa na kolá a to, či bude v nasledujúcom kole bunka živá alebo mŕtva, určujú tieto tri pravidlá:
+ - Živá, ak je teraz mŕtva a má troch živých susedov.
+ - Živá, ak je teraz živá a má dvoch alebo troch živých susedov.
+ - Mŕtva v ostatných prípadoch.
  
-Neighbors are the eight cells both side by side and diagonally adjacent to the cell. These simple rules, applied every turn, produce wonderfully complex and chaotic patterns.{% include collapsible.html content=" If you can't figure out how to win this game, it's a single player game and the winner is anyone who enjoys themselves watching the strange patterns evolve."%}
+Susedov bunky tvorí všetkých 8 políčok okolo nej — vertikálne, horizontálne aj diagonálne susediace. Tieto jednoduché pravidlá, aplikované v každom kole, vedia vytvoriť úžasne zložité a chaotické vzory.{% include collapsible.html content=" Ak rozmýšľate, ako sa takáto hra dá vyhrať, tak je to hra pre jedného a vyhráva každý, koho baví, ako podivne sa obrazce na ploche vyvíjajú."%}
 
-These rules are a natural "if else" algorithm processing boolean values. It really makes no sense, from performance standpoint or otherwise, to replace it with a neural network, which is a comparably complicated chain of weighted sums and nonlinear functions on (typically) 64-bit floats.
+Tieto pravidlá prirodzene tvoria jednoduchý algoritmus obsahujúci "if else" podmienku a boolovské (tzn. binárne) premenné. Pre taký jednoduchý algoritmus naozaj nedáva zmysel, kvôli výkonu alebo z iného dôvodu, nahradiť ho neurónovou sieťou — zložitým reťazcom vážených súm a nelineárnych funkcií, ktoré miesto binárnych premenných operujú s (typicky) 64 bitovými číslami.
 
-We can write the rules as a function. The input will be a 3x3 array, with values 1 or 0 for live and dead cells respectively, and output will be the value for the center cell on the next turn. We could then apply this function to every 3x3 square on the grid on each turn to get the cell values for the next turn. This would not be the most efficient implementation {% include collapsible.html content='for that, see [this video](https://www.youtube.com/watch?v=ndAfWKmKF34)' %}, but it's elegant, and as we will see, also useful in our endeavor to misuse neural nets.
+Tieto pravidlá implementujeme ako funkciu. Vstup do nej bude pole s rozmermi 3x3, s hodnotami 1 a 0 pre živé a mŕtve bunky a výstup bude hodnota prostrednej bunky v ďalšom kole. Túto funkciu by sme potom mohli v každom kole aplikovať na každú 3x3 oblasť hracej plochy, a dostali by sme tak hodnoty políčok v ďalšom kole. Nie je to najefektívnejšia implementácia {% include collapsible.html content='Efektívnu implementáciu nájdete napríklad v [tomto videu](https://www.youtube.com/watch?v=ndAfWKmKF34)' %}, ale je elegantná a ako uvidíme, zíde sa nám aj pri našej snahe zneužívať neurónové siete.
 
-Here is such implementation of the rules, together with a function that generates all possible 3x3 squares (useful for testing and training).
+Tu je táto funkcia v Pythone, spolu s funkciou, ktorá generuje všetky možné polia 3x3 (zíde sa nám pri trénovaní a testovaní).
 
 ```python
 import torch
@@ -114,31 +114,30 @@ else:
     Everything checks out!
 
 
-## How to turn this to a neural network?
+## Ako z toho urobiť neurónovú sieť?
 
-The usual way of doing things is machine learning: we define the structure of the neural network and then we train it, that is, we use some algorithm (e.g. gradient descent) to tweak its free parameters until its output resembles the desired one.
+Obvyklým spôsobom je použiť strojové učenie — ručne definujeme štruktúru neurónovej siete a potom ju natrénujeme, tzn. použijeme nejaký algoritmus (napr. gradientný zostup) na postupné pošťuchovanie jej parametrov až kým nebude jej výstup dostatočne pripomínat výstup, ktorý chceme.
 
-But we don't have to do that. Neural networks are just a special class of functions, like "quadratic functions" or "Fourier series" etc. We can just think really hard and write down its structure and parameters directly.
+Ale nemusíme to tak robiť. Neurónové siete sú len špeciálna trieda parametrických funkcií, podobne ako "kvadratické funkcie" alebo "Fourierove rady" a podobne. Môžeme sa skrátka tuho zamyslieť a prísť s potrebnými parametrami sami.
 
-Here are a few insights that will help us do that:
- - We already implemented the rules as a function that takes a 3x3 square, which we can then apply to every such square on the grid. But that's exactly what convolutional neural networks do! So we are looking for a convolutional network with a 3x3 kernel.
- - A single neuron with two inputs can compute a logical AND function (or other logical functions, see [this page](https://towardsdatascience.com/perceptrons-logical-functions-and-the-xor-problem-37ca5025790a)).
- - We can exploit the symmetry of the rules. Rules are the same for every neighbor of the cell, their positions don't matter. The network can therefore also have this symmetry and all weights on the perimeter of the kernel can be the same (but don't necessary have to be).
+Tu je pár vhľadov, ktoré nám s tým pomôžu:
+ - Pravidlá sme už implementovali ako funkciu, ktorá má na vstupe pole 3x3 a ktorú potom postupne aplikujeme na každé také pole na hracej ploche. To je ale predsa presne to, čo robia konvolučné neurónové siete! Takže hľadáme konvolučnú neurónovú sieť s 3x3 konvolučným filtrom.
+ - Jediný neurón s dvoma vstupmi dokáže simulovať logickú AND funkciu (alebo ľubovoľnú inú logickú funkciu, viď. [túto stránku](https://towardsdatascience.com/perceptrons-logical-functions-and-the-xor-problem-37ca5025790a)).
+ - Môžeme využiť symetriu pravidiel hry. Z pohľadu pravidiel sú si všetky susedné bunky rovnocenné, na ich polohe nezáleží, závisí len na celkovom poočte živých susedov. Neurónová sieť teda tiež môže mať túto symetriu, a všetky váhy na obvode konvolučného filtra môžu byť rovnaké (nemusí to tak nutne byť, ale hodí sa nám to).
 
-Based on these, here is a neural network implementation of the rules. It's basically a direct rewrite of `conway_rule` function into a neural network. Keep in mind this implementation is not unique.
+
+Na základe týchto myšlienok, tu je implementácia pravidiel hry pomocou neurónovej siete. Je to v podstate priamy prepis funkcie`conway_rule` do neurónovej siete. Pamätajte ale, že táto implementácia nie je jediná možná.
 
 <div style="background-color:white;padding:10px">
-<img alt="neural network" src="{{site.baseurl}}/images/nn-vs-conway/neural_network.png">
+<img alt="neurónová sieť" src="{{site.baseurl}}/images/nn-vs-conway/neural_network.png">
 </div>
+No a to je všetko. Vždy, keď aplikujeme túto konvolučnú sieť na hracie pole, vypočíta, akú hodnotu bude mať každá bunka v budúcom kole.
 
-And that's it! Every time we apply this neural network to a grid, it will compute cell values for the next turn.
+## Okrajové podmienky
 
-## Boundaries
+Hra by sa mala hrať na nekonečnej mriežke. Keďže by to bolo celkom náročné implementovať, nahradíme to mriežkou, ktorá je konečná, ale napája sa sama na seba — každá bunka na okraji hracej plochy bude brať ako svojich susedov aj zodpovedajúce bunky z opačného okraja plochy. Tejto finte sa hovorí aj periodické okrajové podmienky a je to to isté, ako keby sme nehrali na nekonečnej rovine, ale na toruse.
 
-The game should be played on an infinite grid. Since that would be quite complicated to implement, we instead opt for the finite grid which loops around: every cell on the edge is a neighbor to the corresponding cell on the opposite edge. This is also called periodic boundary conditions, and it's equivalent to having the grid not on a plane, but on a torus.
-
-We achieve this looping around by simply padding the grid during the preprocessing step. We also make it optional, so when we turn the padding off and run the network on a 3x3 grid, the output is just the value for the center cell.
-
+Toto napojenie dosiahneme jednoducho tak, že k neurónovej sieti pridáme prípravný krok (preprocessing), počas ktorého ku každému okraju hracej plochy skrátka prilepíme bunky z jej opačného okraja. Tento preprocessing bude voliteľný, takžo keď ho vypneme a sieť spustíme na mriežke 3x3, výstup bude len hodnota pre prostrednú bunku a nie pre všetky bunky na malom 3x3 toruse.
 
 ```python
 class ConwayStep(torch.nn.Module):
@@ -274,18 +273,18 @@ else:
     Everything checks out!
 
 
-# How to train the network
+# Ako natrénovať neurónovú sieť?
 
-This is straightforward:
- - Our dataset will contain all possible 3x3 squares and labels will be generated by the conway_rule function, because that's all the data we may need.
- - Batch size will be 1 (online learning)
- - We will use crossentropy loss and Adam optimizer, because these two are rarely a bad choice.
- - The metrics of interest will be loss and the area under ROC curve (`roc_auc`) computed on the whole dataset at the end of each epoch. If the network achieves perfect accuracy, roc_auc will be 1. Loss alone is hard to interpret, since it can decrease even if the model accuracy doesn't improve.
+Je to priamočiare:
+ - Náš trénovací dataset bude obsahovať všetky možné 3x3 mriežky a očakávané výstupy (labels) bude generovať funkcia `conway_rule`, pretože to sú skrátka všetky možné dáta, aké ku Conwayovej hre života môžu existovať.
+ - Použijeme online learning, čiže batch size bude 1.
+ - Ako loss funkciu použijeme cross entropiu a ako optimizátor Adam, pretože táto kombinácia je len málokedy zlou voľbou.
+ - Metriky, na ktoré sa zameriame, budú hodnota loss funkcie a oblasť pod ROC krivkou (`roc_auc`), vypočítané pre celý dataset na konci každej epochy. Keď dosiahne sieť perfektnú presnosť, jej roc_auc bude 1. Loss funkcia sama o sebe nemá takú jasnú interpretáciu, pretože môže klesať aj keď sa presnosť modelu už nemení.
 
-At least that was the plan, but it turned out that it takes really, really long time for the network to converge, if it converges at all. Sometimes we got lucky and the network converged after a few hundred epochs, sometimes it got stuck for thousands of epochs, depending on the random initialization. 
+Teda, aspoň takýto bol plán, ale ukázalo sa, že niekedy trvá sieti veľmi, veľmi dlho skonvergovať (ak vôbec skonverguje).
+Občas som mal šťastie a skonvergovala po pár stovkách epoch, občas sa zasekla na niekoľko tisíc epoch, v závislosti od počiatočnej náhodnej inicializácie siete.
 
-Turns out that Adam is not always the best choice. Somewhat surprisingly, ordinary stochastic gradient descent with learning rate 0.01 converges reliably in 200 epochs. Stochastic gradient descent with momentum converges even faster.
-
+Ukázalo sa, že Adam nie je vždy najlepšia voľba, pretože trochu prekvapivo, obyčajný stochastický gradientný zostup s learning rate hodnotou 0.01 skonvergoval spoľahlivo do 200 epoch. Stochastický gradientný zostup s hybnosťou skonvergoval ešte rýchlejšie.
 
 ```python
 net_trained=ConwayStep(handcrafted=False)
@@ -353,12 +352,13 @@ plt.legend()
 plt.show()
 ```
 
+
 <div class="lighter_background">
-<img src="{{site.baseurl}}/images/nn-vs-conway/NN%20plays%20Conways%20Game%20of%20Life_13_0.png" alt="plot of the metrics evolving during training">
+<img src="{{site.baseurl}}/images/nn-vs-conway/NN%20plays%20Conways%20Game%20of%20Life_13_0.png" alt="graf vývoja metrík počas tréningu">
 </div>
 
 
-That's it. The trained neural network achieved perfect accuracy, since the area under ROC is 1. Conveniently, threshold 0.5 perfectly separates the classes, so we don't need to set it to a different value. Now we can just sit back and enjoy some inefficiently computed glider action.
+To je celé. Natrénovaná neurónová sieť dosiahla perfektnú presnosť, keďže plocha pod ROC je 1. Pre nás veľmi pohodlne, threshold s hodnotou 0.5 perfektne oddeľuje obidve triedy (živé a mŕtve bunky), takže ho nemusíme nijak nastavovať. Môžeme sa skrátka pohodlne oprieť a užívať si tieto neefektívne vypočítané klzáky.
 
 
 ```python
@@ -392,9 +392,9 @@ for i in range(1,20):
 
 
 
-# Trained vs handcrafted
+# Ručne vs. strojovo
 
-Here are the weights of the trained neural network.
+Tu sú váhy našej natrénovanej neurónovej siete:
 
 
 ```python
@@ -417,14 +417,14 @@ net_trained.state_dict()
 
 
 
-We can see that the trained network is remarkably similar to our handcrafted one. Next plot shows how weights of the network changed during training. Pay attention to the second channel of first layer (orange). During the second leap in accuracy, all weights in it converged to the same value, which broke the symmetry between channels and enabled the model to fit the data perfectly.
+Vidíme, že trénovaná sieť je úžasne podobná tej, ktorú sme vytvorili ručne. Nasledujúci graf zobrazuje, ako sa váhy siete vyvíjali počas tréningu. Všímajte si druhý kanál prvej vrstvy (oranžové krivka). Počas druhého skoku v presnosti všetky váhy v tejto časti siete skonveregovali k rovnakej hodnote, čo prelomilo symetriu medzi kanálmi a umožnilo sieti perfektne fitnúť dáta.
 
 
 ```python
 keys=["max(perimeter of layer 1, channel 1)",
        "min(perimeter of layer 1, channel 1)",
        "center of layer 1, channel 1",
-       "bias of layer 1, channel 1",
+       "bias of layer 1, channel 1", 
        "max(perimeter of layer 1, channel 2)",
        "min(perimeter of layer 1, channel 2)",
        "center of layer 1, channel 2",
@@ -493,20 +493,21 @@ ax2.tick_params(axis='y', labelcolor=color)
 plt.show()
 ```
 
-
 <div class="lighter_background">
 <img src="{{site.baseurl}}/images/nn-vs-conway/NN%20plays%20Conways%20Game%20of%20Life_19_0.png"
-alt="Weights of the neural network evolving during training."></div>
+alt="Vývoj váh neurónovej siete počas tréningu."></div>
 
 
-## Why Adam failed?
+## Prečo Adam zlyhal?
 
-Short answer: I don't know yet.
+Krátka odpoveď: Ešte neviem.
 
-Long answer:
+Dlhá odpoveď:
 
-The idea with neural networks and gradient descent is that the parameter space is usually high dimensional (one dimension for each weight or bias of a neural network). In high dimensional spaces, local minima are usually rare, since for a point to be a minimum, it must be a minimum in every direction. With e.g. 1000 dimensions, that's pretty unlikely, so gradient descent should have nowhere to get stuck.
+Myšlienka za neurónovými sieťami a gradientným zostupom je, že priestor parametrov je väčšinou mnohorozmerný (jeden rozmer za každý jeden parameter siete). V priestoroch s vysokým počtom rozmerov sú väčšinou lokálne minimá funkcií vzácne, pretože na to, aby bol nejaký bod minimom funkcie, musí byť minimom v každom jednom rozmere. Keď je tých rozmerov napr. 1000, tak je niečo také celkom nepravdepodobné, a gradientný zostup sa teda nemá kde zaseknúť.
 
-But in our case, the network has just 23 parameters, and effectively even less. With Adam, network learned the symmetry of the data in just 100 epochs. Since then, all weights on the perimeter of the kernel were approximately the same, so in effect, our network had just 9 parameters. Usual assumptions about high dimensional spaces probably don't hold here.
+Lenže v našom prípade má sieť len 23 parametrov, efektívne ešte menej. Pri použití Adama sa sieť naučila symetriu dát za menej ako 100 epoch Od tej chvíle boli všetky váhy po obvode konvolučného filtra prakticky identické, takže efektívne mala naša sieť len 9 parametrov. Obvyklé predpoklady o mnohorozmerných priestoroch tu už možno neplatia.
 
-My guess is therefore that Adam got stuck in some plateau or local minimum and was unable to move from it. It seemed to me that it usually failed to break the symmetry between the channels. But why that happened and why exactly pure stochastic gradient descent fared better is a good question, which definitely shows that it is indeed possible to learn something even from doing stupid things.
+Môj odhad teda je, že Adam sa zasekol na nejakej plošine alebo v lokálnom minime a nevedel sa z neho dostať. Prišlo mi, že väčšinou nezvládol prelomiť symetriu medzi kanálmi. Ale prečo presne táto situácia nastala a prečo sa čistému gradientnému zostupu darilo lepšie sú dobré otázky, čo jasne dokazuje, že je naozaj možné sa niečo naučiť aj zo stupídnych nápadov.
+
+Anglická verzia tohoto článku bola zverejnená 23.9.2020.
