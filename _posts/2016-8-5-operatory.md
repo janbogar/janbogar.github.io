@@ -1,31 +1,34 @@
 ---
 layout: post
 title: 'O podprsenkách, mačkách a operátoroch'
-scripts: [mathjax, toggle]
+scripts: [mathjax]
 lang: sk
 ref: operatory
 pormalink: /o-podprsenkach-mackach-a-operatoroch/
+thumbnail: "images/operatory/kat_and_bra.jpg"
 tags:
- - "ťažká fyzika"
- - "veda"
+ - "physics"
 ---
+<div style="display:none">
 $$
 \newcommand{\refr}[1]{(\ref{#1})}
 \newcommand{\tvect}[2]{ \begin{pmatrix} #1 \\ #2 \end{pmatrix} }
 \newcommand{\bra}[1]{ \langle #1 \rvert }
 \newcommand{\ket}[1]{ \lvert #1 \rangle }
 \newcommand{\braket}[2]{ \langle #1 \lvert #2 \rangle }
-$$Ha, dostal som vás! Tento článok je&#160;v skutočnosti o kvantovej mechanike&#160;a Dirac, tvorca bra-ket notácie, sa teraz smeje vo svojom hrobe <a href="javascript:toggle('{% capture id %}1{%endcapture%}{{id}}');"><img src="{{ site.baseurl }}/images/add.svg" class="inlinedisplayimg" id="{{id}}_displayimg"/> <img src="{{ site.baseurl }}/images/minus.svg" class="inlinehideimg" id="{{id}}_hideimg"/>  \[{{id}}\]</a><span id="{{id}}" class="collapsible"> Aj keď je pravda, že táto interpretácia názvu bra&#160;v Diracovej dobe ešte pravdepodobne nebola možná. Termín bra pre podprsenku bol prvý krát použitý&#160;v Holandsku len 15 rokov pred zavedením bra-ket notácie a šíril sa len pomaly. </span>. Konkrétne sa tu dozviete niečo o bra a ket (to sú tie zobáčikové zátvorky $$\ket{}$$a $$\bra{}$$ )&#160;a hlavne&#160;o tom, ako pomocou nich zapisovať operátory&#160;v kvantovej mechanike. Tento článok je určený pre všetkých, ktorí si už s&#160;kvantovou mechanikou čo to odžili (študenti na Matfyze, ktorí sa práve boria s&#160;Kvantovkou&#160;I, sa sem rátajú), ale mätú ich tie divné zátvorky a čo s&#160;nimi občas ľudia stvárajú. Ak do tejto kategórie spadáte, čítajte ďalej.
+$$
+</div>
+Ha, dostal som vás! Tento článok je&#160;v skutočnosti o kvantovej mechanike&#160;a Dirac, tvorca bra-ket notácie, sa teraz smeje vo svojom hrobe. Chápete? Bra a ket, podprsenky a mačky? {% include collapsible.html content="V Diracovej dobe bola takáto interpretácia slova bra&#160; zrejme už možná (pretože slovo brassiere sa začalo skracovať na bra práve v 30-tych rokoch a bra-ket notácia vznikla v roku 1939), ale skôr to vyzerá, že to tak nemyslel."%} No dobre, poďme radšej ďalej. Konkrétne sa tu dozviete niečo o bra a ket (to sú tie zobáčikové zátvorky $$\ket{}$$a $$\bra{}$$ )&#160;a hlavne&#160;o tom, ako pomocou nich zapisovať operátory&#160;v kvantovej mechanike. Tento článok je určený pre všetkých, ktorí kvantovú mechanikou detailne študujú, napríklad práve navštevujú úvodný kurz na univerzite, ale mätú ich tie divné zátvorky a čo s&#160;nimi občas ľudia stvárajú. Ak do tejto kategórie spadáte, čítajte ďalej.
 
 Bra-ket notácia je skvelá&#160;v tom, že zachováva abstraktný charakter pojmov, ktoré ňou popisujeme,&#160;a nelipne na ich konkrétnej reprezentácií. Nezáleží na tom, či stavy popisovaného systému reprezentujeme ako usporiadané n-tice čísel, kvadraticky integrovateľné funkcie (a.k.a. vlnové funkcie), alebo nejakým iným obskúrnym spôsobom. Dôležité je len to, že sú to vektory. Funguje to takto:
 
 #### Ket $$\ket{.}$$
-Ket sú stavy systému. Sú to teda vektory zo stavového priestoru <a href="javascript:toggle('{% capture id %}2{%endcapture%}{{id}}');"><img src="{{ site.baseurl }}/images/add.svg" class="inlinedisplayimg" id="{{id}}_displayimg"/> <img src="{{ site.baseurl }}/images/minus.svg" class="inlinehideimg" id="{{id}}_hideimg"/>  \[{{id}}\]</a><span id="{{id}}" class="collapsible">Ak je fakt, že stavy sú vektory, pre vás novinka, tento článok vám nič nedá. Skúste najprv zelenú knižku alebo inú učebnicu a potom sa vráťte. </span> a môžeme ich sčitovať a násobiť komplexnými číslami. Pojmy stav&#160;a vektor tu budem teda voľne zamieňať. Čokoľvek vnútri zátvorky pritom slúži len ako nálepka, charakterizujúca konkrétny vektor. Napríklad $$\ket{1}$$ je stav ktorý sme označili číslom $$1$$, $$\ket{init}$$ môže byť označenie začiatočného stavu. Často sa stretnete aj s takýmto zápisom: $$\ket{x}$$. Tu si treba uvedomiť, že $$x$$ nie je premenná, ale nejaká konkrétna hodnota $$x$$.
+Ket sú stavy systému. Sú to teda vektory zo stavového priestoru {% include collapsible.html content= "Ak je fakt, že stavy sú vektory, pre vás novinka, tento článok vám nič nedá. Odporúčam si tento blog zazáložkovať a vrátiť sa neskôr. "%} a môžeme ich sčitovať a násobiť komplexnými číslami. Pojmy stav&#160;a vektor tu budem teda voľne zamieňať. Čokoľvek vnútri zátvorky pritom slúži len ako nálepka, charakterizujúca konkrétny vektor. Napríklad $$\ket{1}$$ je stav ktorý sme označili číslom $$1$$, $$\ket{init}$$ môže byť označenie začiatočného stavu. Často sa stretnete aj s takýmto zápisom: $$\ket{x}$$. Tu si treba uvedomiť, že $$x$$ nie je premenná, ale nejaká konkrétna hodnota $$x$$.
 
 #### Bra $$\bra{.}$$
 Bra sú lineárne funkcionály na stavovom priestore. Funkcionál je mlynček. Na vstupe vezme stav&#160;a do klobások natlačí číslo.
 
-<img alt="funkcionálny mlynček" width="250px" src="{{site.baseurl}}/images/operatory/funkcional.png" />
+<div class="lighter_background"><img alt="funkcionálny mlynček" width="250px" src="{{site.baseurl}}/images/operatory/funkcional.png" /></div>
 
 $$\begin{equation}
 \bra{\phi}\ket{\psi}=\braket{\phi}{\psi}=c \;\;\;\; c \in \mathbb{C}
@@ -66,13 +69,13 @@ c\braket{\psi}{\phi}=\bra{\psi}c\ket{\phi}=\braket{\psi}{\phi}c
 \end{equation}$$
 
 Inak povedané, číslo môžeme výrazom zloženým zo zasebou zapísaných bra a ket ľubovoľne presúvať.
-Ale pozor: bra vektor k vektoru $$ c\ket{\psi}$$ je $$c^*\bra{\psi}$$, kde $$^*$$ značí komplexné združenie. Vyplýva to z požiadavky kososymetrickosti skalárneho súčinu <a href="javascript:toggle('{% capture id %}3{%endcapture%}{{id}}');"><img src="{{ site.baseurl }}/images/add.svg" class="inlinedisplayimg" id="{{id}}_displayimg"/> <img src="{{ site.baseurl }}/images/minus.svg" class="inlinehideimg" id="{{id}}_hideimg"/>  \[{{id}}\]</a><span id="{{id}}" class="collapsible">Kososymetrickosť znamená, že $$\braket{\psi }{ \phi}=\braket{\phi }{ \psi}^*$$. Premyslite si to. </span>.
+Ale pozor: bra vektor k vektoru $$ c\ket{\psi}$$ je $$c^*\bra{\psi}$$, kde $$^*$$ značí komplexné združenie. Vyplýva to z požiadavky kososymetrickosti skalárneho súčinu {% include collapsible.html content= "Kososymetrickosť znamená, že $$\braket{\psi }{ \phi}=\braket{\phi }{ \psi}^*$$. Premyslite si to. "%}.
 
 #### Operátor
 
 Operátor&#160;v kvantovej mechanike je mlynček. Na vstupe vezme stav zo stavového priestoru&#160;a do klobások natlačí iný (alebo aj rovnaký) stav.
 
-<img alt="operátorový mlynček" width="250px" src="{{site.baseurl}}/images/operatory/operator.png" />
+<div class="lighter_background"><img alt="operátorový mlynček" width="250px" src="{{site.baseurl}}/images/operatory/operator.png" /></div>
 
 $$\begin{equation}
 A\ket{\psi}=\ket{\phi}
@@ -98,7 +101,7 @@ $$
 
 Ako ale zraziť tento zápis do jedného riadku? Na to, aby to bolo možné, je potrebné, aby bola báza zložená z $$\ket{\psi_1}$$ a $$\ket{\psi_2}$$ ortonormálna (Oprava: Naozaj nutné je len aby bola úplná, ale v takom prípade by bol celý postup obludný. Ako by vyzeral bra-ket zápis pre nenormovanú, neortogonálnu, a nakoniec neortogonálnu a nenormovanú bázu už nechávam na zvedavých a masochystických čitaťeľov).
 
-Takže:
+Z definície ortonormálnosti vyplýva:
 
 $$
 \begin{align}
@@ -118,7 +121,7 @@ A &= \begin{aligned}[t]
 \end{align}
 $$
 
-Zápis do dvoch riadkov je tu čisto estetický. Čo to teda vlastne znamená a prečo je to tak? Rozoberme si pôsobenie tohoto operátora na bázový stav $$\ket{\psi_1}$$. Najprv obyčajne roznásobím:
+Zápis do dvoch riadkov je tu čisto estetický, aby bola zrejmý súvis s maticovým zápisom. Čo to teda vlastne znamená a prečo je to tak? Rozoberme si pôsobenie tohoto operátora na bázový stav $$\ket{\psi_1}$$. Najprv obyčajne roznásobím:
 
 $$
 \begin{align}
@@ -130,13 +133,15 @@ A \ket{\psi_1} &= \begin{aligned}[t]
 \end{align}
 $$
 
-Teraz vďaka ortonormálnosti bude $$\braket{\psi_2 }{ \psi_1}=0$$ a  $$\braket{\psi_1 }{ \psi_1}=1$$. Takže prežije len prvý riadok, a teda:
+Teraz vďaka ortonormálnosti bude $$\braket{\psi_2 }{ \psi_1}=0$$ a  $$\braket{\psi_1 }{ \psi_1}=1$$. Skalárne súčiny v druhom riadku sú teda všetku nulové, prežije len prvý riadok:
 
 $$\begin{equation}
 A \ket{\psi_1} = a \ket{\psi_1} + b \ket{\psi_2}
 \end{equation}$$
 
-A je to. Obdobne pôsobí $$A$$ aj na stav $$\psi_2$$. **_Výraz $$\boldsymbol{c\ket{\psi_i}\bra{\psi_j}}$$ teda pôsobí tak, že vylúpne všetky $$\boldsymbol{\ket{\psi_j}}$$ a nahradí ich $$\boldsymbol{c \ket{\psi_i}}$$._**
+A je to. Obdobne pôsobí $$A$$ aj na stav $$\psi_2$$.
+
+**Výraz $$\boldsymbol{c\ket{\psi_i}\bra{\psi_j}}$$ teda pôsobí tak, že vylúpne všetky $$\boldsymbol{\ket{\psi_j}}$$ a nahradí ich $$\boldsymbol{c \ket{\psi_i}}$$.**
 
 Pekné, nie? Ako to bude pre všeobecný, viacrozmerný vektorový priestor (konečnorozmerný alebo spočítateľne nekonečnorozmerný)? Ľahko nahliadneme, že všeobecný operátor zapíšeme ako:
 
@@ -144,7 +149,7 @@ $$\begin{equation}
 A=\sum\limits_{i}{\sum\limits_{j}{c_{ij}{\ket{\psi_i}\bra{\psi_j}}}}
 \end{equation}$$
 
-Tento zápis sa hodí hlavne vtedy, ak operátor (vo svojom maticovom zápise) má veľa nulových elementov. Napríklad jednotkový operátor (identita) bude <a href="javascript:toggle('{% capture id %}4{%endcapture%}{{id}}');"><img src="{{ site.baseurl }}/images/add.svg" class="inlinedisplayimg" id="{{id}}_displayimg"/> <img src="{{ site.baseurl }}/images/minus.svg" class="inlinehideimg" id="{{id}}_hideimg"/>  \[{{id}}\]</a><span id="{{id}}" class="collapsible"> Toto si zapamätajte, tento výraz sa votrel snáď úplne všade. </span>:
+Tento zápis sa hodí hlavne vtedy, ak operátor (vo svojom maticovom zápise) má veľa nulových elementov. Napríklad jednotkový operátor (identita) bude {% include collapsible.html content= "Toto si zapamätajte, tento výraz sa votrel snáď úplne všade. "%}:
 
 $$\begin{equation}
 I=\sum\limits_{i}{\ket{\psi_i}\bra{\psi_i}}

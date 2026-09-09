@@ -1,31 +1,25 @@
 ---
 layout: post
 title: 'Ružová je pre baby!'
-scripts: [toggle]
 lang: sk
 ref: ruzova-je-pre-baby
 permalink: /ruzova-je-pre-baby/
 thumbnail: "images/pink-is-for-girls/sasha.jpg"
 tags:
- - "všeličo"
- - "programovanie"
+ - "data-science"
 excerpt: '"Super tričko/mikina/lezečky, ale mali len v ružovej!" Tak približne znie jedna zo sťažností outdoorovo ladených žien nakupujúcich v outdoorovo ladených obchodoch.
 Rodové stereotypy majú skrátka našu spoločnosť pevne vo svojich pazúroch. Ani tie najdrsnejšie baby, ktoré by svojimi prelezmi mohli zahanbiť nejedného horala, sa ružovému outdoorovému oblečeniu len tak ľahko nevyhnú, a to aj keby chceli.
 Je to  skrátka tak, chýba ponuka. Alebo nie?'
 ---
 <img alt="mysterious girl in pink" src="{{site.baseurl}}/images/pink-is-for-girls/pic.jpeg" />
 
-"Super tričko/mikina/lezečky, ale mali len v ružovej!" Tak približne znie jedna zo sťažností outdoorovo ladených žien nakupujúcich v outdoorovo ladených obchodoch.
-Rodové stereotypy majú jednoducho našu spoločnosť pevne vo svojich pazúroch. Ani tie najdrsnejšie baby, ktoré by svojimi prelezmi mohli zahanbiť nejedného horala, sa ružovému outdoorovému oblečeniu len tak ľahko nevyhnú, a to aj keby chceli.
-Je to  skrátka tak, chýba ponuka. Alebo nie?
-
-Ako je to vlastne naozaj? Naozaj je veľa ženského vybavenia do hôr v ružovom vyhotovení? A ako je to potom s tým mužským? Kto by to len mohol vedieť?
+{{page.excerpt}}
 
 ...napäté ticho...
 
-No predsa ja! Pomocou mocného počítačového kung-fu som posťahoval všetky obrázky oblečenia a topánok z e-shopov sport-outdoor.sk a hudy.sk <a href="javascript:toggle('{% capture id %}1{%endcapture%}{{id}}');"><img src="{{ site.baseurl }}/images/add.svg" class="inlinedisplayimg" id="{{id}}_displayimg"/> <img src="{{ site.baseurl }}/images/minus.svg" class="inlinehideimg" id="{{id}}_hideimg"/>  \[{{id}}\]</a><span id="{{id}}" class="collapsible"> Dokopy niečo cez 5000 obrázkov.</span>, odrezal z nich pozadie a urobil štatistiku všetkých farieb v obrázkoch pre mužské a ženské výrobky zvlášť <a href="javascript:toggle('{% capture id %}2{%endcapture%}{{id}}');"><img src="{{ site.baseurl }}/images/add.svg" class="inlinedisplayimg" id="{{id}}_displayimg"/> <img src="{{ site.baseurl }}/images/minus.svg" class="inlinehideimg" id="{{id}}_hideimg"/>  \[{{id}}\]</a><span id="{{id}}" class="collapsible">V skratke: python, scrapy, numpy, mpld3 a tento [kód](https://mail.python.org/pipermail/image-sig/2010-April/006220.html) floodfil algoritmu s thresholdom. Tu je môj [zdroják](https://github.com/janbogar/small_projects/tree/master/pink_is_for_girls)</span>.
+No predsa ja! Pomocou mocného počítačového kung-fu som posťahoval všetky obrázky oblečenia a topánok z e-shopov sport-outdoor.sk a hudy.sk {% include collapsible.html content= "Dokopy niečo cez 5000 obrázkov."%}, odrezal z nich pozadie a urobil štatistický prehľad všetkých farieb v obrázkoch pre mužské a ženské výrobky zvlášť {% include collapsible.html content= "V skratke: python, scrapy, numpy, mpld3 a tento [kód](https://mail.python.org/pipermail/image-sig/2010-April/006220.html) floodfil algoritmu s thresholdom. Tu je môj [zdroják](https://github.com/janbogar/small_projects/tree/master/pink_is_for_girls)"%}.
 
-No a tu sú výsledky v podobe dvoch najfarebnejších grafov aké som kedy vytvoril.
+No a tu sú výsledky v podobe dvoch najfarebnejších grafov, aké som kedy vytvoril.
 
 <script>
 function showPlot1() {
@@ -52,6 +46,7 @@ function showPlot2() {
 <button id='button1' onclick='showPlot1()'> Farba podľa počtu kusov </button><button id='button2' onclick='showPlot2()'> Farba podľa plochy</button>
 </div>
 <p id='plotTitle' style='color: #666;padding-left:40px;padding-right:40px;font-style: italic;'></p>
+<div class="lighter_background">
 <div id="plot1" style='text-align:center;'></div><script>
 function mpld3_load_lib(url, callback){
   var s = document.createElement('script');
@@ -123,13 +118,12 @@ if(typeof(mpld3) !== "undefined" && mpld3._mpld3IsLoaded){
             })
          });
 }
-</script><script>
+</script>
+</div>
+<script>
 showPlot1();
 </script>
 
-Hneď vidno že ženské oblečenie sa viac ako to mužské kloní k fialovej, tyrkysovej, červenej a áno, aj tej ružovej. Mužské zas vedie prekvapivo v žltej, zelenej, oranžovej a neprekvapivo v tmavých farbách. Zaujímavá je tiež modrá, v ktorej muži napriek stereotypu stvorenému farebne kódovanými detskými dupačkami nevedú. Rozdiely sú ale menšie než 10% ponúkaného sortimentu.
+Hneď vidno, že ženské oblečenie sa viac ako to mužské kloní k fialovej, tyrkysovej, červenej a áno, aj tej ružovej. Mužské zas vedie prekvapivo v žltej, zelenej, oranžovej a neprekvapivo v tmavých farbách. Zaujímavá je tiež modrá, v ktorej muži napriek stereotypu nevedú. Rozdiely sú ale menšie než 10 % ponúkaného sortimentu.
 
-Poučenie na záver? Iba ak toto. To ružové stvorenie na začiatku článku nie je nejaká náhodná dievčina, ale Sasha DiGuilian, jedna z najlepších lezkýň súčasnosti a veľká fanúšička všetkého ružového (presvedčí o tom jediný pohľad na jej <a href = "http://www.sasha-digiulian.com/" target="_blank">osobnú stránku</a> alebo niektoré z jej osobných vyjadrení). Takže poučenie je, noste si čo chcete, pokojne aj ružovú. Možno potom tiež onsightnete nejakú tú desinu, a ak aj nie, aspoň budete veselší :)
-
-
-
+Poučenie na záver? Iba ak toto. Na fotke v úvode nie je nejaká náhodná dievčina, ale Sasha DiGiulian – špičková atlétka, jedna z najlepších lezcov súčasnosti a podľa vlastných slov veľká fanúšička všetkého ružového. Takže poučenie je, noste si čo chcete, pokojne aj ružovú. Možno sa na vás vďaka tomu nalepí trocha DiGiulian mágie a tiež preleziete na onsight nejaké to 8b+ – a ak aj nie, aspoň budete veselší.

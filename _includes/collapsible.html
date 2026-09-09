@@ -1,0 +1,11 @@
+<label class="collaps_button"><span class="clickable">{{include.label}}</span>
+  <input type="checkbox" class="collaps_checkbox" >
+  <img
+    alt="click to expand"
+    src="{{ site.baseurl }}/images/add.svg"
+    class="collaps_button_unchecked">
+  <img
+    alt="click to collaps"
+    src="{{ site.baseurl }}/images/minus.svg"
+    class="collaps_button_checked">
+  <span class="collapsible">{{ include.content }}</span></label>

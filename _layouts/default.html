@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.t[page.lang].name }} – {%if page.ref == 'about' %} {{ site.t[page.lang].description}} {% else %} Blog {% endif%}</title>
+    <title>{{site.title}}</title>
 
     {% include meta.html %}
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 
-	    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 	<!-- include scripts with filenames specified in scripts variable in frontmatter of the relevant markdown file. scripts are in dir _includes/_scripts-->	
 	{% if page.scripts %}
 		{% for script in page.scripts %}
   			{% include {{site.baseurl}}_scripts/{{script}}%}
 		{% endfor %}
 	{% endif %}
+
+  <link rel="me" href="https://mastodonczech.cz/@janbogar">
   </head>
 
   <body>
@@ -34,7 +34,7 @@
 			{% assign abouts=site.pages | where: 'ref', 'about' |  where: 'lang', page.lang %}
         	{% assign about=abouts[0]%}
 		
-          <a href="{{ blog.url }}" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+          <a href="{{ blog.url }}" class="site-avatar"><img alt="my portrait - a man with blue eyes and long hair, in his thirties, in a pirate hat and striped shirt, behind a wheel." src="{{ site.avatar }}" /></a>
 
           <div class="site-info">
             <h1 class="site-name"><a href="{%if page.ref == 'about' %}{{about.url}}{%else%}{{blog.url }}{%endif%}">{{ site.t[page.lang].name }}</a></h1>
@@ -45,20 +45,21 @@
           <nav>
             <a href="{{ blog.url }}">Blog</a>
             <a href="{{ about.url }}">{{site.t[page.lang].about}}</a>
-            <a href= "https://github.com/janbogar/"> Github </a>
           </nav>
 
 
-			<div class=language_select>
-				{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-				{% for post in posts %}
-  				<a href="{{ post.url }}" class="{{ post.lang }}"><img src="{{ site.base_url}}/images/flags/{{post.lang}}.png" /></a></li>
-				{% endfor %}
-
-				{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-				{% for page in pages %}
-				<a href="{{ page.url }}" class="{{ page.lang }}"><img src="{{ site.base_url}}/images/flags/{{page.lang}}.png" /></a></li>
-				{% endfor %}
+			<div class="language_select">
+        {% if page.id%}
+          {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+          {% for post in posts %}
+            <a href="{{ post.url }}" class="{{ post.lang }}"><img alt="{{post.lang}}" src="{{ site.base_url}}/images/flags/{{post.lang}}.png" /></a>
+          {% endfor %}
+        {% else %}
+          {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+          {% for other_page in pages %}
+            <a href="{{ other_page.url }}" class="{{ other_page.lang }}"><img alt="{{other_page.lang}}" src="{{ site.base_url}}/images/flags/{{other_page.lang}}.png" /></a>
+          {% endfor %}
+        {% endif %}
 				</div>
 			</div>
 
@@ -68,19 +69,19 @@
     </div>
 
     <div id="main" role="main" class="container">
-		
-
       {{ content }}
     </div>
 
     <div class="wrapper-footer">
       <div class="container">
-        <footer class="footer">
-			<!--{% include svg-icons.html %}-->
-      <a class= svg-icon rel="me" href="https://mastodonczech.cz/@janbogar"><img src="{{ site.base_url}}/images/mastodon.svg" /></a>
-      <a class= svg-icon href=https://www.facebook.com/jan.bogar><img src="{{ site.base_url}}/images/Facebook.svg" /></a>
-
-<!--<a class= svg-icon href=jan.boogie.bogar@gmail.com><img src="{{ site.base_url}}/images/mail.svg" /></a> -->
+        <footer class="footer clearfix">
+          <div class="left_block">
+          <a class= svg-icon download type="application/rss+xml"  href="{{ site.base_url }}/feed.xml" title="{{ site.title }}"><img alt="rss feed" src="{{ site.base_url}}/images/rss.svg" /></a>
+          <a class= svg-icon href="https://mastodonczech.cz/@janbogar"><img alt="mastodon" src="{{ site.base_url}}/images/mastodon.svg" /></a>
+          <a class= svg-icon href={%case page.lang %} {% when 'en' %} {{site.base_url}}/how-to-follow/ {% when 'sk' %}{{site.base_url}}/ako-ma-sledovat/{%endcase%}><img alt="facebook" src="{{ site.base_url}}/images/facebook.svg" /></a>
+          </div> 
+          <div class="right_block"><div><img src="{{ site.base_url }}/images/no_ai.svg" alt="Stop sign with crossed out AI" height="30px" style="margin-bottom:-7px;">  {{site.t[page.lang].ai}}</div><div>{{site.t[page.lang].cookies}}</div></div>
+      
         </footer>
       </div>
     </div>
