@@ -2,7 +2,7 @@
 layout: about
 ref: about
 lang: sk
-title: O mne
+title: Ján Bogár
 permalink: /o_mne/
 ---
 

@@ -2,7 +2,7 @@
 layout: about
 ref: about
 lang: en
-title: About me
+title: Ján Bogár
 permalink: /about/
 ---
 

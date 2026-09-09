@@ -28,3 +28,4 @@
 - [ ]gramatika nepal
 - [ ]dopis cokoladovu hadanku
 - [ ]jazykovy filter both? a zvyraznit, ktory je vybraty, a nastavit oboje ako default, alebo aspon prelozit conway
+- [ ]vycisti metadata, vyhod description z prekladov

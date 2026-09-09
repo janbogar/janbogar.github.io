@@ -7,17 +7,22 @@
     <meta name="description" content='{{ page.excerpt| strip_html }}' >
     <meta property="og:description" content='{{ page.excerpt| strip_html }}' >
     {% else %}
-    <meta name="description" content="{%if page.ref == 'about' %} {{ site.t[page.lang].description}} {% else %} Blog {% endif%}">
-    <meta property="og:description" content="{%if page.ref == 'about' %} {{ site.t[page.lang].description}} {% else %} Blog {% endif%} }}" >
+    <meta name="description" content="{%if page.ref == 'about' %} {{ site.t[page.lang].description}} {% else %} {{site.title}} {% endif%}">
+    <meta property="og:description" content="{%if page.ref == 'about' %} {{ site.t[page.lang].description}} {% else %} {{site.title}} {% endif%} }}" >
     {% endif %}
     <meta name="author" content="{{ site.name }}" >
 
     {% if page.title %}
     <meta property="og:title" content='{{ page.title }}' >
-    <meta property="twitter:title" content='{{ page.title }}' >
+    {% else %}
+    <meta propert="og:title" content="{{site.title}}">
     {% endif %}
+
     
-        {% if page.thumbnail %}
+    {% if page.thumbnail %}
     <meta name="image" content="/{{ page.thumbnail| strip_html }}" >
     <meta property="og:image" content="/{{ page.thumbnail|}}" >
+    {% else %}
+    <meta name="image" content="{{site.avatar}}">
+    <meta name="og:image" content="{{site.avatar}}">
     {%endif%}
