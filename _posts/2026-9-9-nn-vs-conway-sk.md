@@ -6,7 +6,7 @@ ref: nn-vs-conway
 permalink: /nn-vs-conway-sk
 thumbnail: images/nn-vs-conway/glider.gif
 excerpt: >-
-    Preskroloval som okolo ukážky nejakého videa o hraní Conwayovej hry života pomocou neurónovej siete, a priznávam, že moja prvá reakcia bola: "Pff, to je blbosť". Myslel som totiž, že "hraním hry" sa myslí samotné aplikovanie jej pravidiel — úloha, pri ktorej akékoľvek použitie neurónových sietí nedáva zmysel. Nakoniec sa samozrejme ukázalo, že video bolo skvelé, pretože "hraním hry" myslelo vymýšľanie rôznych zaujímavých obrazcov, na čo sa neurónky naopak perfektne hodia.
+    Preskroloval som okolo ukážky nejakého videa o hraní Conwayovej hry života pomocou neurónovej siete a priznávam, že moja prvá reakcia bola: "Pff, to je blbosť". Myslel som totiž, že "hraním hry" sa myslí samotné aplikovanie jej pravidiel — úloha, pri ktorej akékoľvek použitie neurónových sietí nedáva zmysel. Nakoniec sa samozrejme ukázalo, že video bolo skvelé, pretože "hraním hry" myslelo vymýšľanie rôznych zaujímavých obrazcov, na čo sa neurónky naopak perfektne hodia.
 
 
     Ale čo keby sme zostali pri tom prvom význame "hrania hry"? Ako stupídne by bolo použiť na to neurónovú sieť? Vlastne celkom dosť. Uvážte, že váhy takej neurónovej siete sa dajú spočítať a zadať ručne. Ale žiadne množstvo stupídnosti by nám nemalo zabrániť urobiť niečo zaujímavé. Kto vie, možno sa pri tom niečo naučíme?
