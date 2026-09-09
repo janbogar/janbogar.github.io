@@ -126,11 +126,15 @@ Tu je pár vhľadov, ktoré nám s tým pomôžu:
  - Môžeme využiť symetriu pravidiel hry. Z pohľadu pravidiel sú si všetky susedné bunky rovnocenné, na ich polohe nezáleží, závisí len na celkovom poočte živých susedov. Neurónová sieť teda tiež môže mať túto symetriu, a všetky váhy na obvode konvolučného filtra môžu byť rovnaké (nemusí to tak nutne byť, ale hodí sa nám to).
 
 
-Na základe týchto myšlienok, tu je implementácia pravidiel hry pomocou neurónovej siete. Je to v podstate priamy prepis funkcie`conway_rule` do neurónovej siete. Pamätajte ale, že táto implementácia nie je jediná možná.
+Na základe týchto myšlienok, tu je implementácia pravidiel hry pomocou neurónovej siete. Je to v podstate priamy prepis funkcie `conway_rule` do neurónovej siete. Pamätajte ale, že táto implementácia nie je jediná možná.
 
 <div style="background-color:white;padding:10px">
 <img alt="neurónová sieť" src="{{site.baseurl}}/images/nn-vs-conway/neural_network.png">
 </div>
+
+Táto sieť pozostáva z konvolučnej siete s konvolučným filtrom 3x3, ktorý má dva kanály: na obrázku červený a modrý. Výstup červeného kanála je väčší ako 0.5, ak je v susedstve centrálnej bunky menej živých buniek ako 4. Výstup modrého kanála je viac ako 0,5 vtedy, ak sú v oblasti (vrátane centrálnej bunky) viac ako dve živé bunky. Výstupy týchto kanálov sú potom vstupy posledného neurónu, ktorú robí (približne) AND operáciu. Ak sú obidva vstupy práve 0,5, ich váhovaný súčet preváži nad biasom (-80) a výstup neurónu bude viac ako 0,5, čo hovorí, že bunka bude v ďalšom kole živá.
+Ak budú ale o trochu menej {% include collapsible.html content="Priznávam, že toto dovysvetlenie som napísal pár rokov neskôr ako pôvodný článok, a už netuším, prečo som vybral parametre tohoto neurónu práve -80, 50 a 50. Asi som si povedal, že -80, 40 a 40 by bolo na hrane, tak to trochu posuniem. O koľko presne to ale je možné posunúť bez zmeny výsledku by už bolo náročnejšie spočítať, takže som to asi len odhadol a preveril, že to funguje."%}, bias nepreváži a výstupná hodnota bude menej ako 0,5, čo značí, že bunka bude v ďalšom kole mŕtva.
+
 No a to je všetko. Vždy, keď aplikujeme túto konvolučnú sieť na hracie pole, vypočíta, akú hodnotu bude mať každá bunka v budúcom kole.
 
 ## Okrajové podmienky
