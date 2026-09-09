@@ -4,5 +4,5 @@ scripts:
  - mathjax
 lang: sk
 ref: blog
-title: Blog
+title: Ján Bogár - Blog
 ---

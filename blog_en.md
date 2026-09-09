@@ -5,5 +5,5 @@ scripts:
 lang: en
 ref: blog
 permalink: /blog_en/
-title: Blog
+title: Ján Bogár - Blog
 ---
