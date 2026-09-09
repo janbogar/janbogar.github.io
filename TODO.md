@@ -20,11 +20,11 @@
 - [x]prepis average mass of everything ze average vymaze exception, takto to nie je nutne pravda (fat tails)
 - [x]vycisti margins
 - [x]zjednot ikony
-- [ ]plausible? - nie, je to drahe, ked tak nieco ine
+- [x]plausible? - nie, je to drahe, ked tak nieco ine
 - [ ]gramatika operatorov
 - [ ]gramatika data science
 - [ ]gramatika average mass
 - [ ]gramatika conway
 - [ ]gramatika nepal
 - [ ]dopis cokoladovu hadanku
-- [ ]jazykovy filter both? a zvyraznit, ktory je vybraty, a nastavit oboje ako default
+- [ ]jazykovy filter both? a zvyraznit, ktory je vybraty, a nastavit oboje ako default, alebo aspon prelozit conway
