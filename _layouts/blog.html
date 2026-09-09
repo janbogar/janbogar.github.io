@@ -43,8 +43,19 @@ function gatherVisibleTags(){
   return Array.from(getCheckboxes()).filter( box => box.checked).map(box => box.id)
 }
 
+function pushSelectedTagsToURL(tags){ 
+  const currentURL=new URL(window.location.href)
+  currentURL.search=''
+  for (tag of tags){
+    currentURL.searchParams.append("tag",tag)}
+  history.pushState(null, "", currentURL)}
+
 function filterPosts(){
-  setPostsDisplay(gatherVisibleTags())
+  const tags=gatherVisibleTags()
+  setPostsDisplay(tags)
+  try {
+  pushSelectedTagsToURL(tags)}
+  catch (e){console.warn("Adding selected tags as query parameters to the url failed.")}
 }
 
 // check checkboxes because of links or url query parameters
@@ -56,17 +67,13 @@ function checkCheckboxes(tags){
   filterPosts()
 }
 
-//check if some specific tag should be prechecked
+//check tags based on url searchQuery
 window.onload = (event) =>{
-let queryString = new URLSearchParams(document.location.search);
+let queryString = new URLSearchParams(window.location.search);
 tags=queryString.getAll("tag")
 if (tags.length > 0) {
-  checkCheckboxes(tags)}
-
-//remove query parameters from url, so that the user isn't confused 
-// after they click other filters and hit reload, or send url to someone else
-history.pushState(null, "", location.href.split("?")[0])};
-
+  checkCheckboxes(tags)}}
+  
 </script>
 
 <div id="tag_filter">

@@ -46,17 +46,18 @@
           </nav>
 
 
-			<div class=language_select>
-        <!-- this is weird, we assume that each page_ref has always just two langs, both are pages or both are posts -->
-				{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-				{% for post in posts %}
-  				<a href="{{ post.url }}" class="{{ post.lang }}"><img alt="{{post.lang}}" src="{{ site.base_url}}/images/flags/{{post.lang}}.png" /></a></li>
-				{% endfor %}
-
-				{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-				{% for page in pages %}
-				<a href="{{ page.url }}" class="{{ page.lang }}"><img alt="{{page.lang}}" src="{{ site.base_url}}/images/flags/{{page.lang}}.png" /></a></li>
-				{% endfor %}
+			<div class="language_select">
+        {% if page.id%}
+          {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+          {% for post in posts %}
+            <a href="{{ post.url }}" class="{{ post.lang }}"><img alt="{{post.lang}}" src="{{ site.base_url}}/images/flags/{{post.lang}}.png" /></a>
+          {% endfor %}
+        {% else %}
+          {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+          {% for other_page in pages %}
+            <a href="{{ other_page.url }}" class="{{ other_page.lang }}"><img alt="{{other_page.lang}}" src="{{ site.base_url}}/images/flags/{{other_page.lang}}.png" /></a>
+          {% endfor %}
+        {% endif %}
 				</div>
 			</div>
 
