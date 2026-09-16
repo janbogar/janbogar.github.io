@@ -18,12 +18,12 @@ $$
 \newcommand{\braket}[2]{ \langle #1 \lvert #2 \rangle }
 $$
 </div>
-Ha, dostal som vás! Tento článok je&#160;v skutočnosti o kvantovej mechanike&#160;a Dirac, tvorca bra-ket notácie, sa teraz smeje vo svojom hrobe. Chápete? Bra a ket, podprsenky a mačky? {% include collapsible.html content="V Diracovej dobe bola takáto interpretácia slova bra&#160; zrejme už možná (pretože slovo brassiere sa začalo skracovať na bra práve v 30-tych rokoch a bra-ket notácia vznikla v roku 1939), ale skôr to vyzerá, že to tak nemyslel."%} No dobre, poďme radšej ďalej. Konkrétne sa tu dozviete niečo o bra a ket (to sú tie zobáčikové zátvorky $$\ket{}$$a $$\bra{}$$ )&#160;a hlavne&#160;o tom, ako pomocou nich zapisovať operátory&#160;v kvantovej mechanike. Tento článok je určený pre všetkých, ktorí kvantovú mechanikou detailne študujú, napríklad práve navštevujú úvodný kurz na univerzite, ale mätú ich tie divné zátvorky a čo s&#160;nimi občas ľudia stvárajú. Ak do tejto kategórie spadáte, čítajte ďalej.
+Ha, dostal som vás! Tento článok je&#160;v skutočnosti o kvantovej mechanike&#160;a Dirac, tvorca bra-ket notácie, sa teraz smeje vo svojom hrobe. Chápete? Bra a ket, podprsenky a mačky? {% include collapsible.html content="V Diracovej dobe bola takáto interpretácia slova bra&#160; zrejme už možná (pretože slovo brassiere sa začalo skracovať na bra práve v 30-tych rokoch a bra-ket notácia vznikla v roku 1939), ale skôr to vyzerá, že to tak nemyslel."%} No dobre, poďme radšej ďalej. Konkrétne sa tu dozviete niečo o bra a ket (to sú tie zobáčikové zátvorky $$\ket{}$$ a $$\bra{}$$ )&#160;a hlavne&#160;o tom, ako pomocou nich zapisovať operátory&#160;v kvantovej mechanike. Tento článok je určený pre všetkých, ktorí kvantovú mechaniku detailne študujú, napríklad práve navštevujú úvodný kurz na univerzite, ale mätú ich tie divné zátvorky a čo s&#160;nimi občas ľudia stvárajú. Ak do tejto kategórie spadáte, čítajte ďalej.
 
-Bra-ket notácia je skvelá&#160;v tom, že zachováva abstraktný charakter pojmov, ktoré ňou popisujeme,&#160;a nelipne na ich konkrétnej reprezentácií. Nezáleží na tom, či stavy popisovaného systému reprezentujeme ako usporiadané n-tice čísel, kvadraticky integrovateľné funkcie (a.k.a. vlnové funkcie), alebo nejakým iným obskúrnym spôsobom. Dôležité je len to, že sú to vektory. Funguje to takto:
+Bra-ket notácia je skvelá&#160;v tom, že zachováva abstraktný charakter pojmov, ktoré ňou popisujeme,&#160;a nelipne na ich konkrétnej reprezentácii. Nezáleží na tom, či stavy popisovaného systému reprezentujeme ako usporiadané n-tice čísel, kvadraticky integrovateľné funkcie (a.k.a. vlnové funkcie), alebo nejakým iným obskúrnym spôsobom. Dôležité je len to, že sú to vektory. Funguje to takto:
 
 #### Ket $$\ket{.}$$
-Ket sú stavy systému. Sú to teda vektory zo stavového priestoru {% include collapsible.html content= "Ak je fakt, že stavy sú vektory, pre vás novinka, tento článok vám nič nedá. Odporúčam si tento blog zazáložkovať a vrátiť sa neskôr. "%} a môžeme ich sčitovať a násobiť komplexnými číslami. Pojmy stav&#160;a vektor tu budem teda voľne zamieňať. Čokoľvek vnútri zátvorky pritom slúži len ako nálepka, charakterizujúca konkrétny vektor. Napríklad $$\ket{1}$$ je stav ktorý sme označili číslom $$1$$, $$\ket{init}$$ môže byť označenie začiatočného stavu. Často sa stretnete aj s takýmto zápisom: $$\ket{x}$$. Tu si treba uvedomiť, že $$x$$ nie je premenná, ale nejaká konkrétna hodnota $$x$$.
+Ket sú stavy systému. Sú to teda vektory zo stavového priestoru {% include collapsible.html content= "Ak je fakt, že stavy sú vektory, pre vás novinka, tento článok vám nič nedá. Odporúčam si tento blog zazáložkovať a vrátiť sa neskôr. "%} a môžeme ich sčitovať a násobiť komplexnými číslami. Pojmy stav&#160;a vektor tu budem teda voľne zamieňať. Čokoľvek vnútri zátvorky pritom slúži len ako nálepka charakterizujúca konkrétny vektor. Napríklad $$\ket{1}$$ je stav, ktorý sme označili číslom $$1$$, $$\ket{init}$$ môže byť označenie začiatočného stavu. Často sa stretnete aj s takýmto zápisom: $$\ket{x}$$. Tu si treba uvedomiť, že $$x$$ nie je premenná, ale nejaká konkrétna hodnota $$x$$.
 
 #### Bra $$\bra{.}$$
 Bra sú lineárne funkcionály na stavovom priestore. Funkcionál je mlynček. Na vstupe vezme stav&#160;a do klobások natlačí číslo.
@@ -68,7 +68,7 @@ $$\begin{equation}
 c\braket{\psi}{\phi}=\bra{\psi}c\ket{\phi}=\braket{\psi}{\phi}c
 \end{equation}$$
 
-Inak povedané, číslo môžeme výrazom zloženým zo zasebou zapísaných bra a ket ľubovoľne presúvať.
+Inak povedané, číslo môžeme výrazom zloženým zo za sebou zapísaných bra a ket ľubovoľne presúvať.
 Ale pozor: bra vektor k vektoru $$ c\ket{\psi}$$ je $$c^*\bra{\psi}$$, kde $$^*$$ značí komplexné združenie. Vyplýva to z požiadavky kososymetrickosti skalárneho súčinu {% include collapsible.html content= "Kososymetrickosť znamená, že $$\braket{\psi }{ \phi}=\braket{\phi }{ \psi}^*$$. Premyslite si to. "%}.
 
 #### Operátor

@@ -7,7 +7,7 @@ ref: data-science-checklist
 thumbnail: "images/data-science-checklist/datascience.webp"
 tags:
  - "data-science"
-excerpt: "Nedávno som stretol niekoho, kto by sa chcel naučiť dátovú vedu - presne ako som sa ju kedysi naučil ja!
+excerpt: "Nedávno som stretol niekoho, kto by sa chcel naučiť dátovú vedu – presne ako som sa ju kedysi naučil ja!
 Tento článok je pre teba, milá budúca dátová vedkyňa.
 
 Keď sa obzriem späť na svoju kariéru, nikdy nebol problém nájsť dostatok kvalitných a voľne dostupných učebných materiálov na internete. Mal som presne opačný problém - každý článok, video, tutoriál, kniha alebo nástroj sa tvárili ako tá najdôležitejšia vec na svete, bez ktorej sa v žiadnom prípade nezaobídem.
@@ -28,20 +28,20 @@ Takže aby som ti s tým pomohol, tu je zoznam konceptov, ktoré by začínajúc
 
 ### Legenda
 
-- <span style="color:{{red}}">Červená</span> - Toto sa nauč detailne, bude to tvoj každodenný chlebíček.
-- <span style="color:{{green}}">Zelená</span> - Toto sa nauč dosť dobre na to, aby si si prinajhoršom len musela dohľadať nejaké podrobnosti.
-- <span style="color:{{blue}}">Modrá</span> - Zapamätaj si, že toto existuje a čo to je. Detaily si doštuduješ neskôr podľa potreby.
+- <span style="color:{{red}}">Červená</span> – Toto sa nauč detailne, bude to tvoj každodenný chlebíček.
+- <span style="color:{{green}}">Zelená</span> – Toto sa nauč dosť dobre na to, aby si si prinajhoršom len musela dohľadať nejaké podrobnosti.
+- <span style="color:{{blue}}">Modrá</span> – Zapamätaj si, že toto existuje a čo to je. Detaily si doštuduješ neskôr podľa potreby.
 
 ## Základné nástroje
 
- - <span style="color:{{red}}">Visual Studio Code</span> - Odporúčam tento editor kódu (presnejšie IDE - Integrated Development Environment - slúži na písanie a editovanie kódu, jeho spúšťanie a iné užitočné veci). IDE bývajú plné užitočných funkcií, ale nemusíš sa trápiť tým, že sa ich hneď všetky naučíš používať, nauč sa najprv tie základné. Existujú aj iné dobré voľby než len VS Code, napr. Spyder. Pár ich vyskúšaj a  jeden si vyber. 
+ - <span style="color:{{red}}">Visual Studio Code</span> – Odporúčam tento editor kódu (presnejšie IDE – Integrated Development Environment – slúži na písanie a editovanie kódu, jeho spúšťanie a iné užitočné veci). IDE bývajú plné užitočných funkcií, ale nemusíš sa trápiť tým, že sa ich hneď všetky naučíš používať, nauč sa najprv tie základné. Existujú aj iné dobré voľby než len VS Code, napr. Spyder. Pár ich vyskúšaj a  jeden si vyber. 
 
-- <span style="color:{{red}}">Jupyter Notebook</span> - Toto je zároveň formát kódu a IDE užitočné na interaktívne skúmanie a vizualizáciu dát. Je plne kompatibilný s VS Code a s Google Collab.
+- <span style="color:{{red}}">Jupyter Notebook</span> – Toto je zároveň formát kódu a IDE užitočné na interaktívne skúmanie a vizualizáciu dát. Je plne kompatibilný s VS Code a s Google Collab.
 
- - <span style="color:{{red}}">Základná práca s linuxovým terminálom (alebo príkazovým riadkom, ak používaš Windows)</span> - Nauč sa ako zmeniť adresár v ktorom sa nachádzaš, vypísať obsah adresára, spustiť príkaz, a zobraziť nápovedu (help) pre daný príkaz.
+ - <span style="color:{{red}}">Základná práca s linuxovým terminálom (alebo príkazovým riadkom, ak používaš Windows)</span> – Nauč sa, ako zmeniť adresár, v ktorom sa nachádzaš, vypísať obsah adresára, spustiť príkaz a zobraziť nápovedu (help) pre daný príkaz.
 
  - <span style="color:{{green}}">Git</span>
- - <span style="color:{{green}}">GitHub</span> - alebo nejaká iná služba na hosting Gitu, ako napr. Gitlab alebo Gitea 
+ - <span style="color:{{green}}">GitHub</span>, alebo nejaká iná služba na hosting Gitu, ako napr. Gitlab alebo Gitea.
 
 ## Programovanie
 
@@ -55,15 +55,15 @@ Takže aby som ti s tým pomohol, tu je zoznam konceptov, ktoré by začínajúc
   
 ## Pythonové balíky a nástroje
 
-- <span style="color:{{red}}">Pandas</span> - Všestranný nástroj s vysokou úrovňu abstrakcie na prácu s tabuľkami. Taký pythonový ekvivalent Excelu. Nauč sa načítať dáta, transformovať ich a vybrať z nich len nejakú časť. Zbytok sa naučiš popri učení ostatných vecí.
-- <span style="color:{{red}}">Matplotlib</span> - Najrozšírenejší balík na kreslenie graafov. Pod kapotou ho používa a Pandas, Seaborn a Scikit-learn pre ich grafy. Nauč sa ako nakresliť základné grafy, formátovanie (nastaviť nadpis, premenovať osi, zmeniť interval) a ako uložiť obrázok do súboru.
-- <span style="color:{{blue}}">Seaborn</span> - Veľmi užitočné rozšírenie Matplotlibu, je dobrý nápad zvyknúť si používať ho miesto Matplotlibu aj na základné grafy.
-- <span style="color:{{green}}">Numpy</span> - Násobenie matíc a iná lineárna algebra, ľubovoľná práca s poliami (tzn. tabuľkami) čísel.
-- <span style="color:{{red}}">Scikit-learn</span> - Obrovská zbierka modelov a nástrojov na ich evaluáciu, od základných až po pokročilé. Nauč sa aké evaluačné nástroje sú k dispozícií, ako vyzerá interface modelov a ber zoznam dostupných modelov ako inšpiráciu pre ďalšie štúdium.
-- <span style="color:{{blue}}">Scipy</span> - Pokročilá matematika, štatistika a optimalizácia.
-- <span style="color:{{blue}}">Pytorch a/alebo Tensorflow</span> - Pythonové balíky pre prácu s neurónovými sieťami.
-- <span style="color:{{green}}">Pip</span> - Manažér balíkov, budeš ho potrebovať už na nainštalovanie všetkých týchto balíkov.
-- <span style="color:{{blue}}">Conda</span> - Manažér balíkov a virtuálnych prostredí.
+- <span style="color:{{red}}">Pandas</span> – Všestranný nástroj s vysokou úrovňu abstrakcie na prácu s tabuľkami. Taký pythonový ekvivalent Excelu. Nauč sa načítať dáta, transformovať ich a vybrať z nich len nejakú časť. Zbytok sa naučiš popri učení ostatných vecí.
+- <span style="color:{{red}}">Matplotlib</span> – Najrozšírenejší balík na kreslenie graafov. Pod kapotou ho používa a Pandas, Seaborn a Scikit-learn pre ich grafy. Nauč sa ako nakresliť základné grafy, formátovanie (nastaviť nadpis, premenovať osi, zmeniť interval) a ako uložiť obrázok do súboru.
+- <span style="color:{{blue}}">Seaborn</span> – Veľmi užitočné rozšírenie Matplotlibu, je dobrý nápad zvyknúť si používať ho miesto Matplotlibu aj na základné grafy.
+- <span style="color:{{green}}">Numpy</span> – Násobenie matíc a iná lineárna algebra, ľubovoľná práca s poliami (tzn. tabuľkami) čísel.
+- <span style="color:{{red}}">Scikit-learn</span> – Obrovská zbierka modelov a nástrojov na ich evaluáciu, od základných až po pokročilé. Nauč sa aké evaluačné nástroje sú k dispozícií, ako vyzerá interface modelov a ber zoznam dostupných modelov ako inšpiráciu pre ďalšie štúdium.
+- <span style="color:{{blue}}">Scipy</span> – Pokročilá matematika, štatistika a optimalizácia.
+- <span style="color:{{blue}}">Pytorch a/alebo Tensorflow</span> – Pythonové balíky pre prácu s neurónovými sieťami.
+- <span style="color:{{green}}">Pip</span> – Manažér balíkov, budeš ho potrebovať už na nainštalovanie všetkých týchto balíkov.
+- <span style="color:{{blue}}">Conda</span> – Manažér balíkov a virtuálnych prostredí.
 
 ## Matematika
 
@@ -113,7 +113,7 @@ Takže aby som ti s tým pomohol, tu je zoznam konceptov, ktoré by začínajúc
   - <span style="color:{{green}}">Cross-validácia</span>
   - <span style="color:{{green}}">Regularizácia</span>
   - <span style="color:{{blue}}">Obohacovanie dát (data augmentation)</span>
-- <span style="color:{{green}}">Normalizácia dát</span> - ktoré modely ju potrebujú a ktoré nie
+- <span style="color:{{green}}">Normalizácia dát</span>, ktoré modely ju potrebujú a ktoré nie
 - <span style="color:{{red}}">Chybová matica (confusion matrix)</span>  a ako z nej vypočítať rôzne metriky:
   - <span style="color:{{red}}">sensitivita (recall)</span>
   - <span style="color:{{red}}">špecificita</span>
@@ -122,7 +122,7 @@ Takže aby som ti s tým pomohol, tu je zoznam konceptov, ktoré by začínajúc
   - ako sa navzájom ovplivňujú
 - <span style="color:{{green}}">ROC krivka</span> a plocha pod ROC krivkou (možno aj krivka precission-recall)
 - Dôsledky <span style="color:{{blue}}">nevyvážených dáta (data imbalance)</span> pri trénovaní a evaluačných metrikách
-- <span style="color:{{green}}">Rozhodovacie rozhranie (decision boundary)</span> - lineárny vs. nelineárny model, koncept lineárne separovateľných dát
+- <span style="color:{{green}}">Rozhodovacie rozhranie (decision boundary)</span> – lineárny vs. nelineárny model, koncept lineárne separovateľných dát
 - <span style="color:{{blue}}">Feature engineering</span>, obzvlášť ako pomocou neho premeniť lineárny model na nelineárny, viď tiež "kernel trick".
 - <span style="color:{{green}}">Rozhodovací strom</span>
 - <span style="color:{{blue}}">Neurónové siete</span> pre klasifikáciu
@@ -136,22 +136,22 @@ Takže aby som ti s tým pomohol, tu je zoznam konceptov, ktoré by začínajúc
 ## Etika
 
 - Skreslené dáta vedú k skresleným modelom.
-- Dezinterpretácia výstupu modelu - užívateľ nerozumie matematike tak ako ty.
-- Prehnaná dôvera v spoľahlivosť modelu - užívateľ nerozumie obmedzeniam modelu tak ako ty.
-- Nezamýšľané použitie - užívatelia si robia čo sa im zachce, občas je to skvelé, občas je to hlúpe a občas je to kruté.
-- Automatické rozhodovanie - nerob to, lepší nápad je pomáhať sa rozhodovať ľuďom, ale mysli pri tom na predošlé body.
-- Kedy nerobiť strojové učenie - dobré užívateľské rozhranie a dobrá matematika sú často lepšie riešenia ako dobrý model.
+- Dezinterpretácia výstupu modelu – užívateľ nerozumie matematike tak ako ty.
+- Prehnaná dôvera v spoľahlivosť modelu – užívateľ nerozumie obmedzeniam modelu tak ako ty.
+- Nezamýšľané použitie – užívatelia si robia, čo sa im zachce, občas je to skvelé, občas je to hlúpe a občas je to nemorálne.
+- Automatické rozhodovanie – nerob to, lepší nápad je pomáhať rozhodovať sa ľuďom, ale mysli pri tom na predošlé body.
+- Kedy nerobiť strojové učenie – dobré užívateľské rozhranie a dobrá matematika sú často lepšie riešenia ako dobrý model.
 
 ## Ako vyzerá typický pracovný postup dátového vedca?
 
 Okrem premýšľania nad prioritami, formovania a testovania hypotéz, komunikácie a iných činností pozostáva väčšinou "remeselná" časť dátovej vedy z týchto krokov:
 
 - Načítaj dáta.
-- Preskúmaj ich - ako dáta vyzerajú, koľko ich je, aké dáta chýbajú, sú nejako skreslené? Sú reprezentatívne voči skutočnému svetu? Aké dáta vlastne potrebuješ? Sú tam nejaké odľahlé, extrémne hodnoty?
+- Preskúmaj ich – ako dáta vyzerajú, koľko ich je, aké dáta chýbajú, sú nejako skreslené? Sú reprezentatívne voči skutočnému svetu? Aké dáta vlastne potrebuješ? Sú tam nejaké odľahlé, extrémne hodnoty?
 - Zosumarizuj vlastnosti dát pomocou deskriptívnej štatistiky a vizualizácie.
-- Vyčisti dáta: odstráň duplicity a vysporiadaj sa s chýbajúcimi dátami a extrémnymi hodnotami.
-- Modeluj dáta - pochop, akú odpoveď hľadáš a aký model ti ju vie poskytnúť.
-- Vyhodnoť model - robí to, čo po ňom chceš? Ak nie, vráť sa k predchádzajúcemu kroku.
+- Vyčisti dáta – odstráň duplicity a vysporiadaj sa s chýbajúcimi dátami a extrémnymi hodnotami.
+- Modeluj dáta – pochop, akú odpoveď hľadáš a aký model ti ju vie poskytnúť.
+- Vyhodnoť model – robí to, čo po ňom chceš? Ak nie, vráť sa k predchádzajúcemu kroku.
 - Vizualizuj a jasne odkomunikuj svoje závery. Čo znamená výstup modelu? Ako veľmi si si svojimi závermi istá?
 - Ak je to potrebné, nasaď model pre opakované použitie.
 

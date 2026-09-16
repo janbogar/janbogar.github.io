@@ -21,8 +21,8 @@
 - [x]vycisti margins
 - [x]zjednot ikony
 - [x]plausible? - nie, je to drahe, ked tak nieco ine
-- [ ]gramatika operatorov
-- [ ]gramatika data science
+- [ ]gramatika operatorov - poslednu cast o operatoroch
+- [x]gramatika data science
 - [ ]gramatika average mass
 - [ ]gramatika conway
 - [ ]gramatika nepal
