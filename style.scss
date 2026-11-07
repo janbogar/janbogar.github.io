@@ -53,7 +53,7 @@ $highlight_secondary: #ff9010;
 $highlight_main: #fadb88;
 $structure: #5cb3b3;
 $base_secondary:#fceac9;
-$base_main: #212131;
+$base_main: #1b1b29;
 $background: #13131b;
 
 // Font stacks
@@ -88,8 +88,7 @@ body {
   font: $fontsize $normal;
   line-height: $normal-line-height;
   color: $content;
-  background-color: $background;
-  text-align: justify;
+  background-color: $base_main;
 }
 
 body h1, body h2, body h3, body h4{
@@ -100,9 +99,6 @@ body h1, body h2, body h3, body h4{
   max-width: 900px;
   padding: 20px;
   width: 100%;
-  border: 1px solid $structure;
-  border-radius: 15px;
-  background-color: $base_main;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -533,7 +529,6 @@ article .img-group img {
 /* definition lists --------------------------------------------------------------------*/
 
 dt{
-  //font-weight: bold;
   color:$structure;
 }
 
