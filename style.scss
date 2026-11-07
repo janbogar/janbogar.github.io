@@ -213,37 +213,19 @@ img {
 // .masthead
 //
 
-.masthead {
-  @include mobile {
-    text-align: center;
-  }
-}
-
-.site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-
-  img {
+.site-avatar img {
+    margin-right: 15px;
     border-radius: 5px;
+    width: 70px;
+    height: 70px;
   }
-}
+// site-info and masthead_nav_lang wrap into two rights if screen width is 230+135+40=405 (40 is for .container padding)
 
 .site-info {
-  float: left;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
+  float:left;
+  display: flex;
+  flex-wrap: wrap;
+  min-width:230px;
 }
 
 .site-name {
@@ -254,10 +236,6 @@ img {
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
-  
-  @include mobile {
-   text-align:center;
-  }
 }
 
 .site-description {
@@ -265,63 +243,38 @@ img {
   color: $content;
   font-size: 16px;
 
-  @include mobile {
-    margin: 3px 0;
-  }
 }
 
 nav {
   margin-top: 0px; // @TODO: Vertically middle align
   font-family: $special;
   font-size: 18px;
-  text-align:center;
 
   a {
     margin-left: 20px;
     color: $highlight_main;
     font-weight: 300;
-
-    @include mobile {
-      margin: 0 10px;
-    }
   }
 }
 
-.language_select {
+.masthead_lang_nav {
   float: right;
+  margin-top: 10px;
+  min-width: 135px;
+
+}
+
+
+.language_select {
   margin-top: 10px; // @TODO: Vertically middle align
   font-family: $special;
   font-size: 18px;
-  text-align: center;
-
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
 
   a {
-	float: none;
     margin-left: 20px;
     color: $highlight_main;
-    text-align: center;
     font-weight: 300;
-    letter-spacing: 1px;
-
-    @include mobile {
-      margin: 0 10px;
-
-	}
   }
-}
-
-.masthead_lang_nav{
-	float: right;
-    margin-top: 10px;
-    @include mobile {
-      float:none;
-    }
 
 }
 

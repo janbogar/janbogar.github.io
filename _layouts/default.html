@@ -24,21 +24,19 @@
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
+    <header class="masthead clearfix container">
         <!--for links in the header to lead to pages in correct language-->
 			{% assign blogs=site.pages | where: 'ref', 'blog' |  where: 'lang', page.lang %}
     		{% assign blog=blogs[0]%}
 	
 			{% assign abouts=site.pages | where: 'ref', 'about' |  where: 'lang', page.lang %}
         	{% assign about=abouts[0]%}
-		
-          <a href="{{ blog.url }}" class="site-avatar"><img alt="my portrait - a man with blue eyes and long hair, in his thirties, in a pirate hat and striped shirt, behind a wheel." src="{{ site.avatar }}" /></a>
-
           <div class="site-info">
-            <h1 class="site-name"><a href="{%if page.ref == 'about' %}{{about.url}}{%else%}{{blog.url }}{%endif%}">{{ site.t[page.lang].name }}</a></h1>
-            <p class="site-description">{% if page.ref == 'about' %} {{ site.t[page.lang].description}} {% else %} Blog {% endif%}</p>
+            <a href="{{ blog.url }}" class="site-avatar"><img alt="my portrait - a man with blue eyes and long hair, in his thirties, in a pirate hat and striped shirt, behind a ship's wheel." src="{{ site.avatar }}" /></a>
+            <div>
+              <h1 class="site-name"><a href="{%if page.ref == 'about' %}{{about.url}}{%else%}{{blog.url }}{%endif%}">{{ site.t[page.lang].name }}</a></h1>
+              <p class="site-description">{% if page.ref == 'about' %} {{ site.t[page.lang].description}} {% else %} Blog {% endif%}</p>
+            </div>
           </div>
 
 		  <div class="masthead_lang_nav">
@@ -62,11 +60,7 @@
         {% endif %}
 				</div>
 			</div>
-
-
-        </header>
-      </div>
-    </div>
+    </header>
 
     <div id="main" role="main" class="container">
       {{ content }}
