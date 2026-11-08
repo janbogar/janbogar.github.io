@@ -95,9 +95,9 @@ body h1, body h2, body h3, body h4{
   text-align: left;}
 
 .container {
-  margin: 20px auto;
+  margin: auto;
   max-width: 900px;
-  padding: 20px;
+  padding: 0px 20px;
   width: 100%;
 }
 
@@ -213,15 +213,11 @@ img {
 // .masthead
 //
 
-header.container {
-  padding-bottom: 0px;
-}
-
 .masthead {
   border-bottom: 1px solid $structure;
   display: flex;
   flex-wrap:wrap;
-  padding-bottom: 20px;
+  padding: 20px 0px;
 }
 
 .site-avatar img {
@@ -291,16 +287,15 @@ nav {
 //
 
 #main {
-  padding-top: 0px;
+  padding-top: 20px;
 }
 
 .posts > .post {
-  padding-bottom: 2em;
+  padding-bottom: 20px;
   border-bottom: 1px solid $structure;
 }
 
 .posts > .post:last-child {
-  padding-bottom: 1em;
   border-bottom: none;
 }
 
