@@ -213,19 +213,27 @@ img {
 // .masthead
 //
 
+header.container {
+  padding-bottom: 0px;
+}
+
+.masthead {
+  border-bottom: 1px solid $structure;
+  display: flex;
+  flex-wrap:wrap;
+  padding-bottom: 20px;
+}
+
 .site-avatar img {
     margin-right: 15px;
     border-radius: 5px;
     width: 70px;
     height: 70px;
   }
-// site-info and masthead_nav_lang wrap into two rights if screen width is 230+135+40=405 (40 is for .container padding)
 
 .site-info {
-  float:left;
   display: flex;
   flex-wrap: wrap;
-  min-width:230px;
 }
 
 .site-name {
@@ -245,6 +253,14 @@ img {
 
 }
 
+.masthead_lang_nav {
+  margin-left: auto;
+  margin-top: 10px;
+
+}
+
+
+
 nav {
   margin-top: 0px; // @TODO: Vertically middle align
   font-family: $special;
@@ -257,16 +273,7 @@ nav {
   }
 }
 
-.masthead_lang_nav {
-  float: right;
-  margin-top: 10px;
-  min-width: 135px;
-
-}
-
-
 .language_select {
-  margin-top: 10px; // @TODO: Vertically middle align
   font-family: $special;
   font-size: 18px;
 
@@ -274,6 +281,7 @@ nav {
     margin-left: 20px;
     color: $highlight_main;
     font-weight: 300;
+    float: right;
   }
 
 }
@@ -281,6 +289,10 @@ nav {
 //
 // .main
 //
+
+#main {
+  padding-top: 0px;
+}
 
 .posts > .post {
   padding-bottom: 2em;
@@ -313,24 +325,26 @@ nav {
   }
 }
 
-footer {
+
+footer > div {
   align-items: center;
+  display: flex;
+  border-top: 1px solid $structure;
+  padding-top: 20px;
 }
 
 footer .left_block {
   text-align:left;
-  float:left;
   @include mobile {
-      float: none;
       text-align: center;
     }
 }
 
 footer .right_block {
+  margin-left:auto;
   text-align:right;
-  float:right;
+
   @include mobile {
-      float: none;
       text-align: center;
     }
 }
@@ -390,6 +404,8 @@ footer .right_block {
 // tag filtering menu
 #tag_filter{
   margin-top: 5px;
+  display: inline;
+  line-height: 2;
 }
 
 .tag_filter_prompt{
@@ -407,10 +423,11 @@ footer .right_block {
   {
     border: 1px solid $structure;
     border-radius: 5px;
-    margin: 5px;
+    margin: 2px;
     color: $structure;
     background-color: $base_main;
     padding: 1px 5px;
+    cursor: pointer;
   }
 
 .tag_checkbox:checked + .tag_label {
@@ -533,20 +550,16 @@ span.collapsible {
   padding: 0px 5px;
  }
 
-.collapsible a {
-  color: $highlight_secondary;
-  &:hover, &:active {
-      text-decoration: underline;
-}}
-
 .collaps_button_checked {
   display: none;
   height: 16px;
+  cursor: pointer;
 }
 
 .collaps_button_unchecked {
   display: inline;
   height: 16px;
+  cursor: pointer;
 }
 
 .collaps_checkbox:checked ~ .collaps_button_checked {
@@ -554,16 +567,6 @@ span.collapsible {
 }
 
 .collaps_checkbox:checked ~ .collaps_button_unchecked {
-  display: none;
-}
-
-
-// for taglists
-.collaps_checkbox:checked + label .collaps_button_checked {
-  display: inline;
-}
-
-.collaps_checkbox:checked + label .collaps_button_unchecked {
   display: none;
 }
 

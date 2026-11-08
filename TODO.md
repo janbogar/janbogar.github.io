@@ -6,6 +6,8 @@ Semanticke html:
 
 Design; ziadny ram, jednotna farba pozadia, bez zarovnania, modry akcent bud ako podciarknutie nadpisov alebo maly promptik, alebo podobne pred nimy, datum posunut hore
 
+- [ ] nech plusko v collapsible meni farbu (na to by to svg nesmelo byt cez img=source, ale inline, s currentColor)
+
 
 
 - [ ]cv

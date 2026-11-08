@@ -24,7 +24,8 @@
   </head>
 
   <body>
-    <header class="masthead clearfix container">
+    <header class="clearfix container">
+      <div class="masthead">
         <!--for links in the header to lead to pages in correct language-->
 			{% assign blogs=site.pages | where: 'ref', 'blog' |  where: 'lang', page.lang %}
     		{% assign blog=blogs[0]%}
@@ -60,25 +61,24 @@
         {% endif %}
 				</div>
 			</div>
+      </div>
     </header>
 
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer clearfix">
+  
+        <footer class="footer clearfix container">
+          <div>
           <div class="left_block">
           <a class= svg-icon download type="application/rss+xml"  href="{{ site.base_url }}/feed.xml" title="{{ site.title }}"><img alt="rss feed" src="{{ site.base_url}}/images/rss.svg" /></a>
           <a class= svg-icon href="https://mastodonczech.cz/@janbogar"><img alt="mastodon" src="{{ site.base_url}}/images/mastodon.svg" /></a>
           <a class= svg-icon href={%case page.lang %} {% when 'en' %} {{site.base_url}}/how-to-follow/ {% when 'sk' %}{{site.base_url}}/ako-ma-sledovat/{%endcase%}><img alt="facebook" src="{{ site.base_url}}/images/facebook.svg" /></a>
           </div> 
           <div class="right_block"><div><img src="{{ site.base_url }}/images/no_ai.svg" alt="Stop sign with crossed out AI" height="30px" style="margin-bottom:-7px;">  {{site.t[page.lang].ai}}</div><div>{{site.t[page.lang].cookies}}</div></div>
-      
+          </div>
         </footer>
-      </div>
-    </div>
 
   </body>
 </html>
