@@ -15,6 +15,8 @@ Je to  skrátka tak, chýba ponuka. Alebo nie?'
 
 {{page.excerpt}}
 
+Ako to teda naozaj je? Aká časť ženského outdoorového vybavenia je v skutočnosti ružová? A čo mužské vybavenie? Kto by to tak mohol vedieť?
+
 ...napäté ticho...
 
 No predsa ja! Pomocou mocného počítačového kung-fu som posťahoval všetky obrázky oblečenia a topánok z e-shopov sport-outdoor.sk a hudy.sk {% include collapsible.html content= "Dokopy niečo cez 5000 obrázkov."%}, odrezal z nich pozadie a urobil štatistický prehľad všetkých farieb v obrázkoch pre mužské a ženské výrobky zvlášť {% include collapsible.html content= "V skratke: python, scrapy, numpy, mpld3 a tento [kód](https://mail.python.org/pipermail/image-sig/2010-April/006220.html) floodfil algoritmu s thresholdom. Tu je môj [zdroják](https://github.com/janbogar/small_projects/tree/master/pink_is_for_girls)"%}.

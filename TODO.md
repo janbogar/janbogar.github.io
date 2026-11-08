@@ -1,28 +1,19 @@
-- [x]oprav link na stranku Sashi di Gulian
-- [x]prepis v NN vs Conway ze je to hlupe, to je prilis velka skratka
-- [x] krajsie fonty
-- [x]inak ries tagy
-  - [x] lepsi dizajn
-  - [x] zvyrazni link aj v tagpage
-  - [x] automaticky generuj veci pre tagy (ruby script?)
-- [x] nahrad toggle cistym css 
-- [x]menej adolescentne intro
-- [x]krajsi dizajn
-- [x]pridaj readme, je to fakt pain sa v tom teraz zorientovat
-- [x]odstran github
-- [x]update picture
+Semanticke html:
+ - pouzivat article na homepage?
+ - datetime
+ - collapsible by malo byt nieco ine?
+ - audit divov
+
+Design; ziadny ram, jednotna farba pozadia, bez zarovnania, modry akcent bud ako podciarknutie nadpisov alebo maly promptik, alebo podobne pred nimy, datum posunut hore
+
+- [ ] nech plusko v collapsible meni farbu (na to by to svg nesmelo byt cez img=source, ale inline, s currentColor)
+
+
+
 - [ ]cv
-- [x]zmen temu
-- [x]zmen farby vsetkeho svg
-- [x]self host fonts 
-- [x]atom feed
 - [ ]preklad homepage nech prenesie vybrate tagy skrz query
-- [x]prepis average mass of everything ze average vymaze exception, takto to nie je nutne pravda (fat tails)
-- [x]vycisti margins
-- [x]zjednot ikony
 - [x]plausible? - nie, je to drahe, ked tak nieco ine
 - [ ]gramatika operatorov - poslednu cast o operatoroch
-- [x]gramatika data science
 - [ ]gramatika average mass
 - [ ]gramatika conway
 - [ ]gramatika nepal
